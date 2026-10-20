@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ФНЛ — Первая лига</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            background: #0f172a; color: #e2e8f0; }
+    header { padding: 24px 16px; background: linear-gradient(135deg, #1e293b, #0f172a);
+              border-bottom: 1px solid #334155; }
+    header h1 { margin: 0; font-size: 24px; }
+    header .sub { color: #94a3b8; font-size: 14px; margin-top: 4px; }
+    main { max-width: 1200px; margin: 0 auto; padding: 16px; }
+    h2 { font-size: 18px; margin: 24px 0 12px; color: #f8fafc; }
+    .matches { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+    .match { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 12px; }
+    .teams { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+    .team { font-weight: 600; font-size: 14px; flex: 1; }
+    .team.home { text-align: left; }
+    .team.guest { text-align: right; }
+    .score { font-weight: 700; font-size: 16px; background: #0f172a; padding: 4px 8px;
+              border-radius: 8px; white-space: nowrap; }
+    .meta { color: #94a3b8; font-size: 12px; margin-top: 6px; }
+    table { width: 100%; border-collapse: collapse; background: #1e293b;
+             border: 1px solid #334155; border-radius: 12px; overflow: hidden; }
+    th, td { padding: 8px 10px; text-align: left; font-size: 13px;
+              border-bottom: 1px solid #334155; }
+    th { background: #0f172a; color: #cbd5e1; font-weight: 600; }
+    tr:last-child td { border-bottom: none; }
+    td.pts { font-weight: 700; }
+    td.form { letter-spacing: 1px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+    .card { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 12px; }
+    .card h3 { margin: 0 0 8px; font-size: 15px; }
+    .media-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+    .media-card { text-decoration: none; color: inherit; background: #1e293b;
+                   border: 1px solid #334155; border-radius: 12px; overflow: hidden; }
+    .media-cover { height: 120px; background-size: cover; background-position: center; }
+    .media-title { padding: 8px 10px; font-size: 13px; }
+    .empty { color: #94a3b8; font-style: italic; }
+    footer { color: #64748b; font-size: 12px; text-align: center; padding: 24px 16px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ФНЛ — Первая лига</h1>
+    <div class="sub">Сезон 1066 ·
+      23-й тур ·
+      обновлено 20.10.2026 13:47</div>
+  </header>
+  <main>
+    <h2>Матчи тура</h2>
+    <section class="matches">
+        <div class="match">
+          <div class="teams">
+            <div class="team home">Волга</div>
+            <div class="score">vs</div>
+            <div class="team guest">Нижний Новгород</div>
+          </div>
+          <div class="meta">—</div>
+          <div class="meta">—</div>
+        </div>
+        <div class="match">
+          <div class="teams">
+            <div class="team home">Енисей</div>
+            <div class="score">vs</div>
+            <div class="team guest">Ротор</div>
+          </div>
+          <div class="meta">—</div>
+          <div class="meta">—</div>
+        </div>
+        <div class="match">
+          <div class="teams">
+            <div class="team home">Ленинградец</div>
+            <div class="score">vs</div>
+            <div class="team guest">Нефтехимик</div>
+          </div>
+          <div class="meta">—</div>
+          <div class="meta">—</div>
+        </div>
+        <div class="match">
+          <div class="teams">
+            <div class="team home">Шинник</div>
+            <div class="score">vs</div>
+            <div class="team guest">Челябинск</div>
+          </div>
+          <div class="meta">—</div>
+          <div class="meta">—</div>
+        </div>
+        <div class="match">
+          <div class="teams">
+            <div class="team home">Спартак (Кострома)</div>
+            <div class="score">vs</div>
+            <div class="team guest">Сочи</div>
+          </div>
+          <div class="meta">—</div>
+          <div class="meta">—</div>
+        </div>
+        <div class="match">
+          <div class="teams">
+            <div class="team home">КАМАЗ</div>
+            <div class="score">vs</div>
+            <div class="team guest">Арсенал</div>
+          </div>
+          <div class="meta">—</div>
+          <div class="meta">—</div>
+        </div>
+        <div class="match">
+          <div class="teams">
+            <div class="team home">Велес</div>
+            <div class="score">vs</div>
+            <div class="team guest">СКА-Хабаровск</div>
+          </div>
+          <div class="meta">—</div>
+          <div class="meta">—</div>
+        </div>
+        <div class="match">
+          <div class="teams">
+            <div class="team home">Торпедо Москва</div>
+            <div class="score">vs</div>
+            <div class="team guest">Уфа</div>
+          </div>
+          <div class="meta">—</div>
+          <div class="meta">—</div>
+        </div></section>
+
+    <h2>Турнирная таблица</h2>
+    <section>
+        <table class="standings">
+          <thead>
+            <tr><th>#</th><th>Команда</th><th>И</th><th>В</th><th>Н</th><th>П</th>
+                <th>Голы</th><th>Разн.</th><th>О</th><th>Форма</th></tr>
+          </thead>
+          <tbody>
+              <tr>
+                <td>1</td>
+                <td class="team-name">Нижний Новгород</td>
+                <td>14</td>
+                <td>12</td>
+                <td>1</td>
+                <td>1</td>
+                <td>43:15</td>
+                <td>28</td>
+                <td class="pts">37</td>
+                <td class="form">ВВВВВ</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td class="team-name">Сочи</td>
+                <td>14</td>
+                <td>9</td>
+                <td>2</td>
+                <td>3</td>
+                <td>23:14</td>
+                <td>9</td>
+                <td class="pts">29</td>
+                <td class="form">ВВНВП</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td class="team-name">Торпедо Москва</td>
+                <td>14</td>
+                <td>8</td>
+                <td>3</td>
+                <td>3</td>
+                <td>26:11</td>
+                <td>15</td>
+                <td class="pts">27</td>
+                <td class="form">ВВННП</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td class="team-name">Спартак (Кострома)</td>
+                <td>14</td>
+                <td>8</td>
+                <td>3</td>
+                <td>3</td>
+                <td>20:13</td>
+                <td>7</td>
+                <td class="pts">27</td>
+                <td class="form">ВППВВ</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td class="team-name">Велес</td>
+                <td>15</td>
+                <td>8</td>
+                <td>3</td>
+                <td>4</td>
+                <td>20:18</td>
+                <td>2</td>
+                <td class="pts">27</td>
+                <td class="form">НВПНП</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td class="team-name">Урал</td>
+                <td>14</td>
+                <td>7</td>
+                <td>4</td>
+                <td>3</td>
+                <td>22:10</td>
+                <td>12</td>
+                <td class="pts">25</td>
+                <td class="form">ППВВН</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td class="team-name">Уфа</td>
+                <td>14</td>
+                <td>5</td>
+                <td>6</td>
+                <td>3</td>
+                <td>18:14</td>
+                <td>4</td>
+                <td class="pts">21</td>
+                <td class="form">ВПНПН</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td class="team-name">Шинник</td>
+                <td>14</td>
+                <td>4</td>
+                <td>8</td>
+                <td>2</td>
+                <td>18:14</td>
+                <td>4</td>
+                <td class="pts">20</td>
+                <td class="form">НВНПН</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td class="team-name">Ротор</td>
+                <td>14</td>
+                <td>5</td>
+                <td>3</td>
+                <td>6</td>
+                <td>22:17</td>
+                <td>5</td>
+                <td class="pts">18</td>
+                <td class="form">ПНВВН</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td class="team-name">Волга</td>
+                <td>15</td>
+                <td>5</td>
+                <td>3</td>
+                <td>7</td>
+                <td>20:22</td>
+                <td>-2</td>
+                <td class="pts">18</td>
+                <td class="form">ВНВПП</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td class="team-name">Арсенал</td>
+                <td>14</td>
+                <td>4</td>
+                <td>4</td>
+                <td>6</td>
+                <td>15:26</td>
+                <td>-11</td>
+                <td class="pts">16</td>
+                <td class="form">ПВПНП</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td class="team-name">Челябинск</td>
+                <td>14</td>
+                <td>4</td>
+                <td>3</td>
+                <td>7</td>
+                <td>18:23</td>
+                <td>-5</td>
+                <td class="pts">15</td>
+                <td class="form">ПВНВН</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td class="team-name">Енисей</td>
+                <td>14</td>
+                <td>3</td>
+                <td>5</td>
+                <td>6</td>
+                <td>16:27</td>
+                <td>-11</td>
+                <td class="pts">14</td>
+                <td class="form">ППНВП</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td class="team-name">КАМАЗ</td>
+                <td>14</td>
+                <td>3</td>
+                <td>4</td>
+                <td>7</td>
+                <td>16:23</td>
+                <td>-7</td>
+                <td class="pts">13</td>
+                <td class="form">ВНВНП</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td class="team-name">Ленинградец</td>
+                <td>14</td>
+                <td>3</td>
+                <td>4</td>
+                <td>7</td>
+                <td>11:25</td>
+                <td>-14</td>
+                <td class="pts">13</td>
+                <td class="form">ППВПН</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td class="team-name">Нефтехимик</td>
+                <td>14</td>
+                <td>4</td>
+                <td>0</td>
+                <td>10</td>
+                <td>10:21</td>
+                <td>-11</td>
+                <td class="pts">12</td>
+                <td class="form">ППППВ</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td class="team-name">Текстильщик</td>
+                <td>14</td>
+                <td>2</td>
+                <td>4</td>
+                <td>8</td>
+                <td>10:22</td>
+                <td>-12</td>
+                <td class="pts">10</td>
+                <td class="form">ВППНП</td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td class="team-name">СКА-Хабаровск</td>
+                <td>14</td>
+                <td>1</td>
+                <td>4</td>
+                <td>9</td>
+                <td>15:28</td>
+                <td>-13</td>
+                <td class="pts">7</td>
+                <td class="form">ПНННН</td>
+              </tr></tbody>
+        </table></section>
+
+    <h2>Лидеры</h2>
+    <section class="cards">
+      
+        <div class="card">
+          <h3>Бомбардиры</h3>
+          <table class="top">
+            <thead><tr><th>#</th><th>Игрок</th><th>Команда</th><th>Голы</th></tr></thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Грулев Вячеслав Дмитриевич</td>
+                <td>Нижний Новгород</td>
+                <td>17</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Калмыков Амур Арсенович</td>
+                <td>Спартак (Кострома)</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Гаджимурадов Рамазан Ирбайханович</td>
+                <td>Челябинск</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Урванцев Матвей Станиславович</td>
+                <td>Челябинск</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Федоров Захар Андреевич</td>
+                <td>Сочи</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Каштанов Алексей Дмитриевич</td>
+                <td>Торпедо Москва</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Саплинов Александр Юрьевич</td>
+                <td>Волга</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Азявин Илья Андреевич</td>
+                <td>Шинник</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Эльдарушев Абу-Саид Исламутдинович</td>
+                <td>Ротор</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Ортис Арагон Дилан Андрес</td>
+                <td>Уфа</td>
+                <td>6</td>
+              </tr></tbody>
+          </table>
+        </div>
+      
+        <div class="card">
+          <h3>Ассистенты</h3>
+          <table class="top">
+            <thead><tr><th>#</th><th>Игрок</th><th>Команда</th><th>Передачи</th></tr></thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Соколов Артем Евгеньевич</td>
+                <td>Нижний Новгород</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Калинский Николай Николаевич</td>
+                <td>Нижний Новгород</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Корольков Кирилл Дмитриевич</td>
+                <td>Велес</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Магаль Руслан Иванович</td>
+                <td>Сочи</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Сарвели Владислав Константинович</td>
+                <td>Нижний Новгород</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Симонян Артем Вруйрович</td>
+                <td>Ротор</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Берковский Илья Витальевич</td>
+                <td>Торпедо Москва</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Боков Денис Игоревич</td>
+                <td>Урал</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Горбунов Игорь Владимирович</td>
+                <td>Арсенал</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Сафронов Илья Сергеевич</td>
+                <td>Челябинск</td>
+                <td>4</td>
+              </tr></tbody>
+          </table>
+        </div>
+    </section>
+
+    <h2>Статистика лиги</h2>
+    <section>
+        <table class="league">
+          <thead><tr><th>Метрика</th><th>Дома</th><th>Гости</th><th>Всего</th></tr></thead>
+          <tbody>
+              <tr>
+                <td>Сыгранные матчи</td>
+                <td>127</td>
+                <td>127</td>
+                <td class="pts">127</td>
+              </tr>
+              <tr>
+                <td>Победы</td>
+                <td>50</td>
+                <td>45</td>
+                <td class="pts">95</td>
+              </tr>
+              <tr>
+                <td>Ничьи</td>
+                <td>32</td>
+                <td>32</td>
+                <td class="pts">64</td>
+              </tr>
+              <tr>
+                <td>Осталось сыграть</td>
+                <td>179</td>
+                <td>179</td>
+                <td class="pts">179</td>
+              </tr>
+              <tr>
+                <td>Забитые мячи</td>
+                <td>190</td>
+                <td>153</td>
+                <td class="pts">343</td>
+              </tr>
+              <tr>
+                <td>Голевые передачи</td>
+                <td>142</td>
+                <td>117</td>
+                <td class="pts">259</td>
+              </tr>
+              <tr>
+                <td>Желтые карточки</td>
+                <td>279</td>
+                <td>271</td>
+                <td class="pts">550</td>
+              </tr>
+              <tr>
+                <td>Красные карточки</td>
+                <td>9</td>
+                <td>18</td>
+                <td class="pts">27</td>
+              </tr>
+              <tr>
+                <td>Пенальти</td>
+                <td>27</td>
+                <td>21</td>
+                <td class="pts">48</td>
+              </tr></tbody>
+        </table></section>
+
+    <h2>Последние видео</h2>
+    <section><div class='media-grid'>
+              <a class="media-card" href="https://vk.ru/video_ext.php?oid=-29484355&amp;id=456253452&amp;hd=1" target="_blank" rel="noopener">
+                <div class="media-cover" style="background-image:url('https://fnl.pro/fnl/match/L1_RE_9 (7)_1792387409006.jpg')"></div>
+                <div class="media-title">&quot;Велес&quot; - &quot;Шинник&quot; - 1:1</div>
+              </a>
+              <a class="media-card" href="https://vk.ru/video_ext.php?oid=-29484355&amp;id=456253451&amp;hd=1" target="_blank" rel="noopener">
+                <div class="media-cover" style="background-image:url('https://fnl.pro/fnl/match/L1_RE_8 (8)_1792387315155.jpg')"></div>
+                <div class="media-title">&quot;Текстильщик&quot; - &quot;Челябинск&quot; - 2:1</div>
+              </a>
+              <a class="media-card" href="https://vk.ru/video_ext.php?oid=-29484355&amp;id=456253450&amp;hd=1" target="_blank" rel="noopener">
+                <div class="media-cover" style="background-image:url('https://fnl.pro/fnl/match/L1_RE_7 (7)_1792387221955.jpg')"></div>
+                <div class="media-title">&quot;Урал&quot; - &quot;Нижний Новгород&quot; - 1:2</div>
+              </a>
+              <a class="media-card" href="https://vk.ru/video_ext.php?oid=-29484355&amp;id=456253440&amp;hd=1" target="_blank" rel="noopener">
+                <div class="media-cover" style="background-image:url('https://fnl.pro/fnl/match/L1_RE_6 (7)_1792387131199.jpg')"></div>
+                <div class="media-title">&quot;СКА-Хабаровск&quot; - &quot;Волга&quot; - 1:2</div>
+              </a>
+              <a class="media-card" href="https://vk.ru/video_ext.php?oid=-29484355&amp;id=456253412&amp;hd=1" target="_blank" rel="noopener">
+                <div class="media-cover" style="background-image:url('https://fnl.pro/fnl/match/L1_RE_1 (9)_1792386951134.jpg')"></div>
+                <div class="media-title">&quot;Ротор&quot; - &quot;Сочи&quot; - 0:1</div>
+              </a>
+              <a class="media-card" href="https://vk.ru/video_ext.php?oid=-29484355&amp;id=456253436&amp;hd=1" target="_blank" rel="noopener">
+                <div class="media-cover" style="background-image:url('https://fnl.pro/fnl/match/L1_RE_4 (7)_1792263704811.jpg')"></div>
+                <div class="media-title">&quot;КАМАЗ&quot; - &quot;Нефтехимик&quot; - 2:1</div>
+              </a></div></section>
+  </main>
+  <footer>Данные: fnl.pro · сгенерировано автоматически</footer>
+</body>
+</html>
