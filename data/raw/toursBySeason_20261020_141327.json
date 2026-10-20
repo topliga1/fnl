@@ -1,0 +1,241 @@
+[
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1069,
+    "name": "1-й тур",
+    "months": [
+      7
+    ]
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1071,
+    "name": "2-й тур",
+    "months": [
+      7
+    ]
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1072,
+    "name": "3-й тур",
+    "months": [
+      7
+    ]
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1073,
+    "name": "4-й тур",
+    "months": [
+      8
+    ]
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1074,
+    "name": "5-й тур",
+    "months": [
+      8
+    ]
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1075,
+    "name": "6-й тур",
+    "months": [
+      8
+    ]
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1076,
+    "name": "7-й тур",
+    "months": [
+      8,
+      9
+    ]
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1077,
+    "name": "8-й тур",
+    "months": [
+      8
+    ]
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1078,
+    "name": "9-й тур",
+    "months": [
+      8
+    ]
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1079,
+    "name": "10-й тур",
+    "months": [
+      9
+    ]
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1080,
+    "name": "11-й тур",
+    "months": [
+      9
+    ]
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1081,
+    "name": "12-й тур",
+    "months": [
+      9
+    ]
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1082,
+    "name": "13-й тур",
+    "months": [
+      10
+    ]
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1083,
+    "name": "14-й тур",
+    "months": [
+      10
+    ]
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1084,
+    "name": "15-й тур",
+    "months": [
+      10
+    ]
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1085,
+    "name": "16-й тур",
+    "months": [
+      10
+    ]
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1086,
+    "name": "17-й тур",
+    "months": []
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1087,
+    "name": "18-й тур",
+    "months": []
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1088,
+    "name": "19-й тур",
+    "months": []
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1089,
+    "name": "20-й тур",
+    "months": []
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1090,
+    "name": "21-й тур",
+    "months": [
+      10
+    ]
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1091,
+    "name": "22-й тур",
+    "months": []
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1092,
+    "name": "23-й тур",
+    "months": []
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1093,
+    "name": "24-й тур",
+    "months": []
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1094,
+    "name": "25-й тур",
+    "months": []
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1095,
+    "name": "26-й тур",
+    "months": []
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1096,
+    "name": "27-й тур",
+    "months": []
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1097,
+    "name": "28-й тур",
+    "months": []
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1098,
+    "name": "29-й тур",
+    "months": []
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1099,
+    "name": "30-й тур",
+    "months": []
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1100,
+    "name": "31-й тур",
+    "months": []
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1101,
+    "name": "32-й тур",
+    "months": []
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1102,
+    "name": "33-й тур",
+    "months": []
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TourInfo",
+    "id": 1103,
+    "name": "34-й тур",
+    "months": []
+  }
+]
