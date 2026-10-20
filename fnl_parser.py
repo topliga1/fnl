@@ -231,33 +231,7 @@ def fetch_league_stats():
     save_csv("08_league_stats", pd.DataFrame(rows))
 
 
-# ---------- MAIN ----------
-def main():
-    print(f"Старт парсинга ФНЛ (leagueId={LEAGUE_ID}, seasonId={SEASON_ID})")
-    print(f"raw -> {RAW_DIR}")
-    print(f"csv -> {CSV_DIR}\n")
-
-    fetch_slider()
-    fetch_logos()
-    fetch_active_season()
-    fetch_season_history()
-    fetch_media("LINK")
-
-    for et in [
-        "BOMBARDIER",
-        "ASSISTANT",
-        "SHOTS_TARGET",
-        "SAVES",
-        "YELLOW_CARD",
-        "FOULS_ON_PLAYER",
-    ]:
-        fetch_player_stats(et)
-
-    fetch_standings(extended=True)
-    fetch_standings(extended=False)
-    fetch_league_stats()
-
-    # ---------- 09. HTML ----------
+# ---------- 09. HTML ----------
 def build_html():
     """Собирает index.html из уже сохранённых CSV."""
     print("[09] build index.html")
@@ -277,8 +251,7 @@ def build_html():
     league = read_csv("08_league_stats")
     media = read_csv("05_media_LINK")
 
-    # --- 1) Определяем "текущий тур" = тур с наибольшим tourId среди FUTURE,
-    #        иначе — среди END ---
+    # --- 1) Определяем "текущий тур" ---
     current_tour_id = None
     current_tour_name = None
     if not slider.empty:
@@ -486,12 +459,39 @@ def build_html():
     out_path.write_text(html_out, encoding="utf-8")
     print(f"  -> html: {out_path.relative_to(ROOT)}")
 
+
+# ---------- MAIN ----------
+def main():
+    print(f"Старт парсинга ФНЛ (leagueId={LEAGUE_ID}, seasonId={SEASON_ID})")
+    print(f"raw -> {RAW_DIR}")
+    print(f"csv -> {CSV_DIR}\n")
+
+    fetch_slider()
+    fetch_logos()
+    fetch_active_season()
+    fetch_season_history()
+    fetch_media("LINK")
+
+    for et in [
+        "BOMBARDIER",
+        "ASSISTANT",
+        "SHOTS_TARGET",
+        "SAVES",
+        "YELLOW_CARD",
+        "FOULS_ON_PLAYER",
+    ]:
+        fetch_player_stats(et)
+
+    fetch_standings(extended=True)
+    fetch_standings(extended=False)
+    fetch_league_stats()
+    build_html()
+
     print("\nГотово.")
     print("Сырые JSON: data/raw/")
     print("Таблицы:    data/csv/")
-    fetch_league_stats()
-    build_html()          # <- новая строка
-    print("\nГотово.")
+    print("Страница:   index.html")
+
 
 if __name__ == "__main__":
     main()
