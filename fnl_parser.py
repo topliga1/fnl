@@ -257,10 +257,243 @@ def main():
     fetch_standings(extended=False)
     fetch_league_stats()
 
+    # ---------- 09. HTML ----------
+def build_html():
+    """Собирает index.html из уже сохранённых CSV."""
+    print("[09] build index.html")
+
+    import html as _html
+
+    def read_csv(name):
+        p = CSV_DIR / f"{name}.csv"
+        if not p.exists():
+            return pd.DataFrame()
+        return pd.read_csv(p)
+
+    slider = read_csv("01_slider_matches")
+    standings = read_csv("07_standings_extended")
+    bomb = read_csv("06_player_stats_BOMBARDIER")
+    ass = read_csv("06_player_stats_ASSISTANT")
+    league = read_csv("08_league_stats")
+    media = read_csv("05_media_LINK")
+
+    # --- 1) Определяем "текущий тур" = тур с наибольшим tourId среди FUTURE,
+    #        иначе — среди END ---
+    current_tour_id = None
+    current_tour_name = None
+    if not slider.empty:
+        future = slider[slider["status"] == "FUTURE"]
+        pick = future if not future.empty else slider
+        current_tour_id = int(pick["tourId"].max())
+        current_tour_name = pick.loc[pick["tourId"] == current_tour_id, "tour"].iloc[0]
+
+    tour_matches = pd.DataFrame()
+    if current_tour_id is not None and not slider.empty:
+        tour_matches = slider[slider["tourId"] == current_tour_id].copy()
+        tour_matches = tour_matches.sort_values("date").head(8)
+
+    # --- 2) Рендер матчей ---
+    def render_match(row):
+        status = row.get("status", "")
+        hs, gs = row.get("home_score"), row.get("guest_score")
+        if status == "END" and pd.notna(hs) and pd.notna(gs):
+            score = f"{int(hs)} : {int(gs)}"
+        else:
+            score = "vs"
+        date = row.get("date") or "—"
+        stadium = row.get("stadium") or "—"
+        city = row.get("city") or ""
+        viewers = row.get("viewers")
+        viewers_str = f"{int(viewers):,}".replace(",", " ") if pd.notna(viewers) else ""
+        return f"""
+        <div class="match">
+          <div class="teams">
+            <div class="team home">{_html.escape(str(row.get("home_name", "")))}</div>
+            <div class="score">{score}</div>
+            <div class="team guest">{_html.escape(str(row.get("guest_name", "")))}</div>
+          </div>
+          <div class="meta">{_html.escape(str(date))}</div>
+          <div class="meta">{_html.escape(stadium)}{", " + _html.escape(city) if city else ""}
+            {("· 👥 " + viewers_str) if viewers_str else ""}</div>
+        </div>"""
+
+    matches_html = "".join(render_match(r) for _, r in tour_matches.iterrows()) \
+        or "<p class='empty'>Нет матчей текущего тура.</p>"
+
+    # --- 3) Таблица ---
+    def render_standings(df):
+        if df.empty:
+            return "<p class='empty'>Нет данных.</p>"
+        rows = []
+        for _, r in df.iterrows():
+            rows.append(f"""
+              <tr>
+                <td>{int(r['rank'])}</td>
+                <td class="team-name">{_html.escape(str(r['teamName']))}</td>
+                <td>{int(r['allGame'])}</td>
+                <td>{int(r['win'])}</td>
+                <td>{int(r['draw'])}</td>
+                <td>{int(r['loss'])}</td>
+                <td>{int(r['scoredGoal'])}:{int(r['missedGoal'])}</td>
+                <td>{int(r['diffGoal'])}</td>
+                <td class="pts">{int(r['score'])}</td>
+                <td class="form">{_html.escape(str(r.get('last5', '')))}</td>
+              </tr>""")
+        return f"""
+        <table class="standings">
+          <thead>
+            <tr><th>#</th><th>Команда</th><th>И</th><th>В</th><th>Н</th><th>П</th>
+                <th>Голы</th><th>Разн.</th><th>О</th><th>Форма</th></tr>
+          </thead>
+          <tbody>{''.join(rows)}</tbody>
+        </table>"""
+
+    # --- 4) Топ-игроки ---
+    def render_top(df, title, metric_label):
+        if df.empty:
+            return f"<div class='card'><h3>{title}</h3><p class='empty'>Нет данных.</p></div>"
+        rows = []
+        for i, r in df.head(10).iterrows():
+            rows.append(f"""
+              <tr>
+                <td>{i + 1}</td>
+                <td>{_html.escape(str(r['playerName']))}</td>
+                <td>{_html.escape(str(r['teamTitle']))}</td>
+                <td>{int(r['eventCnt'])}</td>
+              </tr>""")
+        return f"""
+        <div class="card">
+          <h3>{title}</h3>
+          <table class="top">
+            <thead><tr><th>#</th><th>Игрок</th><th>Команда</th><th>{metric_label}</th></tr></thead>
+            <tbody>{''.join(rows)}</tbody>
+          </table>
+        </div>"""
+
+    # --- 5) Агрегаты лиги ---
+    def render_league(df):
+        if df.empty:
+            return "<p class='empty'>Нет данных.</p>"
+        rows = []
+        for _, r in df.iterrows():
+            rows.append(f"""
+              <tr>
+                <td>{_html.escape(str(r.get('description', '')))}</td>
+                <td>{r.get('home')}</td>
+                <td>{r.get('guest')}</td>
+                <td class="pts">{r.get('total')}</td>
+              </tr>""")
+        return f"""
+        <table class="league">
+          <thead><tr><th>Метрика</th><th>Дома</th><th>Гости</th><th>Всего</th></tr></thead>
+          <tbody>{''.join(rows)}</tbody>
+        </table>"""
+
+    # --- 6) Последние видео ---
+    def render_media(df):
+        if df.empty:
+            return "<p class='empty'>Нет данных.</p>"
+        cards = []
+        for _, r in df.head(6).iterrows():
+            title = _html.escape(str(r.get('title', '')))
+            video = r.get('videoUrl') or ''
+            cover = r.get('url') or ''
+            cover_full = f"https://fnl.pro{cover}" if cover.startswith('/') else cover
+            cards.append(f"""
+              <a class="media-card" href="{_html.escape(video)}" target="_blank" rel="noopener">
+                <div class="media-cover" style="background-image:url('{_html.escape(cover_full)}')"></div>
+                <div class="media-title">{title}</div>
+              </a>""")
+        return f"<div class='media-grid'>{''.join(cards)}</div>"
+
+    # --- 7) Финальный HTML ---
+    html_out = f"""<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ФНЛ — Первая лига</title>
+  <style>
+    * {{ box-sizing: border-box; }}
+    body {{ margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            background: #0f172a; color: #e2e8f0; }}
+    header {{ padding: 24px 16px; background: linear-gradient(135deg, #1e293b, #0f172a);
+              border-bottom: 1px solid #334155; }}
+    header h1 {{ margin: 0; font-size: 24px; }}
+    header .sub {{ color: #94a3b8; font-size: 14px; margin-top: 4px; }}
+    main {{ max-width: 1200px; margin: 0 auto; padding: 16px; }}
+    h2 {{ font-size: 18px; margin: 24px 0 12px; color: #f8fafc; }}
+    .matches {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }}
+    .match {{ background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 12px; }}
+    .teams {{ display: flex; justify-content: space-between; align-items: center; gap: 8px; }}
+    .team {{ font-weight: 600; font-size: 14px; flex: 1; }}
+    .team.home {{ text-align: left; }}
+    .team.guest {{ text-align: right; }}
+    .score {{ font-weight: 700; font-size: 16px; background: #0f172a; padding: 4px 8px;
+              border-radius: 8px; white-space: nowrap; }}
+    .meta {{ color: #94a3b8; font-size: 12px; margin-top: 6px; }}
+    table {{ width: 100%; border-collapse: collapse; background: #1e293b;
+             border: 1px solid #334155; border-radius: 12px; overflow: hidden; }}
+    th, td {{ padding: 8px 10px; text-align: left; font-size: 13px;
+              border-bottom: 1px solid #334155; }}
+    th {{ background: #0f172a; color: #cbd5e1; font-weight: 600; }}
+    tr:last-child td {{ border-bottom: none; }}
+    td.pts {{ font-weight: 700; }}
+    td.form {{ letter-spacing: 1px; }}
+    .cards {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }}
+    .card {{ background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 12px; }}
+    .card h3 {{ margin: 0 0 8px; font-size: 15px; }}
+    .media-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }}
+    .media-card {{ text-decoration: none; color: inherit; background: #1e293b;
+                   border: 1px solid #334155; border-radius: 12px; overflow: hidden; }}
+    .media-cover {{ height: 120px; background-size: cover; background-position: center; }}
+    .media-title {{ padding: 8px 10px; font-size: 13px; }}
+    .empty {{ color: #94a3b8; font-style: italic; }}
+    footer {{ color: #64748b; font-size: 12px; text-align: center; padding: 24px 16px; }}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ФНЛ — Первая лига</h1>
+    <div class="sub">Сезон {_html.escape(str(slider['seasonId'].iloc[0]) if not slider.empty else '—')} ·
+      {_html.escape(str(current_tour_name or '—'))} ·
+      обновлено {datetime.now().strftime('%d.%m.%Y %H:%M')}</div>
+  </header>
+  <main>
+    <h2>Матчи тура</h2>
+    <section class="matches">{matches_html}</section>
+
+    <h2>Турнирная таблица</h2>
+    <section>{render_standings(standings)}</section>
+
+    <h2>Лидеры</h2>
+    <section class="cards">
+      {render_top(bomb, "Бомбардиры", "Голы")}
+      {render_top(ass, "Ассистенты", "Передачи")}
+    </section>
+
+    <h2>Статистика лиги</h2>
+    <section>{render_league(league)}</section>
+
+    <h2>Последние видео</h2>
+    <section>{render_media(media)}</section>
+  </main>
+  <footer>Данные: fnl.pro · сгенерировано автоматически</footer>
+</body>
+</html>
+"""
+    out_path = ROOT / "index.html"
+    out_path.write_text(html_out, encoding="utf-8")
+    print(f"  -> html: {out_path.relative_to(ROOT)}")
+
     print("\nГотово.")
     print("Сырые JSON: data/raw/")
     print("Таблицы:    data/csv/")
-
+    fetch_league_stats()
+    build_html()          # <- новая строка
+    print("\nГотово.")
 
 if __name__ == "__main__":
     main()
+
+    
