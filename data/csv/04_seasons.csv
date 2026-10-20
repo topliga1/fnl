@@ -1,0 +1,16 @@
+﻿@class,leagueId,seasonId,title
+ru.saytori.fnl.db.dto.SeasonInfo,100,1066,2026/2027
+ru.saytori.fnl.db.dto.SeasonInfo,100,1024,2025/2026
+ru.saytori.fnl.db.dto.SeasonInfo,100,979,2024/2025
+ru.saytori.fnl.db.dto.SeasonInfo,100,936,2023/2024
+ru.saytori.fnl.db.dto.SeasonInfo,100,896,2022/2023
+ru.saytori.fnl.db.dto.SeasonInfo,100,841,2021/2022
+ru.saytori.fnl.db.dto.SeasonInfo,100,785,2020/2021
+ru.saytori.fnl.db.dto.SeasonInfo,100,712,2019/2020
+ru.saytori.fnl.db.dto.SeasonInfo,100,639,2018/2019
+ru.saytori.fnl.db.dto.SeasonInfo,100,561,2017/2018
+ru.saytori.fnl.db.dto.SeasonInfo,100,484,2016/2017
+ru.saytori.fnl.db.dto.SeasonInfo,100,358,2015/2016
+ru.saytori.fnl.db.dto.SeasonInfo,100,259,2014/2015
+ru.saytori.fnl.db.dto.SeasonInfo,100,186,2013/2014
+ru.saytori.fnl.db.dto.SeasonInfo,100,106,2012/2013
