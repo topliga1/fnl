@@ -36,6 +36,8 @@ jobs:
         run: python fnl_parser.py
 
       # 5. Проверяем, появились ли новые файлы, и коммитим их
+      - name: Add index.html to git
+        run: git add index.html
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
