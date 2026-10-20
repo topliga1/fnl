@@ -121,6 +121,7 @@ def fetch_logos():
 # ---------- 02.5. TEAMS BY SEASON ----------
 def fetch_teams_by_season():
     print("[02.5] teamsBySeason")
+    # Без limit/offset
     data = get("/info/teamsBySeason", {"leagueId": LEAGUE_ID, "seasonId": SEASON_ID})
     save_raw("teamsBySeason", data)
 
@@ -150,12 +151,14 @@ def fetch_season_history():
 # ---------- 04.5. MONTHS & TOURS ----------
 def fetch_months():
     print("[04.5] monthsByParams")
+    # Без limit/offset
     data = get("/info/monthsByParams", {"leagueId": LEAGUE_ID, "seasonId": SEASON_ID})
     save_raw("monthsByParams", data)
     save_csv("04_5_months", pd.DataFrame({"month": data}))
 
 def fetch_tours():
     print("[04.6] toursBySeason")
+    # Без limit/offset
     data = get("/info/toursBySeason", {"leagueId": LEAGUE_ID, "seasonId": SEASON_ID})
     save_raw("toursBySeason", data)
     rows = []
@@ -251,43 +254,35 @@ def fetch_league_stats():
 
 
 # ---------- 09. FULL CALENDAR ----------
-def fetch_calendar_full(page_size: int = 100, max_pages: int = 10):
+def fetch_calendar_full():
     print("[09] calendar full")
+    # Без limit/offset, только move=ALL
+    data = get("/center/calendar/matches/date", {
+        "leagueId": LEAGUE_ID,
+        "seasonId": SEASON_ID,
+        "move": "ALL",
+    })
+    save_raw("calendar_full", data)
+
     all_matches = {}
-    offset, total_days = 0, None
+    for day in data.get("matches", []):
+        for m in day.get("matches", []):
+            mid = m.get("matchId")
+            if mid not in all_matches:
+                all_matches[mid] = match_to_row(m)
 
-    for page in range(max_pages):
-        data = get("/center/calendar/matches/date", {
-            "leagueId": LEAGUE_ID, "seasonId": SEASON_ID,
-            "limit": page_size, "offset": offset, "move": "ALL",
-        })
-        if page == 0:
-            save_raw("calendar_full_page0", data)
+    print(f"  получено матчей из календаря: {len(all_matches)}")
 
-        loc = data.get("location") or {}
-        total_days = loc.get("count")
-        days = data.get("matches", [])
-
-        for day in days:
-            for m in day.get("matches", []):
-                mid = m.get("matchId")
-                if mid not in all_matches:
-                    all_matches[mid] = match_to_row(m)
-
-        offset += page_size
-        print(f"  страница {page + 1}: дней {len(days)} (накоплено матчей {len(all_matches)})")
-        if not days or offset >= (total_days or 0):
-            break
-        time.sleep(REQUEST_DELAY)
-
-    # дедупликация с слайдером: если матч есть в слайдере, берём его данные
+    # Дедупликация с слайдером
     slider_path = CSV_DIR / "01_slider_matches.csv"
     if slider_path.exists():
         slider_df = pd.read_csv(slider_path)
         for _, r in slider_df.iterrows():
             mid = r.get("matchId")
             if pd.notna(mid):
-                all_matches[int(mid)] = {k: (None if pd.isna(v) else v) for k, v in r.items()}
+                all_matches[int(mid)] = {
+                    k: (None if pd.isna(v) else v) for k, v in r.items()
+                }
 
     df = pd.DataFrame(all_matches.values())
     if not df.empty:
@@ -400,7 +395,6 @@ def build_html():
     def render_calendar(df):
         if df.empty:
             return "<p class='empty'>Нет данных.</p>"
-        # Группируем по дате
         df["date_short"] = df["date"].astype(str).str[:10]
         html_parts = []
         for date, group in df.groupby("date_short"):
