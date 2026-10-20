@@ -172,34 +172,25 @@ def fetch_media(media_type: str = "LINK", page_size: int = 100, max_pages: int =
 
 
 # ---------- 06. PLAYER STATS (по одному типу) ----------
-def fetch_player_stats(event_type: str, page_size: int = 100, max_pages: int = 50):
+def fetch_player_stats(event_type: str):
     print(f"[06] player stats ({event_type})")
-    all_rows, offset, total = [], 0, None
-    for page in range(max_pages):
-        data = get("/center/player/stats", {
-            "leagueId": LEAGUE_ID,
-            "seasonId": SEASON_ID,
-            "eventType": event_type,
-            "limit": page_size,
-            "offset": offset,
-        })
-        if page == 0:
-            save_raw(f"player_stats_{event_type}_page0", data)
+    # ВАЖНО: эндпоинт /center/player/stats не принимает limit и offset —
+    # только leagueId, seasonId, eventType. Иначе 400 Bad Request.
+    data = get("/center/player/stats", {
+        "leagueId": LEAGUE_ID,
+        "seasonId": SEASON_ID,
+        "eventType": event_type,
+    })
+    save_raw(f"player_stats_{event_type}", data)
 
-        players = data.get("players", [])
-        for p in players:
-            p = dict(p)
-            p["eventType"] = event_type
-            all_rows.append(p)
+    players = data.get("players", [])
+    for p in players:
+        p = dict(p)
+        p["eventType"] = event_type
 
-        total = data.get("total")
-        offset += page_size
-        if not players or offset >= (total or 0):
-            break
-        time.sleep(REQUEST_DELAY)
-
-    save_csv(f"06_player_stats_{event_type}", pd.DataFrame(all_rows))
-
+    save_csv(f"06_player_stats_{event_type}", pd.DataFrame(players))
+    total = data.get("total")
+    print(f"  получено записей: {len(players)} (total в ответе: {total})")
 
 # ---------- 07. STANDINGS ----------
 def fetch_standings(extended: bool = True):
