@@ -1,0 +1,4007 @@
+{
+  "@class": "ru.saytori.fnl.model.MainSliderInfo",
+  "matches": [
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7326,
+      "fnlId": "match40716",
+      "ticketUrl": null,
+      "status": "END",
+      "statusExtended": "END",
+      "matchTime": "96",
+      "matchTimeStr": "96",
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1090,
+      "tour": "21-й тур",
+      "date": "2026-10-04 14:30",
+      "estimatedDate": "2026-12-04",
+      "estimatedDateTo": "2026-12-07",
+      "url": null,
+      "isAvailableBroadcast": true,
+      "typeLink": null,
+      "links": [
+        {
+          "url": "https://matchtv.ru/on-air",
+          "typeLink": "match-tv"
+        },
+        {
+          "url": "https://matchpremier.ru/live",
+          "typeLink": "match-premier"
+        },
+        {
+          "url": "https://hd.kinopoisk.ru/sport/event/37945/",
+          "typeLink": "kinopoisk"
+        }
+      ],
+      "stadium": {
+        "title": "«Авангард»",
+        "city": "Домодедово",
+        "viewers": "1221"
+      },
+      "judges": {
+        "name": "Цурков Данила",
+        "city": "Москва"
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 204,
+        "teamSlug": "veles",
+        "name": "Велес",
+        "score": 1,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 263,
+        "teamSlug": "volga",
+        "name": "Волга",
+        "score": 2,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": [
+        {
+          "@class": "ru.saytori.fnl.model.MatchMedia",
+          "id": 6616,
+          "matchId": 7326,
+          "leagueId": 100,
+          "url": "/fnl/match/L1_RE_1 (7)_1791194262332.jpg",
+          "videoUrl": "https://vk.ru/video_ext.php?oid=-29484355&id=456253311&hd=1",
+          "type": "LINK",
+          "title": "\"Велес\" - \"Волга\" - 1:2",
+          "photos": [],
+          "photosSize": 0,
+          "hashTags": [
+            "Велес",
+            "Волга"
+          ],
+          "modifiedDate": "2026-10-05T10:04:13.444483"
+        }
+      ]
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7303,
+      "fnlId": "match40693",
+      "ticketUrl": null,
+      "status": "END",
+      "statusExtended": "END",
+      "matchTime": "96",
+      "matchTimeStr": "96",
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1083,
+      "tour": "14-й тур",
+      "date": "2026-10-16 19:00",
+      "estimatedDate": "2026-10-16",
+      "estimatedDateTo": "2026-10-19",
+      "url": null,
+      "isAvailableBroadcast": true,
+      "typeLink": null,
+      "links": [
+        {
+          "url": "https://matchpremier.ru/live",
+          "typeLink": "match-premier"
+        }
+      ],
+      "stadium": {
+        "title": "«Волгоград Арена»",
+        "city": "Волгоград",
+        "viewers": "13832"
+      },
+      "judges": {
+        "name": "Федотов Сергей",
+        "city": "Нижний Новгород"
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 182,
+        "teamSlug": "rotor",
+        "name": "Ротор",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 66,
+        "teamSlug": "sochi",
+        "name": "Сочи",
+        "score": 1,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": [
+        {
+          "@class": "ru.saytori.fnl.model.MatchMedia",
+          "id": 6797,
+          "matchId": 7303,
+          "leagueId": 100,
+          "url": "/fnl/match/L1_RE_1 (9)_1792386951134.jpg",
+          "videoUrl": "https://vk.ru/video_ext.php?oid=-29484355&id=456253412&hd=1",
+          "type": "LINK",
+          "title": "\"Ротор\" - \"Сочи\" - 0:1",
+          "photos": [],
+          "photosSize": 0,
+          "hashTags": [
+            "Ротор",
+            "Сочи"
+          ],
+          "modifiedDate": "2026-10-19T05:16:25.599298"
+        }
+      ]
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7301,
+      "fnlId": "match40691",
+      "ticketUrl": null,
+      "status": "END",
+      "statusExtended": "END",
+      "matchTime": "94",
+      "matchTimeStr": "94",
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1083,
+      "tour": "14-й тур",
+      "date": "2026-10-17 11:30",
+      "estimatedDate": "2026-10-16",
+      "estimatedDateTo": "2026-10-19",
+      "url": null,
+      "isAvailableBroadcast": true,
+      "typeLink": null,
+      "links": [
+        {
+          "url": "https://hd.kinopoisk.ru/sport/event/38548/",
+          "typeLink": "kinopoisk"
+        }
+      ],
+      "stadium": {
+        "title": "«Манеж «Футбол-Арена «Енисей»",
+        "city": "Красноярск",
+        "viewers": "2871"
+      },
+      "judges": {
+        "name": "Матвеев Юрий",
+        "city": "Москва"
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 13,
+        "teamSlug": "enisey",
+        "name": "Енисей",
+        "score": 1,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 22,
+        "teamSlug": "torpedo-moskva",
+        "name": "Торпедо Москва",
+        "score": 2,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": [
+        {
+          "@class": "ru.saytori.fnl.model.MatchMedia",
+          "id": 6782,
+          "matchId": 7301,
+          "leagueId": 100,
+          "url": "/fnl/match/L1_RE_2 (8)_1792256677810.jpg",
+          "videoUrl": "https://vk.ru/video_ext.php?oid=-29484355&id=456253425&hd=1",
+          "type": "LINK",
+          "title": "\"Енисей\" - \"Торпедо Москва\" - 1:2",
+          "photos": [],
+          "photosSize": 0,
+          "hashTags": [
+            "Енисей",
+            "Торпедо",
+            "Москва"
+          ],
+          "modifiedDate": "2026-10-17T17:08:32.690833"
+        }
+      ]
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7312,
+      "fnlId": "match40702",
+      "ticketUrl": null,
+      "status": "END",
+      "statusExtended": "END",
+      "matchTime": "94",
+      "matchTimeStr": "94",
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1083,
+      "tour": "14-й тур",
+      "date": "2026-10-17 14:00",
+      "estimatedDate": "2026-10-16",
+      "estimatedDateTo": "2026-10-19",
+      "url": null,
+      "isAvailableBroadcast": true,
+      "typeLink": null,
+      "links": [
+        {
+          "url": "https://hd.kinopoisk.ru/sport/event/38549/",
+          "typeLink": "kinopoisk"
+        },
+        {
+          "url": "https://kino.tricolor.ru/channel/tv-sport-hd-1759/232995728",
+          "typeLink": "tricolor"
+        }
+      ],
+      "stadium": {
+        "title": "«Нефтяник»",
+        "city": "Уфа",
+        "viewers": "2174"
+      },
+      "judges": {
+        "name": "Медведев Семен",
+        "city": "Екатеринбург"
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 37,
+        "teamSlug": "ufa",
+        "name": "Уфа",
+        "score": 2,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 63,
+        "teamSlug": "arsenal",
+        "name": "Арсенал",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": [
+        {
+          "@class": "ru.saytori.fnl.model.MatchMedia",
+          "id": 6783,
+          "matchId": 7312,
+          "leagueId": 100,
+          "url": "/fnl/match/L1_RE_3 (8)_1792260124781.jpg",
+          "videoUrl": "https://vk.ru/video_ext.php?oid=-29484355&id=456253434&hd=1",
+          "type": "LINK",
+          "title": "\"Уфа\" - \"Арсенал\" - 2:0",
+          "photos": [],
+          "photosSize": 0,
+          "hashTags": [
+            "Уфа",
+            "Арсенал"
+          ],
+          "modifiedDate": "2026-10-17T18:02:59.500287"
+        }
+      ]
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7307,
+      "fnlId": "match40697",
+      "ticketUrl": null,
+      "status": "END",
+      "statusExtended": "END",
+      "matchTime": "96",
+      "matchTimeStr": "96",
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1083,
+      "tour": "14-й тур",
+      "date": "2026-10-17 16:00",
+      "estimatedDate": "2026-10-16",
+      "estimatedDateTo": "2026-10-19",
+      "url": null,
+      "isAvailableBroadcast": true,
+      "typeLink": null,
+      "links": [
+        {
+          "url": "https://hd.kinopoisk.ru/sport/event/38550/",
+          "typeLink": "kinopoisk"
+        },
+        {
+          "url": "https://kino.tricolor.ru/channel/tv-sport-hd-1759/232995728",
+          "typeLink": "tricolor"
+        }
+      ],
+      "stadium": {
+        "title": "«КАМАЗ»",
+        "city": "Набережные Челны",
+        "viewers": "1720"
+      },
+      "judges": {
+        "name": "Харитонов Владислав",
+        "city": "Казань"
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 15,
+        "teamSlug": "KAMAZ",
+        "name": "КАМАЗ",
+        "score": 2,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 32,
+        "teamSlug": "neftehimik",
+        "name": "Нефтехимик",
+        "score": 1,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": [
+        {
+          "@class": "ru.saytori.fnl.model.MatchMedia",
+          "id": 6785,
+          "matchId": 7307,
+          "leagueId": 100,
+          "url": "/fnl/match/L1_RE_4 (7)_1792263704811.jpg",
+          "videoUrl": "https://vk.ru/video_ext.php?oid=-29484355&id=456253436&hd=1",
+          "type": "LINK",
+          "title": "\"КАМАЗ\" - \"Нефтехимик\" - 2:1",
+          "photos": [],
+          "photosSize": 0,
+          "hashTags": [
+            "КАМАЗ",
+            "Нефтехимик"
+          ],
+          "modifiedDate": "2026-10-17T19:02:06.555114"
+        }
+      ]
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7304,
+      "fnlId": "match40694",
+      "ticketUrl": null,
+      "status": "END",
+      "statusExtended": "END",
+      "matchTime": "93",
+      "matchTimeStr": "93",
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1083,
+      "tour": "14-й тур",
+      "date": "2026-10-17 16:30",
+      "estimatedDate": "2026-10-16",
+      "estimatedDateTo": "2026-10-19",
+      "url": null,
+      "isAvailableBroadcast": true,
+      "typeLink": null,
+      "links": [
+        {
+          "url": "https://hd.kinopoisk.ru/sport/event/38551/",
+          "typeLink": "kinopoisk"
+        },
+        {
+          "url": "https://kino.tricolor.ru/channel/myach-hd-1805/232997083",
+          "typeLink": "tricolor"
+        }
+      ],
+      "stadium": {
+        "title": "«Арена Химки»",
+        "city": "Химки",
+        "viewers": "321"
+      },
+      "judges": {
+        "name": "Сагдиев Артур",
+        "city": "Набережные Челны"
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 267,
+        "teamSlug": "spartak-kostroma",
+        "name": "Спартак (Кострома)",
+        "score": 2,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 256,
+        "teamSlug": "leningradec",
+        "name": "Ленинградец",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": [
+        {
+          "@class": "ru.saytori.fnl.model.MatchMedia",
+          "id": 6784,
+          "matchId": 7304,
+          "leagueId": 100,
+          "url": "/fnl/match/L1_RE_5 (8)_1792262756336.jpg",
+          "videoUrl": "https://vk.ru/video_ext.php?oid=-29484355&id=456253435&hd=1",
+          "type": "LINK",
+          "title": "\"Спартак Кострома\" - \"Ленинградец\" - 2:0",
+          "photos": [],
+          "photosSize": 0,
+          "hashTags": [
+            "Спартак",
+            "Кострома",
+            "Ленинградец"
+          ],
+          "modifiedDate": "2026-10-17T18:46:46.018616"
+        }
+      ]
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7305,
+      "fnlId": "match40695",
+      "ticketUrl": null,
+      "status": "END",
+      "statusExtended": "END",
+      "matchTime": "95",
+      "matchTimeStr": "95",
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1083,
+      "tour": "14-й тур",
+      "date": "2026-10-18 08:00",
+      "estimatedDate": "2026-10-16",
+      "estimatedDateTo": "2026-10-19",
+      "url": null,
+      "isAvailableBroadcast": true,
+      "typeLink": null,
+      "links": [
+        {
+          "url": "https://hd.kinopoisk.ru/sport/event/38552/",
+          "typeLink": "kinopoisk"
+        },
+        {
+          "url": "https://kino.tricolor.ru/channel/tv-sport-hd-1759/232995728",
+          "typeLink": "tricolor"
+        }
+      ],
+      "stadium": {
+        "title": "«Имени В.И. Ленина»",
+        "city": "Хабаровск",
+        "viewers": "724"
+      },
+      "judges": {
+        "name": "Молдован Виталий",
+        "city": "Краснодар"
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 20,
+        "teamSlug": "ska-habarovsk",
+        "name": "СКА-Хабаровск",
+        "score": 1,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 263,
+        "teamSlug": "volga",
+        "name": "Волга",
+        "score": 2,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": [
+        {
+          "@class": "ru.saytori.fnl.model.MatchMedia",
+          "id": 6798,
+          "matchId": 7305,
+          "leagueId": 100,
+          "url": "/fnl/match/L1_RE_6 (7)_1792387131199.jpg",
+          "videoUrl": "https://vk.ru/video_ext.php?oid=-29484355&id=456253440&hd=1",
+          "type": "LINK",
+          "title": "\"СКА-Хабаровск\" - \"Волга\" - 1:2",
+          "photos": [],
+          "photosSize": 0,
+          "hashTags": [
+            "СКА-Хабаровск",
+            "Волга"
+          ],
+          "modifiedDate": "2026-10-19T05:19:40.091181"
+        }
+      ]
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7310,
+      "fnlId": "match40700",
+      "ticketUrl": null,
+      "status": "END",
+      "statusExtended": "END",
+      "matchTime": "96",
+      "matchTimeStr": "96",
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1083,
+      "tour": "14-й тур",
+      "date": "2026-10-18 13:00",
+      "estimatedDate": "2026-10-16",
+      "estimatedDateTo": "2026-10-19",
+      "url": null,
+      "isAvailableBroadcast": true,
+      "typeLink": null,
+      "links": [
+        {
+          "url": "https://matchtv.ru/on-air",
+          "typeLink": "match-tv"
+        }
+      ],
+      "stadium": {
+        "title": "«Екатеринбург Арена»",
+        "city": "Екатеринбург",
+        "viewers": "11944"
+      },
+      "judges": {
+        "name": "Набока Данил",
+        "city": "Краснодар"
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 23,
+        "teamSlug": "ural",
+        "name": "Урал",
+        "score": 1,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 183,
+        "teamSlug": "nizhniy-novgorod",
+        "name": "Нижний Новгород",
+        "score": 2,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": [
+        {
+          "@class": "ru.saytori.fnl.model.MatchMedia",
+          "id": 6799,
+          "matchId": 7310,
+          "leagueId": 100,
+          "url": "/fnl/match/L1_RE_7 (7)_1792387221955.jpg",
+          "videoUrl": "https://vk.ru/video_ext.php?oid=-29484355&id=456253450&hd=1",
+          "type": "LINK",
+          "title": "\"Урал\" - \"Нижний Новгород\" - 1:2",
+          "photos": [],
+          "photosSize": 0,
+          "hashTags": [
+            "Урал",
+            "Нижний_Новгород"
+          ],
+          "modifiedDate": "2026-10-19T05:21:17.37268"
+        }
+      ]
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7316,
+      "fnlId": "match40706",
+      "ticketUrl": null,
+      "status": "END",
+      "statusExtended": "END",
+      "matchTime": "98",
+      "matchTimeStr": "98",
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1083,
+      "tour": "14-й тур",
+      "date": "2026-10-18 15:00",
+      "estimatedDate": "2026-10-16",
+      "estimatedDateTo": "2026-10-19",
+      "url": null,
+      "isAvailableBroadcast": true,
+      "typeLink": null,
+      "links": [
+        {
+          "url": "https://hd.kinopoisk.ru/sport/event/38554/",
+          "typeLink": "kinopoisk"
+        }
+      ],
+      "stadium": {
+        "title": "«Текстильщик»",
+        "city": "Иваново",
+        "viewers": "1320"
+      },
+      "judges": {
+        "name": "Волошин Николай",
+        "city": "Смоленск"
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 102,
+        "teamSlug": "tekstilschik",
+        "name": "Текстильщик",
+        "score": 2,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 159,
+        "teamSlug": "chelyabinsk",
+        "name": "Челябинск",
+        "score": 1,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": [
+        {
+          "@class": "ru.saytori.fnl.model.MatchMedia",
+          "id": 6800,
+          "matchId": 7316,
+          "leagueId": 100,
+          "url": "/fnl/match/L1_RE_8 (8)_1792387315155.jpg",
+          "videoUrl": "https://vk.ru/video_ext.php?oid=-29484355&id=456253451&hd=1",
+          "type": "LINK",
+          "title": "\"Текстильщик\" - \"Челябинск\" - 2:1",
+          "photos": [],
+          "photosSize": 0,
+          "hashTags": [
+            "Текстильщик",
+            "Челябинск"
+          ],
+          "modifiedDate": "2026-10-19T05:22:58.456782"
+        }
+      ]
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7314,
+      "fnlId": "match40704",
+      "ticketUrl": null,
+      "status": "END",
+      "statusExtended": "END",
+      "matchTime": "93",
+      "matchTimeStr": "93",
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1083,
+      "tour": "14-й тур",
+      "date": "2026-10-18 17:00",
+      "estimatedDate": "2026-10-16",
+      "estimatedDateTo": "2026-10-19",
+      "url": null,
+      "isAvailableBroadcast": true,
+      "typeLink": null,
+      "links": [
+        {
+          "url": "https://hd.kinopoisk.ru/sport/event/38555/",
+          "typeLink": "kinopoisk"
+        }
+      ],
+      "stadium": {
+        "title": "«Авангард»",
+        "city": "Домодедово",
+        "viewers": "1957"
+      },
+      "judges": {
+        "name": "Лапатухин Алексей Леонидович",
+        "city": "Москва"
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 204,
+        "teamSlug": "veles",
+        "name": "Велес",
+        "score": 1,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 27,
+        "teamSlug": "shinnik",
+        "name": "Шинник",
+        "score": 1,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": [
+        {
+          "@class": "ru.saytori.fnl.model.MatchMedia",
+          "id": 6801,
+          "matchId": 7314,
+          "leagueId": 100,
+          "url": "/fnl/match/L1_RE_9 (7)_1792387409006.jpg",
+          "videoUrl": "https://vk.ru/video_ext.php?oid=-29484355&id=456253452&hd=1",
+          "type": "LINK",
+          "title": "\"Велес\" - \"Шинник\" - 1:1",
+          "photos": [],
+          "photosSize": 0,
+          "hashTags": [
+            "Велес",
+            "Шинник"
+          ],
+          "modifiedDate": "2026-10-19T05:24:22.087648"
+        }
+      ]
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7352,
+      "fnlId": "match40742",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1084,
+      "tour": "15-й тур",
+      "date": "2026-10-23 18:00",
+      "estimatedDate": "2026-10-23",
+      "estimatedDateTo": "2026-10-26",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 22,
+        "teamSlug": "torpedo-moskva",
+        "name": "Торпедо Москва",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 182,
+        "teamSlug": "rotor",
+        "name": "Ротор",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7345,
+      "fnlId": "match40735",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1084,
+      "tour": "15-й тур",
+      "date": "2026-10-24 08:00",
+      "estimatedDate": "2026-10-23",
+      "estimatedDateTo": "2026-10-26",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": "«Имени В.И. Ленина»",
+        "city": "Хабаровск",
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 20,
+        "teamSlug": "ska-habarovsk",
+        "name": "СКА-Хабаровск",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 13,
+        "teamSlug": "enisey",
+        "name": "Енисей",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7350,
+      "fnlId": "match40740",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1084,
+      "tour": "15-й тур",
+      "date": "2026-10-24 14:00",
+      "estimatedDate": "2026-10-23",
+      "estimatedDateTo": "2026-10-26",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": "«Нефтяник»",
+        "city": "Уфа",
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 37,
+        "teamSlug": "ufa",
+        "name": "Уфа",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 183,
+        "teamSlug": "nizhniy-novgorod",
+        "name": "Нижний Новгород",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7356,
+      "fnlId": "match40746",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1084,
+      "tour": "15-й тур",
+      "date": "2026-10-24 16:00",
+      "estimatedDate": "2026-10-23",
+      "estimatedDateTo": "2026-10-26",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": "«Текстильщик»",
+        "city": "Иваново",
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 102,
+        "teamSlug": "tekstilschik",
+        "name": "Текстильщик",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 66,
+        "teamSlug": "sochi",
+        "name": "Сочи",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7347,
+      "fnlId": "match40737",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1084,
+      "tour": "15-й тур",
+      "date": "2026-10-24 17:00",
+      "estimatedDate": "2026-10-23",
+      "estimatedDateTo": "2026-10-26",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": "«Арсенал»",
+        "city": "Тула",
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 63,
+        "teamSlug": "arsenal",
+        "name": "Арсенал",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 15,
+        "teamSlug": "KAMAZ",
+        "name": "КАМАЗ",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7354,
+      "fnlId": "match40744",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1084,
+      "tour": "15-й тур",
+      "date": "2026-10-25 13:00",
+      "estimatedDate": "2026-10-23",
+      "estimatedDateTo": "2026-10-26",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": "«Центральный»",
+        "city": "Челябинск",
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 159,
+        "teamSlug": "chelyabinsk",
+        "name": "Челябинск",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 23,
+        "teamSlug": "ural",
+        "name": "Урал",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7339,
+      "fnlId": "match40729",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1084,
+      "tour": "15-й тур",
+      "date": "2026-10-25 13:30",
+      "estimatedDate": "2026-10-23",
+      "estimatedDateTo": "2026-10-26",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": "«Труд» им. Л.И. Яшина»",
+        "city": "Ульяновск",
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 263,
+        "teamSlug": "volga",
+        "name": "Волга",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 204,
+        "teamSlug": "veles",
+        "name": "Велес",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7341,
+      "fnlId": "match40731",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1084,
+      "tour": "15-й тур",
+      "date": "2026-10-25 16:00",
+      "estimatedDate": "2026-10-23",
+      "estimatedDateTo": "2026-10-26",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": "«Нефтехимик»",
+        "city": "Нижнекамск",
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 32,
+        "teamSlug": "neftehimik",
+        "name": "Нефтехимик",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 256,
+        "teamSlug": "leningradec",
+        "name": "Ленинградец",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7343,
+      "fnlId": "match40733",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1084,
+      "tour": "15-й тур",
+      "date": "2026-10-26 19:30",
+      "estimatedDate": "2026-10-23",
+      "estimatedDateTo": "2026-10-26",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": "«Шинник»",
+        "city": "Ярославль",
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 27,
+        "teamSlug": "shinnik",
+        "name": "Шинник",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 267,
+        "teamSlug": "spartak-kostroma",
+        "name": "Спартак (Кострома)",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7376,
+      "fnlId": "match40766",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1085,
+      "tour": "16-й тур",
+      "date": "2026-10-30 18:00",
+      "estimatedDate": "2026-10-30",
+      "estimatedDateTo": "2026-11-02",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": "«Авангард»",
+        "city": "Домодедово",
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 204,
+        "teamSlug": "veles",
+        "name": "Велес",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 267,
+        "teamSlug": "spartak-kostroma",
+        "name": "Спартак (Кострома)",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7361,
+      "fnlId": "match40751",
+      "ticketUrl": "https://widget.afisha.yandex.ru/w/sessions/MzQ5N3w5MDQzMzR8MTA2MjYzNDR8MTc5MzM4MDUwMDAwMA==?clientKey=06989048-8084-4c22-a03c-afd5f8ba94f6",
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1085,
+      "tour": "16-й тур",
+      "date": "2026-10-30 20:15",
+      "estimatedDate": "2026-10-30",
+      "estimatedDateTo": "2026-11-02",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": "«Совкомбанк Арена»  ",
+        "city": "Нижний Новгород",
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 183,
+        "teamSlug": "nizhniy-novgorod",
+        "name": "Нижний Новгород",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 63,
+        "teamSlug": "arsenal",
+        "name": "Арсенал",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7378,
+      "fnlId": "match40768",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1085,
+      "tour": "16-й тур",
+      "date": "2026-10-31 13:00",
+      "estimatedDate": "2026-10-30",
+      "estimatedDateTo": "2026-11-02",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": "«Центральный»",
+        "city": "Челябинск",
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 159,
+        "teamSlug": "chelyabinsk",
+        "name": "Челябинск",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 27,
+        "teamSlug": "shinnik",
+        "name": "Шинник",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7366,
+      "fnlId": "match40756",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1085,
+      "tour": "16-й тур",
+      "date": "2026-10-31 16:00",
+      "estimatedDate": "2026-10-30",
+      "estimatedDateTo": "2026-11-02",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": "«Труд» им. Л.И. Яшина»",
+        "city": "Ульяновск",
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 263,
+        "teamSlug": "volga",
+        "name": "Волга",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 102,
+        "teamSlug": "tekstilschik",
+        "name": "Текстильщик",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7370,
+      "fnlId": "match40760",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1085,
+      "tour": "16-й тур",
+      "date": "2026-10-31 16:00",
+      "estimatedDate": "2026-10-30",
+      "estimatedDateTo": "2026-11-02",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": "«Нефтехимик»",
+        "city": "Нижнекамск",
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 32,
+        "teamSlug": "neftehimik",
+        "name": "Нефтехимик",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 20,
+        "teamSlug": "ska-habarovsk",
+        "name": "СКА-Хабаровск",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7368,
+      "fnlId": "match40758",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1085,
+      "tour": "16-й тур",
+      "date": "2026-10-31",
+      "estimatedDate": "2026-10-30",
+      "estimatedDateTo": "2026-11-02",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 256,
+        "teamSlug": "leningradec",
+        "name": "Ленинградец",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 13,
+        "teamSlug": "enisey",
+        "name": "Енисей",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7364,
+      "fnlId": "match40754",
+      "ticketUrl": "https://widget.afisha.yandex.ru/w/sessions/MTk4Njl8MzI2NjI3fDEwNTQ4NDQzfDE3OTM1NDE2MDAwMDA=?clientKey=06989048-8084-4c22-a03c-afd5f8ba94f6",
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1085,
+      "tour": "16-й тур",
+      "date": "2026-11-01",
+      "estimatedDate": "2026-10-30",
+      "estimatedDateTo": "2026-11-02",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 66,
+        "teamSlug": "sochi",
+        "name": "Сочи",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 23,
+        "teamSlug": "ural",
+        "name": "Урал",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7372,
+      "fnlId": "match40762",
+      "ticketUrl": "https://widget.afisha.yandex.ru/w/sessions/MzU5MHw5MDUxMDR8MTI5MTg5NjF8MTc5MzUzODAwMDAwMA==?clientKey=06989048-8084-4c22-a03c-afd5f8ba94f6",
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1085,
+      "tour": "16-й тур",
+      "date": "2026-11-01",
+      "estimatedDate": "2026-10-30",
+      "estimatedDateTo": "2026-11-02",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 182,
+        "teamSlug": "rotor",
+        "name": "Ротор",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 37,
+        "teamSlug": "ufa",
+        "name": "Уфа",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7374,
+      "fnlId": "match40764",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1085,
+      "tour": "16-й тур",
+      "date": "2026-11-01",
+      "estimatedDate": "2026-10-30",
+      "estimatedDateTo": "2026-11-02",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 15,
+        "teamSlug": "KAMAZ",
+        "name": "КАМАЗ",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 22,
+        "teamSlug": "torpedo-moskva",
+        "name": "Торпедо Москва",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7369,
+      "fnlId": "match40759",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1086,
+      "tour": "17-й тур",
+      "date": null,
+      "estimatedDate": "2026-11-06",
+      "estimatedDateTo": "2026-11-08",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 13,
+        "teamSlug": "enisey",
+        "name": "Енисей",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 66,
+        "teamSlug": "sochi",
+        "name": "Сочи",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7371,
+      "fnlId": "match40761",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1086,
+      "tour": "17-й тур",
+      "date": null,
+      "estimatedDate": "2026-11-06",
+      "estimatedDateTo": "2026-11-08",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 27,
+        "teamSlug": "shinnik",
+        "name": "Шинник",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 37,
+        "teamSlug": "ufa",
+        "name": "Уфа",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7373,
+      "fnlId": "match40763",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1086,
+      "tour": "17-й тур",
+      "date": null,
+      "estimatedDate": "2026-11-06",
+      "estimatedDateTo": "2026-11-08",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 182,
+        "teamSlug": "rotor",
+        "name": "Ротор",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 256,
+        "teamSlug": "leningradec",
+        "name": "Ленинградец",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7375,
+      "fnlId": "match40765",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1086,
+      "tour": "17-й тур",
+      "date": null,
+      "estimatedDate": "2026-11-06",
+      "estimatedDateTo": "2026-11-08",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 267,
+        "teamSlug": "spartak-kostroma",
+        "name": "Спартак (Кострома)",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 183,
+        "teamSlug": "nizhniy-novgorod",
+        "name": "Нижний Новгород",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7377,
+      "fnlId": "match40767",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1086,
+      "tour": "17-й тур",
+      "date": null,
+      "estimatedDate": "2026-11-06",
+      "estimatedDateTo": "2026-11-08",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 20,
+        "teamSlug": "ska-habarovsk",
+        "name": "СКА-Хабаровск",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 102,
+        "teamSlug": "tekstilschik",
+        "name": "Текстильщик",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7379,
+      "fnlId": "match40769",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1086,
+      "tour": "17-й тур",
+      "date": null,
+      "estimatedDate": "2026-11-06",
+      "estimatedDateTo": "2026-11-08",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 23,
+        "teamSlug": "ural",
+        "name": "Урал",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 263,
+        "teamSlug": "volga",
+        "name": "Волга",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7380,
+      "fnlId": "match40770",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1086,
+      "tour": "17-й тур",
+      "date": null,
+      "estimatedDate": "2026-11-06",
+      "estimatedDateTo": "2026-11-08",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 63,
+        "teamSlug": "arsenal",
+        "name": "Арсенал",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 159,
+        "teamSlug": "chelyabinsk",
+        "name": "Челябинск",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7381,
+      "fnlId": "match40771",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1086,
+      "tour": "17-й тур",
+      "date": null,
+      "estimatedDate": "2026-11-06",
+      "estimatedDateTo": "2026-11-08",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 204,
+        "teamSlug": "veles",
+        "name": "Велес",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 15,
+        "teamSlug": "KAMAZ",
+        "name": "КАМАЗ",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7382,
+      "fnlId": "match40772",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1086,
+      "tour": "17-й тур",
+      "date": null,
+      "estimatedDate": "2026-11-06",
+      "estimatedDateTo": "2026-11-08",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 22,
+        "teamSlug": "torpedo-moskva",
+        "name": "Торпедо Москва",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 32,
+        "teamSlug": "neftehimik",
+        "name": "Нефтехимик",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7329,
+      "fnlId": "match40719",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1089,
+      "tour": "20-й тур",
+      "date": null,
+      "estimatedDate": "2026-11-27",
+      "estimatedDateTo": "2026-11-30",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 256,
+        "teamSlug": "leningradec",
+        "name": "Ленинградец",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 263,
+        "teamSlug": "volga",
+        "name": "Волга",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7330,
+      "fnlId": "match40720",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1089,
+      "tour": "20-й тур",
+      "date": null,
+      "estimatedDate": "2026-11-27",
+      "estimatedDateTo": "2026-11-30",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 32,
+        "teamSlug": "neftehimik",
+        "name": "Нефтехимик",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 183,
+        "teamSlug": "nizhniy-novgorod",
+        "name": "Нижний Новгород",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7331,
+      "fnlId": "match40721",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1089,
+      "tour": "20-й тур",
+      "date": null,
+      "estimatedDate": "2026-11-27",
+      "estimatedDateTo": "2026-11-30",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 23,
+        "teamSlug": "ural",
+        "name": "Урал",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 27,
+        "teamSlug": "shinnik",
+        "name": "Шинник",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7332,
+      "fnlId": "match40722",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1089,
+      "tour": "20-й тур",
+      "date": null,
+      "estimatedDate": "2026-11-27",
+      "estimatedDateTo": "2026-11-30",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 182,
+        "teamSlug": "rotor",
+        "name": "Ротор",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 15,
+        "teamSlug": "KAMAZ",
+        "name": "КАМАЗ",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7333,
+      "fnlId": "match40723",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1089,
+      "tour": "20-й тур",
+      "date": null,
+      "estimatedDate": "2026-11-27",
+      "estimatedDateTo": "2026-11-30",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 267,
+        "teamSlug": "spartak-kostroma",
+        "name": "Спартак (Кострома)",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 159,
+        "teamSlug": "chelyabinsk",
+        "name": "Челябинск",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7334,
+      "fnlId": "match40724",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1089,
+      "tour": "20-й тур",
+      "date": null,
+      "estimatedDate": "2026-11-27",
+      "estimatedDateTo": "2026-11-30",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 63,
+        "teamSlug": "arsenal",
+        "name": "Арсенал",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 66,
+        "teamSlug": "sochi",
+        "name": "Сочи",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7335,
+      "fnlId": "match40725",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1089,
+      "tour": "20-й тур",
+      "date": null,
+      "estimatedDate": "2026-11-27",
+      "estimatedDateTo": "2026-11-30",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 204,
+        "teamSlug": "veles",
+        "name": "Велес",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 37,
+        "teamSlug": "ufa",
+        "name": "Уфа",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7336,
+      "fnlId": "match40726",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1089,
+      "tour": "20-й тур",
+      "date": null,
+      "estimatedDate": "2026-11-27",
+      "estimatedDateTo": "2026-11-30",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 22,
+        "teamSlug": "torpedo-moskva",
+        "name": "Торпедо Москва",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 20,
+        "teamSlug": "ska-habarovsk",
+        "name": "СКА-Хабаровск",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7337,
+      "fnlId": "match40727",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1089,
+      "tour": "20-й тур",
+      "date": null,
+      "estimatedDate": "2026-11-27",
+      "estimatedDateTo": "2026-11-30",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 102,
+        "teamSlug": "tekstilschik",
+        "name": "Текстильщик",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 13,
+        "teamSlug": "enisey",
+        "name": "Енисей",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7320,
+      "fnlId": "match40710",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1090,
+      "tour": "21-й тур",
+      "date": null,
+      "estimatedDate": "2026-12-04",
+      "estimatedDateTo": "2026-12-07",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 183,
+        "teamSlug": "nizhniy-novgorod",
+        "name": "Нижний Новгород",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 15,
+        "teamSlug": "KAMAZ",
+        "name": "КАМАЗ",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7321,
+      "fnlId": "match40711",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1090,
+      "tour": "21-й тур",
+      "date": null,
+      "estimatedDate": "2026-12-04",
+      "estimatedDateTo": "2026-12-07",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 66,
+        "teamSlug": "sochi",
+        "name": "Сочи",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 256,
+        "teamSlug": "leningradec",
+        "name": "Ленинградец",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7322,
+      "fnlId": "match40712",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1090,
+      "tour": "21-й тур",
+      "date": null,
+      "estimatedDate": "2026-12-04",
+      "estimatedDateTo": "2026-12-07",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 13,
+        "teamSlug": "enisey",
+        "name": "Енисей",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 23,
+        "teamSlug": "ural",
+        "name": "Урал",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7323,
+      "fnlId": "match40713",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1090,
+      "tour": "21-й тур",
+      "date": null,
+      "estimatedDate": "2026-12-04",
+      "estimatedDateTo": "2026-12-07",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 182,
+        "teamSlug": "rotor",
+        "name": "Ротор",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 27,
+        "teamSlug": "shinnik",
+        "name": "Шинник",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7324,
+      "fnlId": "match40714",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1090,
+      "tour": "21-й тур",
+      "date": null,
+      "estimatedDate": "2026-12-04",
+      "estimatedDateTo": "2026-12-07",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 267,
+        "teamSlug": "spartak-kostroma",
+        "name": "Спартак (Кострома)",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 20,
+        "teamSlug": "ska-habarovsk",
+        "name": "СКА-Хабаровск",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7325,
+      "fnlId": "match40715",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1090,
+      "tour": "21-й тур",
+      "date": null,
+      "estimatedDate": "2026-12-04",
+      "estimatedDateTo": "2026-12-07",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 63,
+        "teamSlug": "arsenal",
+        "name": "Арсенал",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 37,
+        "teamSlug": "ufa",
+        "name": "Уфа",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7327,
+      "fnlId": "match40717",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1090,
+      "tour": "21-й тур",
+      "date": null,
+      "estimatedDate": "2026-12-04",
+      "estimatedDateTo": "2026-12-07",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 22,
+        "teamSlug": "torpedo-moskva",
+        "name": "Торпедо Москва",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 159,
+        "teamSlug": "chelyabinsk",
+        "name": "Челябинск",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7328,
+      "fnlId": "match40718",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1090,
+      "tour": "21-й тур",
+      "date": null,
+      "estimatedDate": "2026-12-04",
+      "estimatedDateTo": "2026-12-07",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 102,
+        "teamSlug": "tekstilschik",
+        "name": "Текстильщик",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 32,
+        "teamSlug": "neftehimik",
+        "name": "Нефтехимик",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7306,
+      "fnlId": "match40696",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1091,
+      "tour": "22-й тур",
+      "date": null,
+      "estimatedDate": "2027-03-05",
+      "estimatedDateTo": "2027-03-08",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 183,
+        "teamSlug": "nizhniy-novgorod",
+        "name": "Нижний Новгород",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 159,
+        "teamSlug": "chelyabinsk",
+        "name": "Челябинск",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7308,
+      "fnlId": "match40698",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1091,
+      "tour": "22-й тур",
+      "date": null,
+      "estimatedDate": "2027-03-05",
+      "estimatedDateTo": "2027-03-08",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 66,
+        "teamSlug": "sochi",
+        "name": "Сочи",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 182,
+        "teamSlug": "rotor",
+        "name": "Ротор",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7309,
+      "fnlId": "match40699",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1091,
+      "tour": "22-й тур",
+      "date": null,
+      "estimatedDate": "2027-03-05",
+      "estimatedDateTo": "2027-03-08",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 13,
+        "teamSlug": "enisey",
+        "name": "Енисей",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 20,
+        "teamSlug": "ska-habarovsk",
+        "name": "СКА-Хабаровск",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7311,
+      "fnlId": "match40701",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1091,
+      "tour": "22-й тур",
+      "date": null,
+      "estimatedDate": "2027-03-05",
+      "estimatedDateTo": "2027-03-08",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 256,
+        "teamSlug": "leningradec",
+        "name": "Ленинградец",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 37,
+        "teamSlug": "ufa",
+        "name": "Уфа",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7313,
+      "fnlId": "match40703",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1091,
+      "tour": "22-й тур",
+      "date": null,
+      "estimatedDate": "2027-03-05",
+      "estimatedDateTo": "2027-03-08",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 267,
+        "teamSlug": "spartak-kostroma",
+        "name": "Спартак (Кострома)",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 63,
+        "teamSlug": "arsenal",
+        "name": "Арсенал",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7315,
+      "fnlId": "match40705",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1091,
+      "tour": "22-й тур",
+      "date": null,
+      "estimatedDate": "2027-03-05",
+      "estimatedDateTo": "2027-03-08",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 15,
+        "teamSlug": "KAMAZ",
+        "name": "КАМАЗ",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 27,
+        "teamSlug": "shinnik",
+        "name": "Шинник",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7317,
+      "fnlId": "match40707",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1091,
+      "tour": "22-й тур",
+      "date": null,
+      "estimatedDate": "2027-03-05",
+      "estimatedDateTo": "2027-03-08",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 204,
+        "teamSlug": "veles",
+        "name": "Велес",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 32,
+        "teamSlug": "neftehimik",
+        "name": "Нефтехимик",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7318,
+      "fnlId": "match40708",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1091,
+      "tour": "22-й тур",
+      "date": null,
+      "estimatedDate": "2027-03-05",
+      "estimatedDateTo": "2027-03-08",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 22,
+        "teamSlug": "torpedo-moskva",
+        "name": "Торпедо Москва",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 23,
+        "teamSlug": "ural",
+        "name": "Урал",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7319,
+      "fnlId": "match40709",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1091,
+      "tour": "22-й тур",
+      "date": null,
+      "estimatedDate": "2027-03-05",
+      "estimatedDateTo": "2027-03-08",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 102,
+        "teamSlug": "tekstilschik",
+        "name": "Текстильщик",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 263,
+        "teamSlug": "volga",
+        "name": "Волга",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7288,
+      "fnlId": "match40678",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1092,
+      "tour": "23-й тур",
+      "date": null,
+      "estimatedDate": "2027-03-12",
+      "estimatedDateTo": "2027-03-15",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 263,
+        "teamSlug": "volga",
+        "name": "Волга",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 183,
+        "teamSlug": "nizhniy-novgorod",
+        "name": "Нижний Новгород",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7290,
+      "fnlId": "match40680",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1092,
+      "tour": "23-й тур",
+      "date": null,
+      "estimatedDate": "2027-03-12",
+      "estimatedDateTo": "2027-03-15",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 13,
+        "teamSlug": "enisey",
+        "name": "Енисей",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 182,
+        "teamSlug": "rotor",
+        "name": "Ротор",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7292,
+      "fnlId": "match40682",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1092,
+      "tour": "23-й тур",
+      "date": null,
+      "estimatedDate": "2027-03-12",
+      "estimatedDateTo": "2027-03-15",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 256,
+        "teamSlug": "leningradec",
+        "name": "Ленинградец",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 32,
+        "teamSlug": "neftehimik",
+        "name": "Нефтехимик",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7294,
+      "fnlId": "match40684",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1092,
+      "tour": "23-й тур",
+      "date": null,
+      "estimatedDate": "2027-03-12",
+      "estimatedDateTo": "2027-03-15",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 27,
+        "teamSlug": "shinnik",
+        "name": "Шинник",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 159,
+        "teamSlug": "chelyabinsk",
+        "name": "Челябинск",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7296,
+      "fnlId": "match40686",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1092,
+      "tour": "23-й тур",
+      "date": null,
+      "estimatedDate": "2027-03-12",
+      "estimatedDateTo": "2027-03-15",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 267,
+        "teamSlug": "spartak-kostroma",
+        "name": "Спартак (Кострома)",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 66,
+        "teamSlug": "sochi",
+        "name": "Сочи",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7298,
+      "fnlId": "match40688",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1092,
+      "tour": "23-й тур",
+      "date": null,
+      "estimatedDate": "2027-03-12",
+      "estimatedDateTo": "2027-03-15",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 15,
+        "teamSlug": "KAMAZ",
+        "name": "КАМАЗ",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 63,
+        "teamSlug": "arsenal",
+        "name": "Арсенал",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7299,
+      "fnlId": "match40689",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1092,
+      "tour": "23-й тур",
+      "date": null,
+      "estimatedDate": "2027-03-12",
+      "estimatedDateTo": "2027-03-15",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 204,
+        "teamSlug": "veles",
+        "name": "Велес",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 20,
+        "teamSlug": "ska-habarovsk",
+        "name": "СКА-Хабаровск",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7300,
+      "fnlId": "match40690",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1092,
+      "tour": "23-й тур",
+      "date": null,
+      "estimatedDate": "2027-03-12",
+      "estimatedDateTo": "2027-03-15",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 22,
+        "teamSlug": "torpedo-moskva",
+        "name": "Торпедо Москва",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 37,
+        "teamSlug": "ufa",
+        "name": "Уфа",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    },
+    {
+      "@class": "ru.saytori.fnl.model.MatchInfoCenter",
+      "leagueId": 100,
+      "matchId": 7302,
+      "fnlId": "match40692",
+      "ticketUrl": null,
+      "status": "FUTURE",
+      "statusExtended": "FUTURE",
+      "matchTime": "FUTURE",
+      "matchTimeStr": null,
+      "seasonId": 1066,
+      "season": "2026/2027",
+      "groupId": null,
+      "group": null,
+      "tourId": 1092,
+      "tour": "23-й тур",
+      "date": null,
+      "estimatedDate": "2027-03-12",
+      "estimatedDateTo": "2027-03-15",
+      "url": null,
+      "isAvailableBroadcast": false,
+      "typeLink": null,
+      "links": [],
+      "stadium": {
+        "title": null,
+        "city": null,
+        "viewers": null
+      },
+      "judges": {
+        "name": null,
+        "city": null
+      },
+      "home": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 102,
+        "teamSlug": "tekstilschik",
+        "name": "Текстильщик",
+        "score": 0,
+        "customLogo": null
+      },
+      "guest": {
+        "@class": "ru.saytori.fnl.model.MatchInfoTeam",
+        "teamId": 23,
+        "teamSlug": "ural",
+        "name": "Урал",
+        "score": 0,
+        "customLogo": null
+      },
+      "matchBettingInfo": null,
+      "description": null,
+      "media": []
+    }
+  ],
+  "initialIndex": 10,
+  "serverTime": "2026-10-20 16:42"
+}
