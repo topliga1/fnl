@@ -18,20 +18,24 @@
 
     /* Матчи */
     .matches { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
-    .match { background: #1e293b; border: 1px solid #334155; border-radius: 14px; padding: 14px; }
-    .match-date { color: #94a3b8; font-size: 12px; text-align: center; margin-bottom: 10px; }
+    .match { background: #1e293b; border: 1px solid #334155; border-radius: 14px; padding: 14px; display: flex; flex-direction: column; justify-content: space-between; }
+    .match-tour { color: #64748b; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; text-align: center; margin-bottom: 12px; font-weight: 600; }
     .match-row { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 10px; }
     .team-block { display: flex; flex-direction: column; align-items: center; gap: 6px; }
     .team-name { font-weight: 600; font-size: 13px; text-align: center; line-height: 1.2; }
-    .score { font-weight: 800; font-size: 20px; background: #0f172a; padding: 6px 12px;
-              border-radius: 10px; white-space: nowrap; }
-    .match-meta { color: #94a3b8; font-size: 12px; text-align: center; margin-top: 10px; }
+    
+    /* Бейдж по центру */
+    .score { font-weight: 800; font-size: 16px; background: #0f172a; padding: 6px 10px; text-align: center;
+              border-radius: 10px; white-space: nowrap; line-height: 1.2; min-width: 64px; color: #f8fafc; }
+    .score .time { font-size: 12px; color: #94a3b8; font-weight: 600; }
+    
+    .match-meta { color: #64748b; font-size: 11px; text-align: center; margin-top: 12px; font-weight: 500; }
 
     /* Логотипы */
-    .logo { width: 40px; height: 40px; object-fit: contain; }
-    .logo-fallback { width: 40px; height: 40px; border-radius: 50%; background: #334155;
+    .logo { width: 44px; height: 44px; object-fit: contain; }
+    .logo-fallback { width: 44px; height: 44px; border-radius: 50%; background: #334155;
                       display: flex; align-items: center; justify-content: center;
-                      font-weight: 700; color: #cbd5e1; }
+                      font-weight: 700; color: #cbd5e1; font-size: 16px; }
 
     /* Таблицы */
     .table-wrap { overflow-x: auto; }
@@ -60,19 +64,19 @@
     <h1>ФНЛ — Первая лига</h1>
     <div class="sub">Сезон 1066 ·
       23-й тур ·
-      обновлено 20.10.2026 14:13</div>
+      обновлено 20.10.2026 14:20</div>
   </header>
   <main>
     <h2>Матчи тура</h2>
     <section class="matches">
         <div class="match">
-          <div class="match-date">—</div>
+          <div class="match-tour">23-й тур</div>
           <div class="match-row">
             <div class="team-block">
               <img src="https://s3.fnl.pro:9000/fnl/team/team-100-263" alt="" class="logo">
               <div class="team-name">Волга</div>
             </div>
-            <div class="score">vs</div>
+            <div class="score">12.03</div>
             <div class="team-block">
               <img src="https://s3.fnl.pro:9000/fnl/team/team-100-183" alt="" class="logo">
               <div class="team-name">Нижний Новгород</div>
@@ -81,13 +85,13 @@
           
         </div>
         <div class="match">
-          <div class="match-date">—</div>
+          <div class="match-tour">23-й тур</div>
           <div class="match-row">
             <div class="team-block">
               <img src="https://s3.fnl.pro:9000/fnl/team/team-100-13" alt="" class="logo">
               <div class="team-name">Енисей</div>
             </div>
-            <div class="score">vs</div>
+            <div class="score">12.03</div>
             <div class="team-block">
               <img src="https://s3.fnl.pro:9000/fnl/team/team-100-182" alt="" class="logo">
               <div class="team-name">Ротор</div>
@@ -96,13 +100,13 @@
           
         </div>
         <div class="match">
-          <div class="match-date">—</div>
+          <div class="match-tour">23-й тур</div>
           <div class="match-row">
             <div class="team-block">
               <img src="https://s3.fnl.pro:9000/fnl/team/team-100-256" alt="" class="logo">
               <div class="team-name">Ленинградец</div>
             </div>
-            <div class="score">vs</div>
+            <div class="score">12.03</div>
             <div class="team-block">
               <img src="https://s3.fnl.pro:9000/fnl/team/team-100-32" alt="" class="logo">
               <div class="team-name">Нефтехимик</div>
@@ -111,13 +115,13 @@
           
         </div>
         <div class="match">
-          <div class="match-date">—</div>
+          <div class="match-tour">23-й тур</div>
           <div class="match-row">
             <div class="team-block">
               <img src="https://s3.fnl.pro:9000/fnl/team/team-100-27" alt="" class="logo">
               <div class="team-name">Шинник</div>
             </div>
-            <div class="score">vs</div>
+            <div class="score">12.03</div>
             <div class="team-block">
               <img src="https://s3.fnl.pro:9000/fnl/team/team-100-159" alt="" class="logo">
               <div class="team-name">Челябинск</div>
@@ -126,13 +130,13 @@
           
         </div>
         <div class="match">
-          <div class="match-date">—</div>
+          <div class="match-tour">23-й тур</div>
           <div class="match-row">
             <div class="team-block">
               <img src="https://s3.fnl.pro:9000/fnl/team/team-100-267" alt="" class="logo">
               <div class="team-name">Спартак (Кострома)</div>
             </div>
-            <div class="score">vs</div>
+            <div class="score">12.03</div>
             <div class="team-block">
               <img src="https://s3.fnl.pro:9000/fnl/team/team-100-66" alt="" class="logo">
               <div class="team-name">Сочи</div>
@@ -141,13 +145,13 @@
           
         </div>
         <div class="match">
-          <div class="match-date">—</div>
+          <div class="match-tour">23-й тур</div>
           <div class="match-row">
             <div class="team-block">
               <img src="https://s3.fnl.pro:9000/fnl/team/team-100-15" alt="" class="logo">
               <div class="team-name">КАМАЗ</div>
             </div>
-            <div class="score">vs</div>
+            <div class="score">12.03</div>
             <div class="team-block">
               <img src="https://s3.fnl.pro:9000/fnl/team/team-100-63" alt="" class="logo">
               <div class="team-name">Арсенал</div>
@@ -156,13 +160,13 @@
           
         </div>
         <div class="match">
-          <div class="match-date">—</div>
+          <div class="match-tour">23-й тур</div>
           <div class="match-row">
             <div class="team-block">
               <img src="https://s3.fnl.pro:9000/fnl/team/team-100-204" alt="" class="logo">
               <div class="team-name">Велес</div>
             </div>
-            <div class="score">vs</div>
+            <div class="score">12.03</div>
             <div class="team-block">
               <img src="https://s3.fnl.pro:9000/fnl/team/team-100-20" alt="" class="logo">
               <div class="team-name">СКА-Хабаровск</div>
@@ -171,13 +175,13 @@
           
         </div>
         <div class="match">
-          <div class="match-date">—</div>
+          <div class="match-tour">23-й тур</div>
           <div class="match-row">
             <div class="team-block">
               <img src="https://s3.fnl.pro:9000/fnl/team/team-100-22" alt="" class="logo">
               <div class="team-name">Торпедо Москва</div>
             </div>
-            <div class="score">vs</div>
+            <div class="score">12.03</div>
             <div class="team-block">
               <img src="https://s3.fnl.pro:9000/fnl/team/team-100-37" alt="" class="logo">
               <div class="team-name">Уфа</div>
