@@ -13,7 +13,7 @@ import requests
 
 # ---------- КОНФИГ ----------
 BASE_URL = "https://fnl-app.fnl.pro/api/v1"
-LOGO_BASE_URL = "https://s3.fnl.pro:9000"  # <-- правильная база для картинок
+LOGO_BASE_URL = "https://s3.fnl.pro:9000"  # правильная база для картинок
 LEAGUE_ID = 100
 SEASON_ID = 1066
 REQUEST_DELAY = 0.5
@@ -72,14 +72,17 @@ def save_csv(name: str, df: pd.DataFrame):
 
 
 def match_to_row(m: dict) -> dict:
-    """Нормализует объект матча (из слайдера или календаря)."""
+    """Нормализует объект матча."""
+    # Если дата пустая, берем estimatedDate
+    date_val = m.get("date") or m.get("estimatedDate") or ""
+    
     return {
         "matchId": m.get("matchId"),
         "fnlId": m.get("fnlId"),
         "status": m.get("status"),
         "tourId": m.get("tourId"),
         "tour": m.get("tour"),
-        "date": m.get("date"),
+        "date": date_val,
         "seasonId": m.get("seasonId"),
         "stadium": (m.get("stadium") or {}).get("title"),
         "city": (m.get("stadium") or {}).get("city"),
@@ -277,7 +280,6 @@ def build_html():
         for _, r in logos_df.iterrows():
             url = r.get("logoUrl")
             if pd.notna(url):
-                # <-- ИСПРАВЛЕНИЕ: база для картинок s3.fnl.pro:9000
                 logos[int(r["teamId"])] = (
                     f"{LOGO_BASE_URL}{url}" if str(url).startswith("/") else url
                 )
@@ -319,37 +321,51 @@ def build_html():
     def render_match(row):
         status = row.get("status", "")
         hs, gs = row.get("home_score"), row.get("guest_score")
+        
+        # Формируем контент для центрального бейджа
         if status == "END" and pd.notna(hs) and pd.notna(gs):
-            score = f"{int(hs)} : {int(gs)}"
+            center_content = f"{int(hs)} : {int(gs)}"
         else:
-            score = "vs"
+            # Если матч не завершен, показываем дату и время
+            date_str = s(row.get("date"), "")
+            if date_str:
+                # Пытаемся распарсить "2026-10-23 18:00"
+                try:
+                    dt = datetime.strptime(date_str, "%Y-%m-%d %H:%M")
+                    center_content = f"{dt.strftime('%d.%m')}<br><span class='time'>{dt.strftime('%H:%M')}</span>"
+                except:
+                    try:
+                        dt = datetime.strptime(date_str, "%Y-%m-%d")
+                        center_content = f"{dt.strftime('%d.%m')}"
+                    except:
+                        center_content = _html.escape(date_str)
+            else:
+                center_content = "vs"
 
-        date = s(row.get("date"), "—")
         stadium = s(row.get("stadium"), "")
         city = s(row.get("city"), "")
-        viewers = row.get("viewers")
-
-        stadium_line = _html.escape(stadium)
+        
+        meta_line = _html.escape(stadium)
         if city:
-            stadium_line += (", " if stadium_line else "") + _html.escape(city)
-        if pd.notna(viewers):
-            stadium_line += " · 👥 " + f"{int(viewers):,}".replace(",", " ")
+            meta_line += (", " if meta_line else "") + _html.escape(city)
+
+        tour_name = s(row.get("tour"), "")
 
         return f"""
         <div class="match">
-          <div class="match-date">{_html.escape(date)}</div>
+          {f'<div class="match-tour">{_html.escape(tour_name)}</div>' if tour_name else ''}
           <div class="match-row">
             <div class="team-block">
               {logo_html(row.get("home_teamId"), s(row.get("home_name")))}
               <div class="team-name">{_html.escape(s(row.get("home_name")))}</div>
             </div>
-            <div class="score">{score}</div>
+            <div class="score">{center_content}</div>
             <div class="team-block">
               {logo_html(row.get("guest_teamId"), s(row.get("guest_name")))}
               <div class="team-name">{_html.escape(s(row.get("guest_name")))}</div>
             </div>
           </div>
-          {f'<div class="match-meta">{stadium_line}</div>' if stadium_line else ''}
+          {f'<div class="match-meta">{meta_line}</div>' if meta_line else ''}
         </div>"""
 
     matches_html = "".join(render_match(r) for _, r in tour_matches.iterrows()) \
@@ -433,20 +449,24 @@ def build_html():
 
     /* Матчи */
     .matches {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }}
-    .match {{ background: #1e293b; border: 1px solid #334155; border-radius: 14px; padding: 14px; }}
-    .match-date {{ color: #94a3b8; font-size: 12px; text-align: center; margin-bottom: 10px; }}
+    .match {{ background: #1e293b; border: 1px solid #334155; border-radius: 14px; padding: 14px; display: flex; flex-direction: column; justify-content: space-between; }}
+    .match-tour {{ color: #64748b; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; text-align: center; margin-bottom: 12px; font-weight: 600; }}
     .match-row {{ display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 10px; }}
     .team-block {{ display: flex; flex-direction: column; align-items: center; gap: 6px; }}
     .team-name {{ font-weight: 600; font-size: 13px; text-align: center; line-height: 1.2; }}
-    .score {{ font-weight: 800; font-size: 20px; background: #0f172a; padding: 6px 12px;
-              border-radius: 10px; white-space: nowrap; }}
-    .match-meta {{ color: #94a3b8; font-size: 12px; text-align: center; margin-top: 10px; }}
+    
+    /* Бейдж по центру */
+    .score {{ font-weight: 800; font-size: 16px; background: #0f172a; padding: 6px 10px; text-align: center;
+              border-radius: 10px; white-space: nowrap; line-height: 1.2; min-width: 64px; color: #f8fafc; }}
+    .score .time {{ font-size: 12px; color: #94a3b8; font-weight: 600; }}
+    
+    .match-meta {{ color: #64748b; font-size: 11px; text-align: center; margin-top: 12px; font-weight: 500; }}
 
     /* Логотипы */
-    .logo {{ width: 40px; height: 40px; object-fit: contain; }}
-    .logo-fallback {{ width: 40px; height: 40px; border-radius: 50%; background: #334155;
+    .logo {{ width: 44px; height: 44px; object-fit: contain; }}
+    .logo-fallback {{ width: 44px; height: 44px; border-radius: 50%; background: #334155;
                       display: flex; align-items: center; justify-content: center;
-                      font-weight: 700; color: #cbd5e1; }}
+                      font-weight: 700; color: #cbd5e1; font-size: 16px; }}
 
     /* Таблицы */
     .table-wrap {{ overflow-x: auto; }}
