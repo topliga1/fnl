@@ -273,21 +273,33 @@ def build_html():
             score = f"{int(hs)} : {int(gs)}"
         else:
             score = "vs"
-        date = row.get("date") or "—"
-        stadium = row.get("stadium") or "—"
-        city = row.get("city") or ""
+                # безопасно приводим к строке — в CSV пустые ячейки читаются как NaN (float)
+        def s(v, default=""):
+            if pd.isna(v):
+                return default
+            return str(v)
+
+        date = s(row.get("date"), "—")
+        stadium = s(row.get("stadium"), "—")
+        city = s(row.get("city"), "")
         viewers = row.get("viewers")
         viewers_str = f"{int(viewers):,}".replace(",", " ") if pd.notna(viewers) else ""
+
+        stadium_line = _html.escape(stadium)
+        if city:
+            stadium_line += ", " + _html.escape(city)
+        if viewers_str:
+            stadium_line += " · 👥 " + viewers_str
+
         return f"""
         <div class="match">
           <div class="teams">
-            <div class="team home">{_html.escape(str(row.get("home_name", "")))}</div>
+            <div class="team home">{_html.escape(s(row.get("home_name")))}</div>
             <div class="score">{score}</div>
-            <div class="team guest">{_html.escape(str(row.get("guest_name", "")))}</div>
+            <div class="team guest">{_html.escape(s(row.get("guest_name")))}</div>
           </div>
-          <div class="meta">{_html.escape(str(date))}</div>
-          <div class="meta">{_html.escape(stadium)}{", " + _html.escape(city) if city else ""}
-            {("· 👥 " + viewers_str) if viewers_str else ""}</div>
+          <div class="meta">{_html.escape(date)}</div>
+          <div class="meta">{stadium_line}</div>
         </div>"""
 
     matches_html = "".join(render_match(r) for _, r in tour_matches.iterrows()) \
