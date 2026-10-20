@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
 Парсер API ФНЛ (fnl.pro).
-Каждый эндпоинт -> отдельный raw JSON (с таймстампом) + отдельный CSV.
 Запуск:  python fnl_parser.py
 """
 import json
@@ -56,7 +55,6 @@ def get(path: str, params: dict | None = None) -> dict | list:
 
 
 def save_raw(name: str, payload):
-    """Сырой JSON -> data/raw/<name>_<timestamp>.json"""
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
     path = RAW_DIR / f"{name}_{ts}.json"
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -64,7 +62,6 @@ def save_raw(name: str, payload):
 
 
 def save_csv(name: str, df: pd.DataFrame):
-    """Нормализованный CSV -> data/csv/<name>.csv (перезаписывается)"""
     if df is None or df.empty:
         print(f"  (пропуск CSV {name}: пусто)")
         return
@@ -73,34 +70,36 @@ def save_csv(name: str, df: pd.DataFrame):
     print(f"  -> csv: {path.relative_to(ROOT)} ({len(df)} строк)")
 
 
+def match_to_row(m: dict) -> dict:
+    """Нормализует объект матча (из слайдера или календаря)."""
+    return {
+        "matchId": m.get("matchId"),
+        "fnlId": m.get("fnlId"),
+        "status": m.get("status"),
+        "tourId": m.get("tourId"),
+        "tour": m.get("tour"),
+        "date": m.get("date"),
+        "seasonId": m.get("seasonId"),
+        "stadium": (m.get("stadium") or {}).get("title"),
+        "city": (m.get("stadium") or {}).get("city"),
+        "viewers": (m.get("stadium") or {}).get("viewers"),
+        "judge": (m.get("judges") or {}).get("name"),
+        "home_teamId": (m.get("home") or {}).get("teamId"),
+        "home_name": (m.get("home") or {}).get("name"),
+        "home_score": (m.get("home") or {}).get("score"),
+        "guest_teamId": (m.get("guest") or {}).get("teamId"),
+        "guest_name": (m.get("guest") or {}).get("name"),
+        "guest_score": (m.get("guest") or {}).get("score"),
+        "broadcast": m.get("isAvailableBroadcast"),
+    }
+
+
 # ---------- 01. SLIDER ----------
 def fetch_slider():
     print("[01] slider")
     data = get("/center/calendar/matches/slider", {"leagueId": LEAGUE_ID})
     save_raw("slider", data)
-
-    rows = []
-    for m in data.get("matches", []):
-        rows.append({
-            "matchId": m.get("matchId"),
-            "fnlId": m.get("fnlId"),
-            "status": m.get("status"),
-            "tourId": m.get("tourId"),
-            "tour": m.get("tour"),
-            "date": m.get("date"),
-            "seasonId": m.get("seasonId"),
-            "stadium": (m.get("stadium") or {}).get("title"),
-            "city": (m.get("stadium") or {}).get("city"),
-            "viewers": (m.get("stadium") or {}).get("viewers"),
-            "judge": (m.get("judges") or {}).get("name"),
-            "home_teamId": (m.get("home") or {}).get("teamId"),
-            "home_name": (m.get("home") or {}).get("name"),
-            "home_score": (m.get("home") or {}).get("score"),
-            "guest_teamId": (m.get("guest") or {}).get("teamId"),
-            "guest_name": (m.get("guest") or {}).get("name"),
-            "guest_score": (m.get("guest") or {}).get("score"),
-            "broadcast": m.get("isAvailableBroadcast"),
-        })
+    rows = [match_to_row(m) for m in data.get("matches", [])]
     save_csv("01_slider_matches", pd.DataFrame(rows))
 
 
@@ -119,6 +118,19 @@ def fetch_logos():
     save_csv("02_team_logos", df)
 
 
+# ---------- 02.5. TEAMS BY SEASON ----------
+def fetch_teams_by_season():
+    print("[02.5] teamsBySeason")
+    data = get("/info/teamsBySeason", {"leagueId": LEAGUE_ID, "seasonId": SEASON_ID})
+    save_raw("teamsBySeason", data)
+
+    df = pd.DataFrame(data)
+    if not df.empty:
+        df = df[["leagueId", "teamId", "title", "teamSlug", "city"]].copy()
+        df = df.sort_values("teamId").reset_index(drop=True)
+    save_csv("02_5_teams_by_season", df)
+
+
 # ---------- 03. ACTIVE SEASON ----------
 def fetch_active_season():
     print("[03] activeSeason")
@@ -135,6 +147,27 @@ def fetch_season_history():
     save_csv("04_seasons", pd.DataFrame(data))
 
 
+# ---------- 04.5. MONTHS & TOURS ----------
+def fetch_months():
+    print("[04.5] monthsByParams")
+    data = get("/info/monthsByParams", {"leagueId": LEAGUE_ID, "seasonId": SEASON_ID})
+    save_raw("monthsByParams", data)
+    save_csv("04_5_months", pd.DataFrame({"month": data}))
+
+def fetch_tours():
+    print("[04.6] toursBySeason")
+    data = get("/info/toursBySeason", {"leagueId": LEAGUE_ID, "seasonId": SEASON_ID})
+    save_raw("toursBySeason", data)
+    rows = []
+    for t in data:
+        rows.append({
+            "tourId": t.get("id"),
+            "name": t.get("name"),
+            "months": ",".join(str(x) for x in (t.get("months") or [])),
+        })
+    save_csv("04_6_tours", pd.DataFrame(rows))
+
+
 # ---------- 05. MEDIA ----------
 def fetch_media(media_type: str = "LINK", page_size: int = 100, max_pages: int = 50):
     print(f"[05] media (type={media_type})")
@@ -142,10 +175,8 @@ def fetch_media(media_type: str = "LINK", page_size: int = 100, max_pages: int =
 
     for page in range(max_pages):
         data = get("/center/media", {
-            "leagueId": LEAGUE_ID,
-            "type": media_type,
-            "limit": page_size,
-            "offset": offset,
+            "leagueId": LEAGUE_ID, "type": media_type,
+            "limit": page_size, "offset": offset,
         })
         if page == 0:
             save_raw(f"media_{media_type}_page0", data)
@@ -165,7 +196,6 @@ def fetch_media(media_type: str = "LINK", page_size: int = 100, max_pages: int =
         if it["id"] not in seen:
             seen.add(it["id"])
             uniq.append(it)
-
     save_csv(f"05_media_{media_type}", pd.DataFrame(uniq))
 
 
@@ -173,9 +203,7 @@ def fetch_media(media_type: str = "LINK", page_size: int = 100, max_pages: int =
 def fetch_player_stats(event_type: str):
     print(f"[06] player stats ({event_type})")
     data = get("/center/player/stats", {
-        "leagueId": LEAGUE_ID,
-        "seasonId": SEASON_ID,
-        "eventType": event_type,
+        "leagueId": LEAGUE_ID, "seasonId": SEASON_ID, "eventType": event_type,
     })
     save_raw(f"player_stats_{event_type}", data)
 
@@ -183,17 +211,13 @@ def fetch_player_stats(event_type: str):
     for p in players:
         p = dict(p)
         p["eventType"] = event_type
-
     save_csv(f"06_player_stats_{event_type}", pd.DataFrame(players))
-    total = data.get("total")
-    print(f"  получено записей: {len(players)} (total в ответе: {total})")
 
 
 # ---------- 07. STANDINGS ----------
 def fetch_standings(extended: bool = True):
     path = "/center/rank/extended" if extended else "/center/rank"
     name = "standings_extended" if extended else "standings"
-    prefix = "07_"
     print(f"[07] {name}")
 
     data = get(path, {"leagueId": LEAGUE_ID, "seasonId": SEASON_ID})
@@ -208,8 +232,7 @@ def fetch_standings(extended: bool = True):
         )
         row["last5_ids"] = ",".join(str(g["gameId"]) for g in (t.get("lastGames") or []))
         rows.append(row)
-
-    save_csv(f"{prefix}{name}", pd.DataFrame(rows))
+    save_csv(f"07_{name}", pd.DataFrame(rows))
 
 
 # ---------- 08. LEAGUE STATS ----------
@@ -224,14 +247,57 @@ def fetch_league_stats():
         row = dict(e)
         row["description"] = types.get(e["id"])
         rows.append(row)
-
     save_csv("08_league_stats", pd.DataFrame(rows))
 
 
-# ---------- 09. HTML ----------
+# ---------- 09. FULL CALENDAR ----------
+def fetch_calendar_full(page_size: int = 100, max_pages: int = 10):
+    print("[09] calendar full")
+    all_matches = {}
+    offset, total_days = 0, None
+
+    for page in range(max_pages):
+        data = get("/center/calendar/matches/date", {
+            "leagueId": LEAGUE_ID, "seasonId": SEASON_ID,
+            "limit": page_size, "offset": offset, "move": "ALL",
+        })
+        if page == 0:
+            save_raw("calendar_full_page0", data)
+
+        loc = data.get("location") or {}
+        total_days = loc.get("count")
+        days = data.get("matches", [])
+
+        for day in days:
+            for m in day.get("matches", []):
+                mid = m.get("matchId")
+                if mid not in all_matches:
+                    all_matches[mid] = match_to_row(m)
+
+        offset += page_size
+        print(f"  страница {page + 1}: дней {len(days)} (накоплено матчей {len(all_matches)})")
+        if not days or offset >= (total_days or 0):
+            break
+        time.sleep(REQUEST_DELAY)
+
+    # дедупликация с слайдером: если матч есть в слайдере, берём его данные
+    slider_path = CSV_DIR / "01_slider_matches.csv"
+    if slider_path.exists():
+        slider_df = pd.read_csv(slider_path)
+        for _, r in slider_df.iterrows():
+            mid = r.get("matchId")
+            if pd.notna(mid):
+                all_matches[int(mid)] = {k: (None if pd.isna(v) else v) for k, v in r.items()}
+
+    df = pd.DataFrame(all_matches.values())
+    if not df.empty:
+        df = df.sort_values("date").reset_index(drop=True)
+    save_csv("01_calendar_full", df)
+
+
+# ---------- 10. HTML ----------
 def build_html():
-    """Собирает index.html из уже сохранённых CSV."""
-    print("[09] build index.html")
+    print("[10] build index.html")
     import html as _html
 
     def read_csv(name):
@@ -239,13 +305,15 @@ def build_html():
         return pd.read_csv(p) if p.exists() else pd.DataFrame()
 
     slider = read_csv("01_slider_matches")
+    calendar = read_csv("01_calendar_full")
     standings = read_csv("07_standings_extended")
     logos_df = read_csv("02_team_logos")
+    teams_df = read_csv("02_5_teams_by_season")
     bomb = read_csv("06_player_stats_BOMBARDIER")
     ass = read_csv("06_player_stats_ASSISTANT")
     media = read_csv("05_media_LINK")
 
-    # Словарь логотипов: teamId -> url
+    # Справочники
     logos = {}
     if not logos_df.empty:
         for _, r in logos_df.iterrows():
@@ -255,10 +323,13 @@ def build_html():
                     f"https://fnl.pro{url}" if str(url).startswith("/") else url
                 )
 
+    cities = {}
+    if not teams_df.empty:
+        for _, r in teams_df.iterrows():
+            cities[int(r["teamId"])] = r.get("city")
+
     def s(v, default=""):
-        if pd.isna(v):
-            return default
-        return str(v)
+        return default if pd.isna(v) else str(v)
 
     def logo_html(team_id, name):
         url = logos.get(int(team_id)) if pd.notna(team_id) else None
@@ -268,7 +339,6 @@ def build_html():
         return f'<div class="logo logo-fallback">{_html.escape(letter)}</div>'
 
     def short_name(full_name):
-        """Оставляем только Фамилию и Имя (первые два слова)."""
         parts = s(full_name).split()
         return " ".join(parts[:2]) if parts else ""
 
@@ -306,23 +376,18 @@ def build_html():
         if pd.notna(viewers):
             stadium_line += " · 👥 " + f"{int(viewers):,}".replace(",", " ")
 
-        home_id = row.get("home_teamId")
-        guest_id = row.get("guest_teamId")
-        home_name = s(row.get("home_name"))
-        guest_name = s(row.get("guest_name"))
-
         return f"""
         <div class="match">
           <div class="match-date">{_html.escape(date)}</div>
           <div class="match-row">
             <div class="team-block">
-              {logo_html(home_id, home_name)}
-              <div class="team-name">{_html.escape(home_name)}</div>
+              {logo_html(row.get("home_teamId"), s(row.get("home_name")))}
+              <div class="team-name">{_html.escape(s(row.get("home_name")))}</div>
             </div>
             <div class="score">{score}</div>
             <div class="team-block">
-              {logo_html(guest_id, guest_name)}
-              <div class="team-name">{_html.escape(guest_name)}</div>
+              {logo_html(row.get("guest_teamId"), s(row.get("guest_name")))}
+              <div class="team-name">{_html.escape(s(row.get("guest_name")))}</div>
             </div>
           </div>
           {f'<div class="match-meta">{stadium_line}</div>' if stadium_line else ''}
@@ -331,7 +396,25 @@ def build_html():
     matches_html = "".join(render_match(r) for _, r in tour_matches.iterrows()) \
         or "<p class='empty'>Нет матчей текущего тура.</p>"
 
-    # --- 3) Таблица ---
+    # --- 3) Календарь (полный) ---
+    def render_calendar(df):
+        if df.empty:
+            return "<p class='empty'>Нет данных.</p>"
+        # Группируем по дате
+        df["date_short"] = df["date"].astype(str).str[:10]
+        html_parts = []
+        for date, group in df.groupby("date_short"):
+            matches = "".join(render_match(r) for _, r in group.iterrows())
+            html_parts.append(f"""
+            <div class="calendar-day">
+              <div class="calendar-date">{_html.escape(date)}</div>
+              <div class="matches">{matches}</div>
+            </div>""")
+        return "".join(html_parts)
+
+    calendar_html = render_calendar(calendar)
+
+    # --- 4) Таблица ---
     def render_standings(df):
         if df.empty:
             return "<p class='empty'>Нет данных.</p>"
@@ -339,10 +422,15 @@ def build_html():
         for _, r in df.iterrows():
             tid = r.get("teamId")
             tname = s(r.get("teamName"))
+            tcity = s(cities.get(int(tid))) if pd.notna(tid) else ""
+            city_str = f'<div class="team-city">{_html.escape(tcity)}</div>' if tcity else ""
             rows.append(f"""
               <tr>
                 <td class="rank">{int(r['rank'])}</td>
-                <td class="team-cell">{logo_html(tid, tname)}<span>{_html.escape(tname)}</span></td>
+                <td class="team-cell">
+                  {logo_html(tid, tname)}
+                  <div><span>{_html.escape(tname)}</span>{city_str}</div>
+                </td>
                 <td>{int(r['allGame'])}</td>
                 <td>{int(r['win'])}</td>
                 <td>{int(r['draw'])}</td>
@@ -359,7 +447,7 @@ def build_html():
           </table>
         </div>"""
 
-    # --- 4) Топ-игроки ---
+    # --- 5) Топ-игроки ---
     def render_top(df, title, metric_label):
         if df.empty:
             return f"<div class='card'><h3>{title}</h3><p class='empty'>Нет данных.</p></div>"
@@ -369,7 +457,7 @@ def build_html():
               <tr>
                 <td class="rank">{i + 1}</td>
                 <td>{_html.escape(short_name(r['playerName']))}</td>
-                <td class="team-cell-simple">{_html.escape(s(r['teamTitle']))}</td>
+                <td>{_html.escape(s(r['teamTitle']))}</td>
                 <td class="pts">{int(r['eventCnt'])}</td>
               </tr>""")
         return f"""
@@ -383,7 +471,7 @@ def build_html():
           </div>
         </div>"""
 
-    # --- 5) Последние видео ---
+    # --- 6) Видео ---
     def render_media(df):
         if df.empty:
             return "<p class='empty'>Нет данных.</p>"
@@ -393,7 +481,7 @@ def build_html():
             video = s(r.get("videoUrl"))
             cover = s(r.get("url"))
             cover_full = f"https://fnl.pro{cover}" if cover.startswith("/") else cover
-            date = s(r.get("modifiedDate"))[:10]  # YYYY-MM-DD
+            date = s(r.get("modifiedDate"))[:10]
             cards.append(f"""
               <a class="media-card" href="{_html.escape(video)}" target="_blank" rel="noopener">
                 <div class="media-cover" style="background-image:url('{_html.escape(cover_full)}')">
@@ -406,7 +494,7 @@ def build_html():
               </a>""")
         return f"<div class='media-grid'>{''.join(cards)}</div>"
 
-    # --- 6) Финальный HTML ---
+    # --- 7) Финальный HTML ---
     html_out = f"""<!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -436,6 +524,11 @@ def build_html():
               border-radius: 10px; white-space: nowrap; }}
     .match-meta {{ color: #94a3b8; font-size: 12px; text-align: center; margin-top: 10px; }}
 
+    /* Календарь */
+    .calendar-day {{ margin-bottom: 24px; }}
+    .calendar-date {{ font-size: 14px; font-weight: 700; color: #cbd5e1; margin-bottom: 10px;
+                      padding-left: 4px; border-left: 3px solid #3b82f6; }}
+
     /* Логотипы */
     .logo {{ width: 40px; height: 40px; object-fit: contain; }}
     .logo-fallback {{ width: 40px; height: 40px; border-radius: 50%; background: #334155;
@@ -454,6 +547,7 @@ def build_html():
     td.pts {{ font-weight: 700; }}
     .team-cell {{ display: flex; align-items: center; gap: 10px; font-weight: 600; }}
     .team-cell .logo, .team-cell .logo-fallback {{ width: 26px; height: 26px; font-size: 12px; }}
+    .team-city {{ font-size: 11px; color: #94a3b8; font-weight: 400; }}
 
     /* Карточки лидеров */
     .cards {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px; }}
@@ -500,6 +594,9 @@ def build_html():
 
     <h2>Последние видео</h2>
     <section>{render_media(media)}</section>
+
+    <h2>Календарь матчей</h2>
+    <section>{calendar_html}</section>
   </main>
   <footer>Данные: fnl.pro · сгенерировано автоматически</footer>
 </body>
@@ -518,23 +615,20 @@ def main():
 
     fetch_slider()
     fetch_logos()
+    fetch_teams_by_season()
     fetch_active_season()
     fetch_season_history()
+    fetch_months()
+    fetch_tours()
     fetch_media("LINK")
 
-    for et in [
-        "BOMBARDIER",
-        "ASSISTANT",
-        "SHOTS_TARGET",
-        "SAVES",
-        "YELLOW_CARD",
-        "FOULS_ON_PLAYER",
-    ]:
+    for et in ["BOMBARDIER", "ASSISTANT", "SHOTS_TARGET", "SAVES", "YELLOW_CARD", "FOULS_ON_PLAYER"]:
         fetch_player_stats(et)
 
     fetch_standings(extended=True)
     fetch_standings(extended=False)
     fetch_league_stats()
+    fetch_calendar_full()
     build_html()
 
     print("\nГотово.")
