@@ -1,0 +1,44 @@
+name: FNL Daily Parser
+
+# Когда запускать: по расписанию и вручную
+on:
+  schedule:
+    # Запуск каждый день в 06:00 UTC (09:00 по Москве)
+    # ВАЖНО: время указывается в UTC!
+    - cron: '0 6 * * *'
+  # Позволяет запустить вручную из вкладки Actions
+  workflow_dispatch:
+
+# Права, которые нужны workflow, чтобы коммитить изменения
+permissions:
+  contents: write
+
+jobs:
+  parse-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Скачиваем код из репозитория на виртуальную машину
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Устанавливаем Python
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # 3. Устанавливаем зависимости из requirements.txt
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # 4. Запускаем наш парсер
+      - name: Run parser
+        run: python fnl_parser.py
+
+      # 5. Проверяем, появились ли новые файлы, и коммитим их
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-update FNL data"
+          # Указываем, какие файлы отслеживать (все в папке data)
+          file_pattern: 'data/**'
