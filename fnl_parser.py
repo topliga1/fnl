@@ -175,7 +175,6 @@ def fetch_media(media_type: str = "LINK", page_size: int = 100, max_pages: int =
 def fetch_player_stats(event_type: str, page_size: int = 100, max_pages: int = 50):
     print(f"[06] player stats ({event_type})")
     all_rows, offset, total = [], 0, None
-
     for page in range(max_pages):
         data = get("/center/player/stats", {
             "leagueId": LEAGUE_ID,
