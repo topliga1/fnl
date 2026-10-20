@@ -13,6 +13,7 @@ import requests
 
 # ---------- КОНФИГ ----------
 BASE_URL = "https://fnl-app.fnl.pro/api/v1"
+LOGO_BASE_URL = "https://s3.fnl.pro:9000"  # <-- правильная база для картинок
 LEAGUE_ID = 100
 SEASON_ID = 1066
 REQUEST_DELAY = 0.5
@@ -121,7 +122,6 @@ def fetch_logos():
 # ---------- 02.5. TEAMS BY SEASON ----------
 def fetch_teams_by_season():
     print("[02.5] teamsBySeason")
-    # Без limit/offset
     data = get("/info/teamsBySeason", {"leagueId": LEAGUE_ID, "seasonId": SEASON_ID})
     save_raw("teamsBySeason", data)
 
@@ -151,14 +151,12 @@ def fetch_season_history():
 # ---------- 04.5. MONTHS & TOURS ----------
 def fetch_months():
     print("[04.5] monthsByParams")
-    # Без limit/offset
     data = get("/info/monthsByParams", {"leagueId": LEAGUE_ID, "seasonId": SEASON_ID})
     save_raw("monthsByParams", data)
     save_csv("04_5_months", pd.DataFrame({"month": data}))
 
 def fetch_tours():
     print("[04.6] toursBySeason")
-    # Без limit/offset
     data = get("/info/toursBySeason", {"leagueId": LEAGUE_ID, "seasonId": SEASON_ID})
     save_raw("toursBySeason", data)
     rows = []
@@ -169,37 +167,6 @@ def fetch_tours():
             "months": ",".join(str(x) for x in (t.get("months") or [])),
         })
     save_csv("04_6_tours", pd.DataFrame(rows))
-
-
-# ---------- 05. MEDIA ----------
-def fetch_media(media_type: str = "LINK", page_size: int = 100, max_pages: int = 50):
-    print(f"[05] media (type={media_type})")
-    all_items, offset, total = [], 0, None
-
-    for page in range(max_pages):
-        data = get("/center/media", {
-            "leagueId": LEAGUE_ID, "type": media_type,
-            "limit": page_size, "offset": offset,
-        })
-        if page == 0:
-            save_raw(f"media_{media_type}_page0", data)
-
-        items = data.get("media", [])
-        all_items.extend(items)
-        total = data.get("total")
-        offset += page_size
-        print(f"  страница {page + 1}: +{len(items)} (накоплено {len(all_items)}/{total})")
-
-        if not items or offset >= (total or 0):
-            break
-        time.sleep(REQUEST_DELAY)
-
-    seen, uniq = set(), []
-    for it in all_items:
-        if it["id"] not in seen:
-            seen.add(it["id"])
-            uniq.append(it)
-    save_csv(f"05_media_{media_type}", pd.DataFrame(uniq))
 
 
 # ---------- 06. PLAYER STATS ----------
@@ -253,10 +220,9 @@ def fetch_league_stats():
     save_csv("08_league_stats", pd.DataFrame(rows))
 
 
-# ---------- 09. FULL CALENDAR ----------
+# ---------- 09. FULL CALENDAR (только в CSV) ----------
 def fetch_calendar_full():
     print("[09] calendar full")
-    # Без limit/offset, только move=ALL
     data = get("/center/calendar/matches/date", {
         "leagueId": LEAGUE_ID,
         "seasonId": SEASON_ID,
@@ -273,7 +239,6 @@ def fetch_calendar_full():
 
     print(f"  получено матчей из календаря: {len(all_matches)}")
 
-    # Дедупликация с слайдером
     slider_path = CSV_DIR / "01_slider_matches.csv"
     if slider_path.exists():
         slider_df = pd.read_csv(slider_path)
@@ -300,13 +265,11 @@ def build_html():
         return pd.read_csv(p) if p.exists() else pd.DataFrame()
 
     slider = read_csv("01_slider_matches")
-    calendar = read_csv("01_calendar_full")
     standings = read_csv("07_standings_extended")
     logos_df = read_csv("02_team_logos")
     teams_df = read_csv("02_5_teams_by_season")
     bomb = read_csv("06_player_stats_BOMBARDIER")
     ass = read_csv("06_player_stats_ASSISTANT")
-    media = read_csv("05_media_LINK")
 
     # Справочники
     logos = {}
@@ -314,8 +277,9 @@ def build_html():
         for _, r in logos_df.iterrows():
             url = r.get("logoUrl")
             if pd.notna(url):
+                # <-- ИСПРАВЛЕНИЕ: база для картинок s3.fnl.pro:9000
                 logos[int(r["teamId"])] = (
-                    f"https://fnl.pro{url}" if str(url).startswith("/") else url
+                    f"{LOGO_BASE_URL}{url}" if str(url).startswith("/") else url
                 )
 
     cities = {}
@@ -391,24 +355,7 @@ def build_html():
     matches_html = "".join(render_match(r) for _, r in tour_matches.iterrows()) \
         or "<p class='empty'>Нет матчей текущего тура.</p>"
 
-    # --- 3) Календарь (полный) ---
-    def render_calendar(df):
-        if df.empty:
-            return "<p class='empty'>Нет данных.</p>"
-        df["date_short"] = df["date"].astype(str).str[:10]
-        html_parts = []
-        for date, group in df.groupby("date_short"):
-            matches = "".join(render_match(r) for _, r in group.iterrows())
-            html_parts.append(f"""
-            <div class="calendar-day">
-              <div class="calendar-date">{_html.escape(date)}</div>
-              <div class="matches">{matches}</div>
-            </div>""")
-        return "".join(html_parts)
-
-    calendar_html = render_calendar(calendar)
-
-    # --- 4) Таблица ---
+    # --- 3) Таблица ---
     def render_standings(df):
         if df.empty:
             return "<p class='empty'>Нет данных.</p>"
@@ -441,7 +388,7 @@ def build_html():
           </table>
         </div>"""
 
-    # --- 5) Топ-игроки ---
+    # --- 4) Топ-игроки ---
     def render_top(df, title, metric_label):
         if df.empty:
             return f"<div class='card'><h3>{title}</h3><p class='empty'>Нет данных.</p></div>"
@@ -465,30 +412,7 @@ def build_html():
           </div>
         </div>"""
 
-    # --- 6) Видео ---
-    def render_media(df):
-        if df.empty:
-            return "<p class='empty'>Нет данных.</p>"
-        cards = []
-        for _, r in df.head(8).iterrows():
-            title = _html.escape(s(r.get("title")))
-            video = s(r.get("videoUrl"))
-            cover = s(r.get("url"))
-            cover_full = f"https://fnl.pro{cover}" if cover.startswith("/") else cover
-            date = s(r.get("modifiedDate"))[:10]
-            cards.append(f"""
-              <a class="media-card" href="{_html.escape(video)}" target="_blank" rel="noopener">
-                <div class="media-cover" style="background-image:url('{_html.escape(cover_full)}')">
-                  <div class="play-icon">▶</div>
-                </div>
-                <div class="media-body">
-                  <div class="media-title">{title}</div>
-                  <div class="media-date">{date}</div>
-                </div>
-              </a>""")
-        return f"<div class='media-grid'>{''.join(cards)}</div>"
-
-    # --- 7) Финальный HTML ---
+    # --- 5) Финальный HTML ---
     html_out = f"""<!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -518,11 +442,6 @@ def build_html():
               border-radius: 10px; white-space: nowrap; }}
     .match-meta {{ color: #94a3b8; font-size: 12px; text-align: center; margin-top: 10px; }}
 
-    /* Календарь */
-    .calendar-day {{ margin-bottom: 24px; }}
-    .calendar-date {{ font-size: 14px; font-weight: 700; color: #cbd5e1; margin-bottom: 10px;
-                      padding-left: 4px; border-left: 3px solid #3b82f6; }}
-
     /* Логотипы */
     .logo {{ width: 40px; height: 40px; object-fit: contain; }}
     .logo-fallback {{ width: 40px; height: 40px; border-radius: 50%; background: #334155;
@@ -548,21 +467,6 @@ def build_html():
     .card {{ background: #1e293b; border: 1px solid #334155; border-radius: 14px; padding: 14px; }}
     .card h3 {{ margin: 0 0 10px; font-size: 15px; }}
 
-    /* Видео */
-    .media-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }}
-    .media-card {{ text-decoration: none; color: inherit; background: #1e293b;
-                   border: 1px solid #334155; border-radius: 14px; overflow: hidden;
-                   transition: transform .15s, border-color .15s; }}
-    .media-card:hover {{ transform: translateY(-2px); border-color: #475569; }}
-    .media-cover {{ height: 140px; background-size: cover; background-position: center;
-                    position: relative; }}
-    .play-icon {{ position: absolute; inset: 0; display: flex; align-items: center;
-                  justify-content: center; font-size: 32px; color: #fff;
-                  background: rgba(0,0,0,.35); }}
-    .media-body {{ padding: 10px 12px; }}
-    .media-title {{ font-size: 13px; font-weight: 600; margin-bottom: 4px; }}
-    .media-date {{ color: #94a3b8; font-size: 12px; }}
-
     footer {{ color: #64748b; font-size: 12px; text-align: center; padding: 24px 16px; }}
   </style>
 </head>
@@ -585,12 +489,6 @@ def build_html():
       {render_top(bomb, "Бомбардиры", "Голы")}
       {render_top(ass, "Ассистенты", "Передачи")}
     </section>
-
-    <h2>Последние видео</h2>
-    <section>{render_media(media)}</section>
-
-    <h2>Календарь матчей</h2>
-    <section>{calendar_html}</section>
   </main>
   <footer>Данные: fnl.pro · сгенерировано автоматически</footer>
 </body>
@@ -614,7 +512,6 @@ def main():
     fetch_season_history()
     fetch_months()
     fetch_tours()
-    fetch_media("LINK")
 
     for et in ["BOMBARDIER", "ASSISTANT", "SHOTS_TARGET", "SAVES", "YELLOW_CARD", "FOULS_ON_PLAYER"]:
         fetch_player_stats(et)
