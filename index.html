@@ -27,6 +27,11 @@
               border-radius: 10px; white-space: nowrap; }
     .match-meta { color: #94a3b8; font-size: 12px; text-align: center; margin-top: 10px; }
 
+    /* Календарь */
+    .calendar-day { margin-bottom: 24px; }
+    .calendar-date { font-size: 14px; font-weight: 700; color: #cbd5e1; margin-bottom: 10px;
+                      padding-left: 4px; border-left: 3px solid #3b82f6; }
+
     /* Логотипы */
     .logo { width: 40px; height: 40px; object-fit: contain; }
     .logo-fallback { width: 40px; height: 40px; border-radius: 50%; background: #334155;
@@ -45,6 +50,7 @@
     td.pts { font-weight: 700; }
     .team-cell { display: flex; align-items: center; gap: 10px; font-weight: 600; }
     .team-cell .logo, .team-cell .logo-fallback { width: 26px; height: 26px; font-size: 12px; }
+    .team-city { font-size: 11px; color: #94a3b8; font-weight: 400; }
 
     /* Карточки лидеров */
     .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px; }
@@ -74,7 +80,7 @@
     <h1>ФНЛ — Первая лига</h1>
     <div class="sub">Сезон 1066 ·
       23-й тур ·
-      обновлено 20.10.2026 14:00</div>
+      обновлено 20.10.2026 14:09</div>
   </header>
   <main>
     <h2>Матчи тура</h2>
@@ -210,7 +216,10 @@
             <tbody>
               <tr>
                 <td class="rank">1</td>
-                <td class="team-cell"><img src="https://fnl.pro/fnl/team/team-100-183" alt="" class="logo"><span>Нижний Новгород</span></td>
+                <td class="team-cell">
+                  <img src="https://fnl.pro/fnl/team/team-100-183" alt="" class="logo">
+                  <div><span>Нижний Новгород</span><div class="team-city">Нижний Новгород</div></div>
+                </td>
                 <td>14</td>
                 <td>12</td>
                 <td>1</td>
@@ -219,7 +228,10 @@
               </tr>
               <tr>
                 <td class="rank">2</td>
-                <td class="team-cell"><img src="https://fnl.pro/fnl/team/team-100-66" alt="" class="logo"><span>Сочи</span></td>
+                <td class="team-cell">
+                  <img src="https://fnl.pro/fnl/team/team-100-66" alt="" class="logo">
+                  <div><span>Сочи</span><div class="team-city">Сочи</div></div>
+                </td>
                 <td>14</td>
                 <td>9</td>
                 <td>2</td>
@@ -228,7 +240,10 @@
               </tr>
               <tr>
                 <td class="rank">3</td>
-                <td class="team-cell"><img src="https://fnl.pro/fnl/team/team-100-22" alt="" class="logo"><span>Торпедо Москва</span></td>
+                <td class="team-cell">
+                  <img src="https://fnl.pro/fnl/team/team-100-22" alt="" class="logo">
+                  <div><span>Торпедо Москва</span><div class="team-city">Москва</div></div>
+                </td>
                 <td>14</td>
                 <td>8</td>
                 <td>3</td>
@@ -237,7 +252,10 @@
               </tr>
               <tr>
                 <td class="rank">4</td>
-                <td class="team-cell"><img src="https://fnl.pro/fnl/team/team-100-267" alt="" class="logo"><span>Спартак (Кострома)</span></td>
+                <td class="team-cell">
+                  <img src="https://fnl.pro/fnl/team/team-100-267" alt="" class="logo">
+                  <div><span>Спартак (Кострома)</span><div class="team-city">Кострома</div></div>
+                </td>
                 <td>14</td>
                 <td>8</td>
                 <td>3</td>
@@ -246,7 +264,10 @@
               </tr>
               <tr>
                 <td class="rank">5</td>
-                <td class="team-cell"><img src="https://fnl.pro/fnl/team/team-100-204" alt="" class="logo"><span>Велес</span></td>
+                <td class="team-cell">
+                  <img src="https://fnl.pro/fnl/team/team-100-204" alt="" class="logo">
+                  <div><span>Велес</span><div class="team-city">Домодедово</div></div>
+                </td>
                 <td>15</td>
                 <td>8</td>
                 <td>3</td>
@@ -255,7 +276,10 @@
               </tr>
               <tr>
                 <td class="rank">6</td>
-                <td class="team-cell"><img src="https://fnl.pro/fnl/team/team-100-23" alt="" class="logo"><span>Урал</span></td>
+                <td class="team-cell">
+                  <img src="https://fnl.pro/fnl/team/team-100-23" alt="" class="logo">
+                  <div><span>Урал</span><div class="team-city">Екатеринбург</div></div>
+                </td>
                 <td>14</td>
                 <td>7</td>
                 <td>4</td>
@@ -264,7 +288,10 @@
               </tr>
               <tr>
                 <td class="rank">7</td>
-                <td class="team-cell"><img src="https://fnl.pro/fnl/team/team-100-37" alt="" class="logo"><span>Уфа</span></td>
+                <td class="team-cell">
+                  <img src="https://fnl.pro/fnl/team/team-100-37" alt="" class="logo">
+                  <div><span>Уфа</span><div class="team-city">Уфа</div></div>
+                </td>
                 <td>14</td>
                 <td>5</td>
                 <td>6</td>
@@ -273,7 +300,10 @@
               </tr>
               <tr>
                 <td class="rank">8</td>
-                <td class="team-cell"><img src="https://fnl.pro/fnl/team/team-100-27" alt="" class="logo"><span>Шинник</span></td>
+                <td class="team-cell">
+                  <img src="https://fnl.pro/fnl/team/team-100-27" alt="" class="logo">
+                  <div><span>Шинник</span><div class="team-city">Ярославль</div></div>
+                </td>
                 <td>14</td>
                 <td>4</td>
                 <td>8</td>
@@ -282,7 +312,10 @@
               </tr>
               <tr>
                 <td class="rank">9</td>
-                <td class="team-cell"><img src="https://fnl.pro/fnl/team/team-100-182" alt="" class="logo"><span>Ротор</span></td>
+                <td class="team-cell">
+                  <img src="https://fnl.pro/fnl/team/team-100-182" alt="" class="logo">
+                  <div><span>Ротор</span><div class="team-city">Волгоград</div></div>
+                </td>
                 <td>14</td>
                 <td>5</td>
                 <td>3</td>
@@ -291,7 +324,10 @@
               </tr>
               <tr>
                 <td class="rank">10</td>
-                <td class="team-cell"><img src="https://fnl.pro/fnl/team/team-100-263" alt="" class="logo"><span>Волга</span></td>
+                <td class="team-cell">
+                  <img src="https://fnl.pro/fnl/team/team-100-263" alt="" class="logo">
+                  <div><span>Волга</span><div class="team-city">Ульяновск</div></div>
+                </td>
                 <td>15</td>
                 <td>5</td>
                 <td>3</td>
@@ -300,7 +336,10 @@
               </tr>
               <tr>
                 <td class="rank">11</td>
-                <td class="team-cell"><img src="https://fnl.pro/fnl/team/team-100-63" alt="" class="logo"><span>Арсенал</span></td>
+                <td class="team-cell">
+                  <img src="https://fnl.pro/fnl/team/team-100-63" alt="" class="logo">
+                  <div><span>Арсенал</span><div class="team-city">Тула</div></div>
+                </td>
                 <td>14</td>
                 <td>4</td>
                 <td>4</td>
@@ -309,7 +348,10 @@
               </tr>
               <tr>
                 <td class="rank">12</td>
-                <td class="team-cell"><img src="https://fnl.pro/fnl/team/team-100-159" alt="" class="logo"><span>Челябинск</span></td>
+                <td class="team-cell">
+                  <img src="https://fnl.pro/fnl/team/team-100-159" alt="" class="logo">
+                  <div><span>Челябинск</span><div class="team-city">Челябинск</div></div>
+                </td>
                 <td>14</td>
                 <td>4</td>
                 <td>3</td>
@@ -318,7 +360,10 @@
               </tr>
               <tr>
                 <td class="rank">13</td>
-                <td class="team-cell"><img src="https://fnl.pro/fnl/team/team-100-13" alt="" class="logo"><span>Енисей</span></td>
+                <td class="team-cell">
+                  <img src="https://fnl.pro/fnl/team/team-100-13" alt="" class="logo">
+                  <div><span>Енисей</span><div class="team-city">Красноярск</div></div>
+                </td>
                 <td>14</td>
                 <td>3</td>
                 <td>5</td>
@@ -327,7 +372,10 @@
               </tr>
               <tr>
                 <td class="rank">14</td>
-                <td class="team-cell"><img src="https://fnl.pro/fnl/team/team-100-15" alt="" class="logo"><span>КАМАЗ</span></td>
+                <td class="team-cell">
+                  <img src="https://fnl.pro/fnl/team/team-100-15" alt="" class="logo">
+                  <div><span>КАМАЗ</span><div class="team-city">Набережные Челны</div></div>
+                </td>
                 <td>14</td>
                 <td>3</td>
                 <td>4</td>
@@ -336,7 +384,10 @@
               </tr>
               <tr>
                 <td class="rank">15</td>
-                <td class="team-cell"><img src="https://fnl.pro/fnl/team/team-100-256" alt="" class="logo"><span>Ленинградец</span></td>
+                <td class="team-cell">
+                  <img src="https://fnl.pro/fnl/team/team-100-256" alt="" class="logo">
+                  <div><span>Ленинградец</span><div class="team-city">Ленинградская область</div></div>
+                </td>
                 <td>14</td>
                 <td>3</td>
                 <td>4</td>
@@ -345,7 +396,10 @@
               </tr>
               <tr>
                 <td class="rank">16</td>
-                <td class="team-cell"><img src="https://fnl.pro/fnl/team/team-100-32" alt="" class="logo"><span>Нефтехимик</span></td>
+                <td class="team-cell">
+                  <img src="https://fnl.pro/fnl/team/team-100-32" alt="" class="logo">
+                  <div><span>Нефтехимик</span><div class="team-city">Нижнекамск</div></div>
+                </td>
                 <td>14</td>
                 <td>4</td>
                 <td>0</td>
@@ -354,7 +408,10 @@
               </tr>
               <tr>
                 <td class="rank">17</td>
-                <td class="team-cell"><img src="https://fnl.pro/fnl/team/team-100-102" alt="" class="logo"><span>Текстильщик</span></td>
+                <td class="team-cell">
+                  <img src="https://fnl.pro/fnl/team/team-100-102" alt="" class="logo">
+                  <div><span>Текстильщик</span><div class="team-city">Иваново</div></div>
+                </td>
                 <td>14</td>
                 <td>2</td>
                 <td>4</td>
@@ -363,7 +420,10 @@
               </tr>
               <tr>
                 <td class="rank">18</td>
-                <td class="team-cell"><img src="https://fnl.pro/fnl/team/team-100-20" alt="" class="logo"><span>СКА-Хабаровск</span></td>
+                <td class="team-cell">
+                  <img src="https://fnl.pro/fnl/team/team-100-20" alt="" class="logo">
+                  <div><span>СКА-Хабаровск</span><div class="team-city">Хабаровск</div></div>
+                </td>
                 <td>14</td>
                 <td>1</td>
                 <td>4</td>
@@ -385,61 +445,61 @@
               <tr>
                 <td class="rank">1</td>
                 <td>Грулев Вячеслав</td>
-                <td class="team-cell-simple">Нижний Новгород</td>
+                <td>Нижний Новгород</td>
                 <td class="pts">17</td>
               </tr>
               <tr>
                 <td class="rank">2</td>
                 <td>Калмыков Амур</td>
-                <td class="team-cell-simple">Спартак (Кострома)</td>
+                <td>Спартак (Кострома)</td>
                 <td class="pts">13</td>
               </tr>
               <tr>
                 <td class="rank">3</td>
                 <td>Гаджимурадов Рамазан</td>
-                <td class="team-cell-simple">Челябинск</td>
+                <td>Челябинск</td>
                 <td class="pts">8</td>
               </tr>
               <tr>
                 <td class="rank">4</td>
                 <td>Урванцев Матвей</td>
-                <td class="team-cell-simple">Челябинск</td>
+                <td>Челябинск</td>
                 <td class="pts">7</td>
               </tr>
               <tr>
                 <td class="rank">5</td>
                 <td>Федоров Захар</td>
-                <td class="team-cell-simple">Сочи</td>
+                <td>Сочи</td>
                 <td class="pts">7</td>
               </tr>
               <tr>
                 <td class="rank">6</td>
                 <td>Каштанов Алексей</td>
-                <td class="team-cell-simple">Торпедо Москва</td>
+                <td>Торпедо Москва</td>
                 <td class="pts">6</td>
               </tr>
               <tr>
                 <td class="rank">7</td>
                 <td>Саплинов Александр</td>
-                <td class="team-cell-simple">Волга</td>
+                <td>Волга</td>
                 <td class="pts">6</td>
               </tr>
               <tr>
                 <td class="rank">8</td>
                 <td>Азявин Илья</td>
-                <td class="team-cell-simple">Шинник</td>
+                <td>Шинник</td>
                 <td class="pts">6</td>
               </tr>
               <tr>
                 <td class="rank">9</td>
                 <td>Эльдарушев Абу-Саид</td>
-                <td class="team-cell-simple">Ротор</td>
+                <td>Ротор</td>
                 <td class="pts">6</td>
               </tr>
               <tr>
                 <td class="rank">10</td>
                 <td>Ортис Арагон</td>
-                <td class="team-cell-simple">Уфа</td>
+                <td>Уфа</td>
                 <td class="pts">6</td>
               </tr></tbody>
             </table>
@@ -455,61 +515,61 @@
               <tr>
                 <td class="rank">1</td>
                 <td>Соколов Артем</td>
-                <td class="team-cell-simple">Нижний Новгород</td>
+                <td>Нижний Новгород</td>
                 <td class="pts">8</td>
               </tr>
               <tr>
                 <td class="rank">2</td>
                 <td>Калинский Николай</td>
-                <td class="team-cell-simple">Нижний Новгород</td>
+                <td>Нижний Новгород</td>
                 <td class="pts">5</td>
               </tr>
               <tr>
                 <td class="rank">3</td>
                 <td>Корольков Кирилл</td>
-                <td class="team-cell-simple">Велес</td>
+                <td>Велес</td>
                 <td class="pts">5</td>
               </tr>
               <tr>
                 <td class="rank">4</td>
                 <td>Магаль Руслан</td>
-                <td class="team-cell-simple">Сочи</td>
+                <td>Сочи</td>
                 <td class="pts">5</td>
               </tr>
               <tr>
                 <td class="rank">5</td>
                 <td>Сарвели Владислав</td>
-                <td class="team-cell-simple">Нижний Новгород</td>
+                <td>Нижний Новгород</td>
                 <td class="pts">5</td>
               </tr>
               <tr>
                 <td class="rank">6</td>
                 <td>Симонян Артем</td>
-                <td class="team-cell-simple">Ротор</td>
+                <td>Ротор</td>
                 <td class="pts">5</td>
               </tr>
               <tr>
                 <td class="rank">7</td>
                 <td>Берковский Илья</td>
-                <td class="team-cell-simple">Торпедо Москва</td>
+                <td>Торпедо Москва</td>
                 <td class="pts">4</td>
               </tr>
               <tr>
                 <td class="rank">8</td>
                 <td>Боков Денис</td>
-                <td class="team-cell-simple">Урал</td>
+                <td>Урал</td>
                 <td class="pts">4</td>
               </tr>
               <tr>
                 <td class="rank">9</td>
                 <td>Горбунов Игорь</td>
-                <td class="team-cell-simple">Арсенал</td>
+                <td>Арсенал</td>
                 <td class="pts">4</td>
               </tr>
               <tr>
                 <td class="rank">10</td>
                 <td>Сафронов Илья</td>
-                <td class="team-cell-simple">Челябинск</td>
+                <td>Челябинск</td>
                 <td class="pts">4</td>
               </tr></tbody>
             </table>
@@ -591,6 +651,473 @@
                   <div class="media-date">2026-10-17</div>
                 </div>
               </a></div></section>
+
+    <h2>Календарь матчей</h2>
+    <section>
+            <div class="calendar-day">
+              <div class="calendar-date">2026-10-04</div>
+              <div class="matches">
+        <div class="match">
+          <div class="match-date">2026-10-04 14:30</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-204" alt="" class="logo">
+              <div class="team-name">Велес</div>
+            </div>
+            <div class="score">1 : 2</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-263" alt="" class="logo">
+              <div class="team-name">Волга</div>
+            </div>
+          </div>
+          <div class="match-meta">«Авангард», Домодедово · 👥 1 221</div>
+        </div></div>
+            </div>
+            <div class="calendar-day">
+              <div class="calendar-date">2026-10-16</div>
+              <div class="matches">
+        <div class="match">
+          <div class="match-date">2026-10-16 19:00</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-182" alt="" class="logo">
+              <div class="team-name">Ротор</div>
+            </div>
+            <div class="score">0 : 1</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-66" alt="" class="logo">
+              <div class="team-name">Сочи</div>
+            </div>
+          </div>
+          <div class="match-meta">«Волгоград Арена», Волгоград · 👥 13 832</div>
+        </div></div>
+            </div>
+            <div class="calendar-day">
+              <div class="calendar-date">2026-10-17</div>
+              <div class="matches">
+        <div class="match">
+          <div class="match-date">2026-10-17 11:30</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-13" alt="" class="logo">
+              <div class="team-name">Енисей</div>
+            </div>
+            <div class="score">1 : 2</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-22" alt="" class="logo">
+              <div class="team-name">Торпедо Москва</div>
+            </div>
+          </div>
+          <div class="match-meta">«Манеж «Футбол-Арена «Енисей», Красноярск · 👥 2 871</div>
+        </div>
+        <div class="match">
+          <div class="match-date">2026-10-17 14:00</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-37" alt="" class="logo">
+              <div class="team-name">Уфа</div>
+            </div>
+            <div class="score">2 : 0</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-63" alt="" class="logo">
+              <div class="team-name">Арсенал</div>
+            </div>
+          </div>
+          <div class="match-meta">«Нефтяник», Уфа · 👥 2 174</div>
+        </div>
+        <div class="match">
+          <div class="match-date">2026-10-17 16:00</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-15" alt="" class="logo">
+              <div class="team-name">КАМАЗ</div>
+            </div>
+            <div class="score">2 : 1</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-32" alt="" class="logo">
+              <div class="team-name">Нефтехимик</div>
+            </div>
+          </div>
+          <div class="match-meta">«КАМАЗ», Набережные Челны · 👥 1 720</div>
+        </div>
+        <div class="match">
+          <div class="match-date">2026-10-17 16:30</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-267" alt="" class="logo">
+              <div class="team-name">Спартак (Кострома)</div>
+            </div>
+            <div class="score">2 : 0</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-256" alt="" class="logo">
+              <div class="team-name">Ленинградец</div>
+            </div>
+          </div>
+          <div class="match-meta">«Арена Химки», Химки · 👥 321</div>
+        </div></div>
+            </div>
+            <div class="calendar-day">
+              <div class="calendar-date">2026-10-18</div>
+              <div class="matches">
+        <div class="match">
+          <div class="match-date">2026-10-18 08:00</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-20" alt="" class="logo">
+              <div class="team-name">СКА-Хабаровск</div>
+            </div>
+            <div class="score">1 : 2</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-263" alt="" class="logo">
+              <div class="team-name">Волга</div>
+            </div>
+          </div>
+          <div class="match-meta">«Имени В.И. Ленина», Хабаровск · 👥 724</div>
+        </div>
+        <div class="match">
+          <div class="match-date">2026-10-18 13:00</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-23" alt="" class="logo">
+              <div class="team-name">Урал</div>
+            </div>
+            <div class="score">1 : 2</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-183" alt="" class="logo">
+              <div class="team-name">Нижний Новгород</div>
+            </div>
+          </div>
+          <div class="match-meta">«Екатеринбург Арена», Екатеринбург · 👥 11 944</div>
+        </div>
+        <div class="match">
+          <div class="match-date">2026-10-18 15:00</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-102" alt="" class="logo">
+              <div class="team-name">Текстильщик</div>
+            </div>
+            <div class="score">2 : 1</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-159" alt="" class="logo">
+              <div class="team-name">Челябинск</div>
+            </div>
+          </div>
+          <div class="match-meta">«Текстильщик», Иваново · 👥 1 320</div>
+        </div>
+        <div class="match">
+          <div class="match-date">2026-10-18 17:00</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-204" alt="" class="logo">
+              <div class="team-name">Велес</div>
+            </div>
+            <div class="score">1 : 1</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-27" alt="" class="logo">
+              <div class="team-name">Шинник</div>
+            </div>
+          </div>
+          <div class="match-meta">«Авангард», Домодедово · 👥 1 957</div>
+        </div></div>
+            </div>
+            <div class="calendar-day">
+              <div class="calendar-date">2026-10-23</div>
+              <div class="matches">
+        <div class="match">
+          <div class="match-date">2026-10-23 18:00</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-22" alt="" class="logo">
+              <div class="team-name">Торпедо Москва</div>
+            </div>
+            <div class="score">vs</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-182" alt="" class="logo">
+              <div class="team-name">Ротор</div>
+            </div>
+          </div>
+          
+        </div></div>
+            </div>
+            <div class="calendar-day">
+              <div class="calendar-date">2026-10-24</div>
+              <div class="matches">
+        <div class="match">
+          <div class="match-date">2026-10-24 08:00</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-20" alt="" class="logo">
+              <div class="team-name">СКА-Хабаровск</div>
+            </div>
+            <div class="score">vs</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-13" alt="" class="logo">
+              <div class="team-name">Енисей</div>
+            </div>
+          </div>
+          <div class="match-meta">«Имени В.И. Ленина», Хабаровск</div>
+        </div>
+        <div class="match">
+          <div class="match-date">2026-10-24 14:00</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-37" alt="" class="logo">
+              <div class="team-name">Уфа</div>
+            </div>
+            <div class="score">vs</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-183" alt="" class="logo">
+              <div class="team-name">Нижний Новгород</div>
+            </div>
+          </div>
+          <div class="match-meta">«Нефтяник», Уфа</div>
+        </div>
+        <div class="match">
+          <div class="match-date">2026-10-24 16:00</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-102" alt="" class="logo">
+              <div class="team-name">Текстильщик</div>
+            </div>
+            <div class="score">vs</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-66" alt="" class="logo">
+              <div class="team-name">Сочи</div>
+            </div>
+          </div>
+          <div class="match-meta">«Текстильщик», Иваново</div>
+        </div>
+        <div class="match">
+          <div class="match-date">2026-10-24 17:00</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-63" alt="" class="logo">
+              <div class="team-name">Арсенал</div>
+            </div>
+            <div class="score">vs</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-15" alt="" class="logo">
+              <div class="team-name">КАМАЗ</div>
+            </div>
+          </div>
+          <div class="match-meta">«Арсенал», Тула</div>
+        </div></div>
+            </div>
+            <div class="calendar-day">
+              <div class="calendar-date">2026-10-25</div>
+              <div class="matches">
+        <div class="match">
+          <div class="match-date">2026-10-25 13:00</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-159" alt="" class="logo">
+              <div class="team-name">Челябинск</div>
+            </div>
+            <div class="score">vs</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-23" alt="" class="logo">
+              <div class="team-name">Урал</div>
+            </div>
+          </div>
+          <div class="match-meta">«Центральный», Челябинск</div>
+        </div>
+        <div class="match">
+          <div class="match-date">2026-10-25 13:30</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-263" alt="" class="logo">
+              <div class="team-name">Волга</div>
+            </div>
+            <div class="score">vs</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-204" alt="" class="logo">
+              <div class="team-name">Велес</div>
+            </div>
+          </div>
+          <div class="match-meta">«Труд» им. Л.И. Яшина», Ульяновск</div>
+        </div>
+        <div class="match">
+          <div class="match-date">2026-10-25 16:00</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-32" alt="" class="logo">
+              <div class="team-name">Нефтехимик</div>
+            </div>
+            <div class="score">vs</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-256" alt="" class="logo">
+              <div class="team-name">Ленинградец</div>
+            </div>
+          </div>
+          <div class="match-meta">«Нефтехимик», Нижнекамск</div>
+        </div></div>
+            </div>
+            <div class="calendar-day">
+              <div class="calendar-date">2026-10-26</div>
+              <div class="matches">
+        <div class="match">
+          <div class="match-date">2026-10-26 19:30</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-27" alt="" class="logo">
+              <div class="team-name">Шинник</div>
+            </div>
+            <div class="score">vs</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-267" alt="" class="logo">
+              <div class="team-name">Спартак (Кострома)</div>
+            </div>
+          </div>
+          <div class="match-meta">«Шинник», Ярославль</div>
+        </div></div>
+            </div>
+            <div class="calendar-day">
+              <div class="calendar-date">2026-10-30</div>
+              <div class="matches">
+        <div class="match">
+          <div class="match-date">2026-10-30 18:00</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-204" alt="" class="logo">
+              <div class="team-name">Велес</div>
+            </div>
+            <div class="score">vs</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-267" alt="" class="logo">
+              <div class="team-name">Спартак (Кострома)</div>
+            </div>
+          </div>
+          <div class="match-meta">«Авангард», Домодедово</div>
+        </div>
+        <div class="match">
+          <div class="match-date">2026-10-30 20:15</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-183" alt="" class="logo">
+              <div class="team-name">Нижний Новгород</div>
+            </div>
+            <div class="score">vs</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-63" alt="" class="logo">
+              <div class="team-name">Арсенал</div>
+            </div>
+          </div>
+          <div class="match-meta">«Совкомбанк Арена»  , Нижний Новгород</div>
+        </div></div>
+            </div>
+            <div class="calendar-day">
+              <div class="calendar-date">2026-10-31</div>
+              <div class="matches">
+        <div class="match">
+          <div class="match-date">2026-10-31</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-256" alt="" class="logo">
+              <div class="team-name">Ленинградец</div>
+            </div>
+            <div class="score">vs</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-13" alt="" class="logo">
+              <div class="team-name">Енисей</div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="match">
+          <div class="match-date">2026-10-31 13:00</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-159" alt="" class="logo">
+              <div class="team-name">Челябинск</div>
+            </div>
+            <div class="score">vs</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-27" alt="" class="logo">
+              <div class="team-name">Шинник</div>
+            </div>
+          </div>
+          <div class="match-meta">«Центральный», Челябинск</div>
+        </div>
+        <div class="match">
+          <div class="match-date">2026-10-31 16:00</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-32" alt="" class="logo">
+              <div class="team-name">Нефтехимик</div>
+            </div>
+            <div class="score">vs</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-20" alt="" class="logo">
+              <div class="team-name">СКА-Хабаровск</div>
+            </div>
+          </div>
+          <div class="match-meta">«Нефтехимик», Нижнекамск</div>
+        </div>
+        <div class="match">
+          <div class="match-date">2026-10-31 16:00</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-263" alt="" class="logo">
+              <div class="team-name">Волга</div>
+            </div>
+            <div class="score">vs</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-102" alt="" class="logo">
+              <div class="team-name">Текстильщик</div>
+            </div>
+          </div>
+          <div class="match-meta">«Труд» им. Л.И. Яшина», Ульяновск</div>
+        </div></div>
+            </div>
+            <div class="calendar-day">
+              <div class="calendar-date">2026-11-01</div>
+              <div class="matches">
+        <div class="match">
+          <div class="match-date">2026-11-01</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-66" alt="" class="logo">
+              <div class="team-name">Сочи</div>
+            </div>
+            <div class="score">vs</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-23" alt="" class="logo">
+              <div class="team-name">Урал</div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="match">
+          <div class="match-date">2026-11-01</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-182" alt="" class="logo">
+              <div class="team-name">Ротор</div>
+            </div>
+            <div class="score">vs</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-37" alt="" class="logo">
+              <div class="team-name">Уфа</div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="match">
+          <div class="match-date">2026-11-01</div>
+          <div class="match-row">
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-15" alt="" class="logo">
+              <div class="team-name">КАМАЗ</div>
+            </div>
+            <div class="score">vs</div>
+            <div class="team-block">
+              <img src="https://fnl.pro/fnl/team/team-100-22" alt="" class="logo">
+              <div class="team-name">Торпедо Москва</div>
+            </div>
+          </div>
+          
+        </div></div>
+            </div></section>
   </main>
   <footer>Данные: fnl.pro · сгенерировано автоматически</footer>
 </body>

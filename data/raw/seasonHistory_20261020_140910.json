@@ -1,0 +1,92 @@
+[
+  {
+    "@class": "ru.saytori.fnl.db.dto.SeasonInfo",
+    "leagueId": 100,
+    "seasonId": 1066,
+    "title": "2026/2027"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.SeasonInfo",
+    "leagueId": 100,
+    "seasonId": 1024,
+    "title": "2025/2026"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.SeasonInfo",
+    "leagueId": 100,
+    "seasonId": 979,
+    "title": "2024/2025"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.SeasonInfo",
+    "leagueId": 100,
+    "seasonId": 936,
+    "title": "2023/2024"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.SeasonInfo",
+    "leagueId": 100,
+    "seasonId": 896,
+    "title": "2022/2023"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.SeasonInfo",
+    "leagueId": 100,
+    "seasonId": 841,
+    "title": "2021/2022"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.SeasonInfo",
+    "leagueId": 100,
+    "seasonId": 785,
+    "title": "2020/2021"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.SeasonInfo",
+    "leagueId": 100,
+    "seasonId": 712,
+    "title": "2019/2020"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.SeasonInfo",
+    "leagueId": 100,
+    "seasonId": 639,
+    "title": "2018/2019"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.SeasonInfo",
+    "leagueId": 100,
+    "seasonId": 561,
+    "title": "2017/2018"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.SeasonInfo",
+    "leagueId": 100,
+    "seasonId": 484,
+    "title": "2016/2017"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.SeasonInfo",
+    "leagueId": 100,
+    "seasonId": 358,
+    "title": "2015/2016"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.SeasonInfo",
+    "leagueId": 100,
+    "seasonId": 259,
+    "title": "2014/2015"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.SeasonInfo",
+    "leagueId": 100,
+    "seasonId": 186,
+    "title": "2013/2014"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.SeasonInfo",
+    "leagueId": 100,
+    "seasonId": 106,
+    "title": "2012/2013"
+  }
+]
