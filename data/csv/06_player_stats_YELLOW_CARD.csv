@@ -1,11 +1,11 @@
 ﻿@class,leagueId,seasonId,playerId,playerSlug,teamId,teamSlug,teamTitle,teamCustomLogo,playerName,num,postName,photoUrl,modifiedDate,typeGK,typeLG,typeYG,eventCnt,cnt,penaltySum
-ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,5455,470,263,volga,Волга,,Костин Андрей Николаевич,99,Защитник,/fnl/player/roster/100/6f8e4b83b27d04ed351d3d83,2026-09-24T22:33:41.895994,N,N,N,6,277,0
-ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,3450,4540,66,sochi,Сочи,,Калинин Игорь Олегович,13,Защитник,/fnl/player/roster/100/fe9c0698d5236d7cca39381b,2026-09-24T22:33:18.667393,N,N,N,5,277,0
-ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,2299,144,15,KAMAZ,КАМАЗ,,Мануйлов Роман Олегович,27,Защитник,/fnl/player/roster/100/0d76c153d0f66f396f73ad13,2026-09-24T22:32:50.655962,N,N,N,5,277,0
-ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,6775,8630,32,neftehimik,Нефтехимик,,Мукба Энри Раульевич,12,Полузащитник,/fnl/player/roster/100/5c950d94ce4cd92437d77f4f,2026-09-24T22:33:14.079464,N,N,Y,5,277,0
-ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,2909,9388,182,rotor,Ротор,,Трошечкин Александр Игоревич,5,Полузащитник,/fnl/player/roster/100/b26b12584b7db484d6f50a9a,2026-09-24T22:33:29.938942,N,N,N,5,277,0
-ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,5046,381,32,neftehimik,Нефтехимик,,Шарифуллин Линар Динарович,19,Полузащитник,/fnl/player/roster/100/d1610f6742409e5338be3ed4,2026-09-24T22:33:12.663785,N,N,N,5,277,0
-ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,3478,209,27,shinnik,Шинник,,Голубев Артем Валерьевич,50,Полузащитник,/fnl/player/roster/100/9714d75073784af80c96dc5f,2026-09-24T22:33:07.469988,N,N,N,4,277,0
-ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,1412,89,37,ufa,Уфа,,Кутин Денис Сергеевич,5,Защитник,/fnl/player/roster/100/b6ca771b74fb6302d7dc9ef4,2026-09-24T22:33:14.451372,N,N,N,4,277,0
-ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,2642,17,267,spartak-kostroma,Спартак (Кострома),,Маляров Кирилл Анатольевич,7,Защитник,/fnl/player/roster/100/b9d7b667e41ecd444c9a861d,2026-09-24T22:33:45.26168,N,N,N,4,277,0
-ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,1955,124,15,KAMAZ,КАМАЗ,,Хубаев Давид Анзорович,2,Полузащитник,/fnl/player/roster/100/8e221222007ff3e1cf6277d2,2026-09-24T22:32:50.164092,N,N,N,4,277,0
+ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,5455,470,263,volga,Волга,,Костин Андрей Николаевич,99,Защитник,/fnl/player/roster/100/6f8e4b83b27d04ed351d3d83,2026-09-24T22:33:41.895994,N,N,N,6,278,0
+ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,4806,9868,182,rotor,Ротор,,Иллой-Айет Владис-Эммерсон,25,Защитник,/fnl/player/roster/100/27776bf9cd9a19d65ce7f06b,2026-09-24T22:33:30.404067,N,Y,N,5,278,0
+ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,3450,4540,66,sochi,Сочи,,Калинин Игорь Олегович,13,Защитник,/fnl/player/roster/100/fe9c0698d5236d7cca39381b,2026-09-24T22:33:18.667393,N,N,N,5,278,0
+ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,2299,144,15,KAMAZ,КАМАЗ,,Мануйлов Роман Олегович,27,Защитник,/fnl/player/roster/100/0d76c153d0f66f396f73ad13,2026-09-24T22:32:50.655962,N,N,N,5,278,0
+ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,6775,8630,32,neftehimik,Нефтехимик,,Мукба Энри Раульевич,12,Полузащитник,/fnl/player/roster/100/5c950d94ce4cd92437d77f4f,2026-09-24T22:33:14.079464,N,N,Y,5,278,0
+ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,2909,9388,182,rotor,Ротор,,Трошечкин Александр Игоревич,5,Полузащитник,/fnl/player/roster/100/b26b12584b7db484d6f50a9a,2026-09-24T22:33:29.938942,N,N,N,5,278,0
+ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,5046,381,32,neftehimik,Нефтехимик,,Шарифуллин Линар Динарович,19,Полузащитник,/fnl/player/roster/100/d1610f6742409e5338be3ed4,2026-09-24T22:33:12.663785,N,N,N,5,278,0
+ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,1332,83,13,enisey,Енисей,,Иванов Егор Олегович,21,Полузащитник,/fnl/player/roster/100/500a133ae1ad8fe8c3b4bcf5,2026-09-24T22:32:43.660782,N,N,N,4,278,0
+ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,1412,89,37,ufa,Уфа,,Кутин Денис Сергеевич,5,Защитник,/fnl/player/roster/100/b6ca771b74fb6302d7dc9ef4,2026-09-24T22:33:14.451372,N,N,N,4,278,0
+ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,1955,124,15,KAMAZ,КАМАЗ,,Хубаев Давид Анзорович,2,Полузащитник,/fnl/player/roster/100/8e221222007ff3e1cf6277d2,2026-09-24T22:32:50.164092,N,N,N,4,278,0
