@@ -1,10 +1,10 @@
 ﻿@class,id,home,homeAvg,guest,guestAvg,total,totalAvg,description
-ru.saytori.fnl.model.TeamInfoStatsItem,10,132,,132,,132,,Сыгранные матчи
-ru.saytori.fnl.model.TeamInfoStatsItem,20,52,39.0,47,36.0,99,75.0,Победы
-ru.saytori.fnl.model.TeamInfoStatsItem,40,33,25.0,33,25.0,66,50.0,Ничьи
-ru.saytori.fnl.model.TeamInfoStatsItem,45,174,,174,,174,,Осталось сыграть
-ru.saytori.fnl.model.TeamInfoStatsItem,60,199,1.51,161,1.22,360,2.73,Забитые мячи
-ru.saytori.fnl.model.TeamInfoStatsItem,70,147,1.11,123,0.93,270,2.05,Голевые передачи
-ru.saytori.fnl.model.TeamInfoStatsItem,100,285,2.16,280,2.12,565,4.28,Желтые карточки
-ru.saytori.fnl.model.TeamInfoStatsItem,120,9,0.07,18,0.14,27,0.2,Красные карточки
-ru.saytori.fnl.model.TeamInfoStatsItem,140,29,0.22,22,0.17,51,0.39,Пенальти
+ru.saytori.fnl.model.TeamInfoStatsItem,10,135,,135,,135,,Сыгранные матчи
+ru.saytori.fnl.model.TeamInfoStatsItem,20,53,39.0,48,36.0,101,75.0,Победы
+ru.saytori.fnl.model.TeamInfoStatsItem,40,34,25.0,34,25.0,68,50.0,Ничьи
+ru.saytori.fnl.model.TeamInfoStatsItem,45,171,,171,,171,,Осталось сыграть
+ru.saytori.fnl.model.TeamInfoStatsItem,60,202,1.5,165,1.22,367,2.72,Забитые мячи
+ru.saytori.fnl.model.TeamInfoStatsItem,70,149,1.1,125,0.93,274,2.03,Голевые передачи
+ru.saytori.fnl.model.TeamInfoStatsItem,100,298,2.21,289,2.14,587,4.35,Желтые карточки
+ru.saytori.fnl.model.TeamInfoStatsItem,120,11,0.08,19,0.14,30,0.22,Красные карточки
+ru.saytori.fnl.model.TeamInfoStatsItem,140,29,0.21,22,0.16,51,0.38,Пенальти
