@@ -1,5 +1,5 @@
 ﻿@class,leagueId,seasonId,playerId,playerSlug,teamId,teamSlug,teamTitle,teamCustomLogo,playerName,num,postName,photoUrl,modifiedDate,typeGK,typeLG,typeYG,eventCnt,cnt,penaltySum
-ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,3624,3738,63,arsenal,Арсенал,,Мелихов Александр Андреевич,42,Вратарь,/fnl/player/roster/100/2cf14b6059a6c2c7a39efe23,2026-09-24T22:33:16.711423,Y,N,N,22,34,0
+ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,3624,3738,63,arsenal,Арсенал,,Мелихов Александр Андреевич,42,Вратарь,/fnl/player/roster/100/2cf14b6059a6c2c7a39efe23,2026-09-24T22:33:16.711423,Y,N,N,27,34,0
 ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,2596,14774,37,ufa,Уфа,,Беленов Александр Васильевич,31,Вратарь,/fnl/player/roster/100/c22ee9b98fceb29e5b62d956,2026-09-24T22:33:14.486811,Y,N,N,19,34,0
 ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,6155,829,27,shinnik,Шинник,,Митров Тимофей Вячеславович,51,Вратарь,/fnl/player/roster/100/cf40b7d8a4beaee1aebc46b8,2026-09-24T22:33:10.737478,Y,N,Y,17,34,0
 ru.saytori.fnl.db.dto.PlayerTopInfo,100,1066,6631,8205,102,tekstilschik,Текстильщик,,Фадеев Семен Геннадьевич,58,Вратарь,/fnl/player/roster/100/b13d8df0ef0c5931eba79058,2026-09-24T22:33:22.178134,Y,N,N,17,34,0
