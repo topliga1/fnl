@@ -1,0 +1,164 @@
+[
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamInfoShort",
+    "leagueId": 100,
+    "teamId": 63,
+    "title": "Арсенал",
+    "teamSlug": "arsenal",
+    "city": "Тула",
+    "customLogo": null
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamInfoShort",
+    "leagueId": 100,
+    "teamId": 204,
+    "title": "Велес",
+    "teamSlug": "veles",
+    "city": "Домодедово",
+    "customLogo": null
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamInfoShort",
+    "leagueId": 100,
+    "teamId": 263,
+    "title": "Волга",
+    "teamSlug": "volga",
+    "city": "Ульяновск",
+    "customLogo": null
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamInfoShort",
+    "leagueId": 100,
+    "teamId": 13,
+    "title": "Енисей",
+    "teamSlug": "enisey",
+    "city": "Красноярск",
+    "customLogo": null
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamInfoShort",
+    "leagueId": 100,
+    "teamId": 15,
+    "title": "КАМАЗ",
+    "teamSlug": "KAMAZ",
+    "city": "Набережные Челны",
+    "customLogo": null
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamInfoShort",
+    "leagueId": 100,
+    "teamId": 256,
+    "title": "Ленинградец",
+    "teamSlug": "leningradec",
+    "city": "Ленинградская область",
+    "customLogo": null
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamInfoShort",
+    "leagueId": 100,
+    "teamId": 32,
+    "title": "Нефтехимик",
+    "teamSlug": "neftehimik",
+    "city": "Нижнекамск",
+    "customLogo": null
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamInfoShort",
+    "leagueId": 100,
+    "teamId": 183,
+    "title": "Нижний Новгород",
+    "teamSlug": "nizhniy-novgorod",
+    "city": "Нижний Новгород",
+    "customLogo": null
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamInfoShort",
+    "leagueId": 100,
+    "teamId": 182,
+    "title": "Ротор",
+    "teamSlug": "rotor",
+    "city": "Волгоград",
+    "customLogo": null
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamInfoShort",
+    "leagueId": 100,
+    "teamId": 20,
+    "title": "СКА-Хабаровск",
+    "teamSlug": "ska-habarovsk",
+    "city": "Хабаровск",
+    "customLogo": null
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamInfoShort",
+    "leagueId": 100,
+    "teamId": 66,
+    "title": "Сочи",
+    "teamSlug": "sochi",
+    "city": "Сочи",
+    "customLogo": null
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamInfoShort",
+    "leagueId": 100,
+    "teamId": 267,
+    "title": "Спартак (Кострома)",
+    "teamSlug": "spartak-kostroma",
+    "city": "Кострома",
+    "customLogo": null
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamInfoShort",
+    "leagueId": 100,
+    "teamId": 102,
+    "title": "Текстильщик",
+    "teamSlug": "tekstilschik",
+    "city": "Иваново",
+    "customLogo": null
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamInfoShort",
+    "leagueId": 100,
+    "teamId": 22,
+    "title": "Торпедо Москва",
+    "teamSlug": "torpedo-moskva",
+    "city": "Москва",
+    "customLogo": null
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamInfoShort",
+    "leagueId": 100,
+    "teamId": 23,
+    "title": "Урал",
+    "teamSlug": "ural",
+    "city": "Екатеринбург",
+    "customLogo": null
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamInfoShort",
+    "leagueId": 100,
+    "teamId": 37,
+    "title": "Уфа",
+    "teamSlug": "ufa",
+    "city": "Уфа",
+    "customLogo": null
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamInfoShort",
+    "leagueId": 100,
+    "teamId": 159,
+    "title": "Челябинск",
+    "teamSlug": "chelyabinsk",
+    "city": "Челябинск",
+    "customLogo": null
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamInfoShort",
+    "leagueId": 100,
+    "teamId": 27,
+    "title": "Шинник",
+    "teamSlug": "shinnik",
+    "city": "Ярославль",
+    "customLogo": null
+  }
+]
