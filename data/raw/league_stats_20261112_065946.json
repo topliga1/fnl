@@ -1,0 +1,142 @@
+{
+  "@class": "ru.saytori.fnl.model.TeamInfoStats",
+  "events": [
+    {
+      "@class": "ru.saytori.fnl.model.TeamInfoStatsItem",
+      "id": 10,
+      "home": 154,
+      "homeAvg": null,
+      "guest": 154,
+      "guestAvg": null,
+      "total": 154,
+      "totalAvg": null
+    },
+    {
+      "@class": "ru.saytori.fnl.model.TeamInfoStatsItem",
+      "id": 20,
+      "home": 63,
+      "homeAvg": 41.0,
+      "guest": 52,
+      "guestAvg": 34.0,
+      "total": 115,
+      "totalAvg": 75.0
+    },
+    {
+      "@class": "ru.saytori.fnl.model.TeamInfoStatsItem",
+      "id": 40,
+      "home": 39,
+      "homeAvg": 25.0,
+      "guest": 39,
+      "guestAvg": 25.0,
+      "total": 78,
+      "totalAvg": 51.0
+    },
+    {
+      "@class": "ru.saytori.fnl.model.TeamInfoStatsItem",
+      "id": 45,
+      "home": 152,
+      "homeAvg": null,
+      "guest": 152,
+      "guestAvg": null,
+      "total": 152,
+      "totalAvg": null
+    },
+    {
+      "@class": "ru.saytori.fnl.model.TeamInfoStatsItem",
+      "id": 60,
+      "home": 231,
+      "homeAvg": 1.5,
+      "guest": 182,
+      "guestAvg": 1.18,
+      "total": 413,
+      "totalAvg": 2.68
+    },
+    {
+      "@class": "ru.saytori.fnl.model.TeamInfoStatsItem",
+      "id": 70,
+      "home": 167,
+      "homeAvg": 1.08,
+      "guest": 139,
+      "guestAvg": 0.9,
+      "total": 306,
+      "totalAvg": 1.99
+    },
+    {
+      "@class": "ru.saytori.fnl.model.TeamInfoStatsItem",
+      "id": 100,
+      "home": 331,
+      "homeAvg": 2.15,
+      "guest": 330,
+      "guestAvg": 2.14,
+      "total": 661,
+      "totalAvg": 4.29
+    },
+    {
+      "@class": "ru.saytori.fnl.model.TeamInfoStatsItem",
+      "id": 120,
+      "home": 12,
+      "homeAvg": 0.08,
+      "guest": 22,
+      "guestAvg": 0.14,
+      "total": 34,
+      "totalAvg": 0.22
+    },
+    {
+      "@class": "ru.saytori.fnl.model.TeamInfoStatsItem",
+      "id": 140,
+      "home": 32,
+      "homeAvg": 0.21,
+      "guest": 23,
+      "guestAvg": 0.15,
+      "total": 55,
+      "totalAvg": 0.36
+    }
+  ],
+  "eventType": [
+    {
+      "@class": "ru.saytori.fnl.model.StatisticEventType",
+      "id": 10,
+      "description": "Сыгранные матчи"
+    },
+    {
+      "@class": "ru.saytori.fnl.model.StatisticEventType",
+      "id": 20,
+      "description": "Победы"
+    },
+    {
+      "@class": "ru.saytori.fnl.model.StatisticEventType",
+      "id": 40,
+      "description": "Ничьи"
+    },
+    {
+      "@class": "ru.saytori.fnl.model.StatisticEventType",
+      "id": 45,
+      "description": "Осталось сыграть"
+    },
+    {
+      "@class": "ru.saytori.fnl.model.StatisticEventType",
+      "id": 60,
+      "description": "Забитые мячи"
+    },
+    {
+      "@class": "ru.saytori.fnl.model.StatisticEventType",
+      "id": 70,
+      "description": "Голевые передачи"
+    },
+    {
+      "@class": "ru.saytori.fnl.model.StatisticEventType",
+      "id": 100,
+      "description": "Желтые карточки"
+    },
+    {
+      "@class": "ru.saytori.fnl.model.StatisticEventType",
+      "id": 120,
+      "description": "Красные карточки"
+    },
+    {
+      "@class": "ru.saytori.fnl.model.StatisticEventType",
+      "id": 140,
+      "description": "Пенальти"
+    }
+  ]
+}
