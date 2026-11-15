@@ -1,0 +1,815 @@
+{
+  "@class": "ru.saytori.fnl.model.CenterTeamsRank",
+  "teams": [
+    {
+      "rank": 1,
+      "teamId": 183,
+      "teamName": "Нижний Новгород",
+      "teamSlug": "nizhniy-novgorod",
+      "allGame": 17,
+      "win": 15,
+      "draw": 1,
+      "loss": 1,
+      "scoredGoal": 52,
+      "missedGoal": 15,
+      "diffGoal": 37,
+      "score": 46,
+      "prevRank": 1,
+      "lastGamesResult": [
+        "WIN",
+        "WIN",
+        "WIN",
+        "WIN",
+        "WIN"
+      ],
+      "customLogo": null,
+      "lastGames": [
+        {
+          "gameId": 7375,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7361,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7350,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7310,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7281,
+          "result": "WIN"
+        }
+      ]
+    },
+    {
+      "rank": 2,
+      "teamId": 22,
+      "teamName": "Торпедо Москва",
+      "teamSlug": "torpedo-moskva",
+      "allGame": 18,
+      "win": 10,
+      "draw": 5,
+      "loss": 3,
+      "scoredGoal": 30,
+      "missedGoal": 13,
+      "diffGoal": 17,
+      "score": 35,
+      "prevRank": 2,
+      "lastGamesResult": [
+        "WIN",
+        "WIN",
+        "DRAW",
+        "DRAW",
+        "WIN"
+      ],
+      "customLogo": null,
+      "lastGames": [
+        {
+          "gameId": 7342,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7382,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7374,
+          "result": "DRAW"
+        },
+        {
+          "gameId": 7352,
+          "result": "DRAW"
+        },
+        {
+          "gameId": 7301,
+          "result": "WIN"
+        }
+      ]
+    },
+    {
+      "rank": 3,
+      "teamId": 23,
+      "teamName": "Урал",
+      "teamSlug": "ural",
+      "allGame": 17,
+      "win": 10,
+      "draw": 4,
+      "loss": 3,
+      "scoredGoal": 29,
+      "missedGoal": 11,
+      "diffGoal": 18,
+      "score": 34,
+      "prevRank": 3,
+      "lastGamesResult": [
+        "WIN",
+        "WIN",
+        "WIN",
+        "LOSS",
+        "LOSS"
+      ],
+      "customLogo": null,
+      "lastGames": [
+        {
+          "gameId": 7379,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7364,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7354,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7310,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7295,
+          "result": "LOSS"
+        }
+      ]
+    },
+    {
+      "rank": 4,
+      "teamId": 66,
+      "teamName": "Сочи",
+      "teamSlug": "sochi",
+      "allGame": 17,
+      "win": 10,
+      "draw": 2,
+      "loss": 5,
+      "scoredGoal": 26,
+      "missedGoal": 20,
+      "diffGoal": 6,
+      "score": 32,
+      "prevRank": 4,
+      "lastGamesResult": [
+        "LOSS",
+        "LOSS",
+        "WIN",
+        "WIN",
+        "WIN"
+      ],
+      "customLogo": null,
+      "lastGames": [
+        {
+          "gameId": 7369,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7364,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7356,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7303,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7283,
+          "result": "WIN"
+        }
+      ]
+    },
+    {
+      "rank": 5,
+      "teamId": 204,
+      "teamName": "Велес",
+      "teamSlug": "veles",
+      "allGame": 18,
+      "win": 9,
+      "draw": 4,
+      "loss": 5,
+      "scoredGoal": 23,
+      "missedGoal": 21,
+      "diffGoal": 2,
+      "score": 31,
+      "prevRank": 5,
+      "lastGamesResult": [
+        "WIN",
+        "DRAW",
+        "LOSS",
+        "DRAW",
+        "WIN"
+      ],
+      "customLogo": null,
+      "lastGames": [
+        {
+          "gameId": 7381,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7376,
+          "result": "DRAW"
+        },
+        {
+          "gameId": 7339,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7314,
+          "result": "DRAW"
+        },
+        {
+          "gameId": 7295,
+          "result": "WIN"
+        }
+      ]
+    },
+    {
+      "rank": 6,
+      "teamId": 267,
+      "teamName": "Спартак Кострома",
+      "teamSlug": "spartak-kostroma",
+      "allGame": 17,
+      "win": 8,
+      "draw": 4,
+      "loss": 5,
+      "scoredGoal": 22,
+      "missedGoal": 20,
+      "diffGoal": 2,
+      "score": 28,
+      "prevRank": 6,
+      "lastGamesResult": [
+        "LOSS",
+        "DRAW",
+        "LOSS",
+        "WIN",
+        "LOSS"
+      ],
+      "customLogo": null,
+      "lastGames": [
+        {
+          "gameId": 7375,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7376,
+          "result": "DRAW"
+        },
+        {
+          "gameId": 7343,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7304,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7297,
+          "result": "LOSS"
+        }
+      ]
+    },
+    {
+      "rank": 7,
+      "teamId": 27,
+      "teamName": "Шинник",
+      "teamSlug": "shinnik",
+      "allGame": 17,
+      "win": 6,
+      "draw": 8,
+      "loss": 3,
+      "scoredGoal": 22,
+      "missedGoal": 18,
+      "diffGoal": 4,
+      "score": 26,
+      "prevRank": 7,
+      "lastGamesResult": [
+        "WIN",
+        "LOSS",
+        "WIN",
+        "DRAW",
+        "WIN"
+      ],
+      "customLogo": null,
+      "lastGames": [
+        {
+          "gameId": 7371,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7378,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7343,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7314,
+          "result": "DRAW"
+        },
+        {
+          "gameId": 7289,
+          "result": "WIN"
+        }
+      ]
+    },
+    {
+      "rank": 8,
+      "teamId": 263,
+      "teamName": "Волга",
+      "teamSlug": "volga",
+      "allGame": 19,
+      "win": 6,
+      "draw": 4,
+      "loss": 9,
+      "scoredGoal": 22,
+      "missedGoal": 26,
+      "diffGoal": -4,
+      "score": 22,
+      "prevRank": 11,
+      "lastGamesResult": [
+        "LOSS",
+        "LOSS",
+        "DRAW",
+        "WIN",
+        "WIN"
+      ],
+      "customLogo": null,
+      "lastGames": [
+        {
+          "gameId": 7342,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7379,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7366,
+          "result": "DRAW"
+        },
+        {
+          "gameId": 7339,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7305,
+          "result": "WIN"
+        }
+      ]
+    },
+    {
+      "rank": 9,
+      "teamId": 37,
+      "teamName": "Уфа",
+      "teamSlug": "ufa",
+      "allGame": 17,
+      "win": 5,
+      "draw": 7,
+      "loss": 5,
+      "scoredGoal": 19,
+      "missedGoal": 17,
+      "diffGoal": 2,
+      "score": 22,
+      "prevRank": 8,
+      "lastGamesResult": [
+        "LOSS",
+        "DRAW",
+        "LOSS",
+        "WIN",
+        "LOSS"
+      ],
+      "customLogo": null,
+      "lastGames": [
+        {
+          "gameId": 7371,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7372,
+          "result": "DRAW"
+        },
+        {
+          "gameId": 7350,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7312,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7283,
+          "result": "LOSS"
+        }
+      ]
+    },
+    {
+      "rank": 10,
+      "teamId": 182,
+      "teamName": "Ротор",
+      "teamSlug": "rotor",
+      "allGame": 17,
+      "win": 5,
+      "draw": 6,
+      "loss": 6,
+      "scoredGoal": 24,
+      "missedGoal": 19,
+      "diffGoal": 5,
+      "score": 21,
+      "prevRank": 9,
+      "lastGamesResult": [
+        "DRAW",
+        "DRAW",
+        "DRAW",
+        "LOSS",
+        "DRAW"
+      ],
+      "customLogo": null,
+      "lastGames": [
+        {
+          "gameId": 7373,
+          "result": "DRAW"
+        },
+        {
+          "gameId": 7372,
+          "result": "DRAW"
+        },
+        {
+          "gameId": 7352,
+          "result": "DRAW"
+        },
+        {
+          "gameId": 7303,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7291,
+          "result": "DRAW"
+        }
+      ]
+    },
+    {
+      "rank": 11,
+      "teamId": 159,
+      "teamName": "Челябинск",
+      "teamSlug": "chelyabinsk",
+      "allGame": 17,
+      "win": 6,
+      "draw": 3,
+      "loss": 8,
+      "scoredGoal": 23,
+      "missedGoal": 27,
+      "diffGoal": -4,
+      "score": 21,
+      "prevRank": 10,
+      "lastGamesResult": [
+        "WIN",
+        "WIN",
+        "LOSS",
+        "LOSS",
+        "WIN"
+      ],
+      "customLogo": null,
+      "lastGames": [
+        {
+          "gameId": 7380,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7378,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7354,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7316,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7287,
+          "result": "WIN"
+        }
+      ]
+    },
+    {
+      "rank": 12,
+      "teamId": 63,
+      "teamName": "Арсенал",
+      "teamSlug": "arsenal",
+      "allGame": 17,
+      "win": 5,
+      "draw": 4,
+      "loss": 8,
+      "scoredGoal": 20,
+      "missedGoal": 35,
+      "diffGoal": -15,
+      "score": 19,
+      "prevRank": 12,
+      "lastGamesResult": [
+        "LOSS",
+        "LOSS",
+        "WIN",
+        "LOSS",
+        "WIN"
+      ],
+      "customLogo": null,
+      "lastGames": [
+        {
+          "gameId": 7380,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7361,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7347,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7312,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7297,
+          "result": "WIN"
+        }
+      ]
+    },
+    {
+      "rank": 13,
+      "teamId": 256,
+      "teamName": "Ленинградец",
+      "teamSlug": "leningradec",
+      "allGame": 17,
+      "win": 4,
+      "draw": 6,
+      "loss": 7,
+      "scoredGoal": 16,
+      "missedGoal": 27,
+      "diffGoal": -11,
+      "score": 18,
+      "prevRank": 13,
+      "lastGamesResult": [
+        "DRAW",
+        "WIN",
+        "DRAW",
+        "LOSS",
+        "LOSS"
+      ],
+      "customLogo": null,
+      "lastGames": [
+        {
+          "gameId": 7373,
+          "result": "DRAW"
+        },
+        {
+          "gameId": 7368,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7341,
+          "result": "DRAW"
+        },
+        {
+          "gameId": 7304,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7285,
+          "result": "LOSS"
+        }
+      ]
+    },
+    {
+      "rank": 14,
+      "teamId": 13,
+      "teamName": "Енисей",
+      "teamSlug": "enisey",
+      "allGame": 17,
+      "win": 4,
+      "draw": 5,
+      "loss": 8,
+      "scoredGoal": 19,
+      "missedGoal": 33,
+      "diffGoal": -14,
+      "score": 17,
+      "prevRank": 14,
+      "lastGamesResult": [
+        "WIN",
+        "LOSS",
+        "LOSS",
+        "LOSS",
+        "LOSS"
+      ],
+      "customLogo": null,
+      "lastGames": [
+        {
+          "gameId": 7369,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7368,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7345,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7301,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7281,
+          "result": "LOSS"
+        }
+      ]
+    },
+    {
+      "rank": 15,
+      "teamId": 20,
+      "teamName": "СКА-Хабаровск",
+      "teamSlug": "ska-habarovsk",
+      "allGame": 17,
+      "win": 4,
+      "draw": 4,
+      "loss": 9,
+      "scoredGoal": 23,
+      "missedGoal": 28,
+      "diffGoal": -5,
+      "score": 16,
+      "prevRank": 15,
+      "lastGamesResult": [
+        "WIN",
+        "WIN",
+        "WIN",
+        "LOSS",
+        "DRAW"
+      ],
+      "customLogo": null,
+      "lastGames": [
+        {
+          "gameId": 7377,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7370,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7345,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7305,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7293,
+          "result": "DRAW"
+        }
+      ]
+    },
+    {
+      "rank": 16,
+      "teamId": 15,
+      "teamName": "КАМАЗ",
+      "teamSlug": "KAMAZ",
+      "allGame": 17,
+      "win": 3,
+      "draw": 5,
+      "loss": 9,
+      "scoredGoal": 21,
+      "missedGoal": 30,
+      "diffGoal": -9,
+      "score": 14,
+      "prevRank": 16,
+      "lastGamesResult": [
+        "LOSS",
+        "DRAW",
+        "LOSS",
+        "WIN",
+        "DRAW"
+      ],
+      "customLogo": null,
+      "lastGames": [
+        {
+          "gameId": 7381,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7374,
+          "result": "DRAW"
+        },
+        {
+          "gameId": 7347,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7307,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7293,
+          "result": "DRAW"
+        }
+      ]
+    },
+    {
+      "rank": 17,
+      "teamId": 32,
+      "teamName": "Нефтехимик",
+      "teamSlug": "neftehimik",
+      "allGame": 17,
+      "win": 4,
+      "draw": 1,
+      "loss": 12,
+      "scoredGoal": 11,
+      "missedGoal": 25,
+      "diffGoal": -14,
+      "score": 13,
+      "prevRank": 17,
+      "lastGamesResult": [
+        "LOSS",
+        "LOSS",
+        "DRAW",
+        "LOSS",
+        "LOSS"
+      ],
+      "customLogo": null,
+      "lastGames": [
+        {
+          "gameId": 7382,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7370,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7341,
+          "result": "DRAW"
+        },
+        {
+          "gameId": 7307,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7287,
+          "result": "LOSS"
+        }
+      ]
+    },
+    {
+      "rank": 18,
+      "teamId": 102,
+      "teamName": "Текстильщик",
+      "teamSlug": "tekstilschik",
+      "allGame": 17,
+      "win": 2,
+      "draw": 5,
+      "loss": 10,
+      "scoredGoal": 12,
+      "missedGoal": 29,
+      "diffGoal": -17,
+      "score": 11,
+      "prevRank": 18,
+      "lastGamesResult": [
+        "LOSS",
+        "DRAW",
+        "LOSS",
+        "WIN",
+        "LOSS"
+      ],
+      "customLogo": null,
+      "lastGames": [
+        {
+          "gameId": 7377,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7366,
+          "result": "DRAW"
+        },
+        {
+          "gameId": 7356,
+          "result": "LOSS"
+        },
+        {
+          "gameId": 7316,
+          "result": "WIN"
+        },
+        {
+          "gameId": 7289,
+          "result": "LOSS"
+        }
+      ]
+    }
+  ]
+}
