@@ -1,0 +1,570 @@
+[
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 75,
+    "teamSlug": "avangard",
+    "logoUrl": "/fnl/team/team-100-75",
+    "modifiedDate": "2024-11-19T18:31:00.473813"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 212,
+    "teamSlug": "fc10786",
+    "logoUrl": "/fnl/team/team-100-212",
+    "modifiedDate": "2024-11-19T18:31:12.963942"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 251,
+    "teamSlug": "alaniya",
+    "logoUrl": "/fnl/team/team-100-251",
+    "modifiedDate": "2025-03-19T15:17:21.625813"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 8,
+    "teamSlug": "alaniya",
+    "logoUrl": "/fnl/team/team-100-8",
+    "modifiedDate": "2025-06-17T13:24:45.945923"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 65,
+    "teamSlug": "angusht",
+    "logoUrl": "/fnl/team/team-100-65",
+    "modifiedDate": "2024-11-19T18:30:58.411805"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 83,
+    "teamSlug": "fc10709",
+    "logoUrl": "/fnl/team/team-100-83",
+    "modifiedDate": "2024-11-19T18:30:51.26287"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 43,
+    "teamSlug": "fc10722",
+    "logoUrl": "/fnl/team/team-100-43",
+    "modifiedDate": "2024-11-19T18:30:55.339938"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 63,
+    "teamSlug": "arsenal",
+    "logoUrl": "/fnl/team/team-100-63",
+    "modifiedDate": "2026-10-22T10:11:44.746048"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 111,
+    "teamSlug": "fc10751",
+    "logoUrl": "/fnl/team/team-100-111",
+    "modifiedDate": "2024-11-19T18:31:03.152045"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 9,
+    "teamSlug": "fc10689",
+    "logoUrl": "/fnl/team/team-100-9",
+    "modifiedDate": "2025-03-19T15:18:01.603218"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 204,
+    "teamSlug": "veles",
+    "logoUrl": "/fnl/team/team-100-204",
+    "modifiedDate": "2024-11-19T18:31:13.973894"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 263,
+    "teamSlug": "volga",
+    "logoUrl": "/fnl/team/team-100-263",
+    "modifiedDate": "2026-10-22T10:34:40.056036"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 88,
+    "teamSlug": "fc10712",
+    "logoUrl": "/fnl/team/team-100-88",
+    "modifiedDate": "2025-06-16T11:09:06.688894"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 10,
+    "teamSlug": "volgar",
+    "logoUrl": "/fnl/team/team-100-10",
+    "modifiedDate": "2024-11-19T18:30:46.108254"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 108,
+    "teamSlug": "volga",
+    "logoUrl": "/fnl/team/team-100-108",
+    "modifiedDate": "2024-11-19T18:31:02.80614"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 264,
+    "teamSlug": "fc10790",
+    "logoUrl": "/fnl/team/team-100-264",
+    "modifiedDate": "2024-11-19T18:31:15.16806"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 12,
+    "teamSlug": "dinamo-bryansk",
+    "logoUrl": "/fnl/team/team-100-12",
+    "modifiedDate": "2024-11-19T18:30:45.884317"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 85,
+    "teamSlug": "fc10710",
+    "logoUrl": "/fnl/team/team-100-85",
+    "modifiedDate": "2024-11-19T18:30:51.729068"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 13,
+    "teamSlug": "enisey",
+    "logoUrl": "/fnl/team/team-100-13",
+    "modifiedDate": "2026-10-22T10:34:45.068536"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 117,
+    "teamSlug": "fc10755",
+    "logoUrl": "/fnl/team/team-100-117",
+    "modifiedDate": "2024-11-19T18:31:04.370177"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 135,
+    "teamSlug": "zenit-2",
+    "logoUrl": "/fnl/team/team-100-135",
+    "modifiedDate": "2024-11-19T18:31:05.259366"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 78,
+    "teamSlug": "irtysh",
+    "logoUrl": "/fnl/team/team-100-78",
+    "modifiedDate": "2024-11-19T18:30:57.685078"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 15,
+    "teamSlug": "KAMAZ",
+    "logoUrl": "/fnl/team/team-100-15",
+    "modifiedDate": "2026-10-22T10:34:50.027527"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 147,
+    "teamSlug": "fc10773",
+    "logoUrl": "/fnl/team/team-100-147",
+    "modifiedDate": "2024-11-19T18:31:08.759095"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 99,
+    "teamSlug": "fc10740",
+    "logoUrl": "/fnl/team/team-100-99",
+    "modifiedDate": "2024-11-19T18:31:00.708717"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 259,
+    "teamSlug": "kuban",
+    "logoUrl": "/fnl/team/team-100-259",
+    "modifiedDate": "2024-11-19T18:31:14.421545"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 115,
+    "teamSlug": "kuban",
+    "logoUrl": "/fnl/team/team-100-115",
+    "modifiedDate": "2024-11-19T18:31:03.855776"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 256,
+    "teamSlug": "leningradec",
+    "logoUrl": "/fnl/team/team-100-256",
+    "modifiedDate": "2026-10-22T10:34:55.045719"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 16,
+    "teamSlug": "fc10693",
+    "logoUrl": "/fnl/team/team-100-16",
+    "modifiedDate": "2024-11-19T18:30:47.07474"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 107,
+    "teamSlug": "metallurg",
+    "logoUrl": "/fnl/team/team-100-107",
+    "modifiedDate": "2024-11-19T18:31:02.56562"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 33,
+    "teamSlug": "fc10718",
+    "logoUrl": "/fnl/team/team-100-33",
+    "modifiedDate": "2024-11-19T18:30:54.395226"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 17,
+    "teamSlug": "fc10695",
+    "logoUrl": "/fnl/team/team-100-17",
+    "modifiedDate": "2024-11-19T18:30:47.536776"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 32,
+    "teamSlug": "neftehimik",
+    "logoUrl": "/fnl/team/team-100-32",
+    "modifiedDate": "2026-10-22T10:21:38.599422"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 183,
+    "teamSlug": "nizhniy-novgorod",
+    "logoUrl": "/fnl/team/team-100-183",
+    "modifiedDate": "2026-10-22T10:35:00.01011"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 18,
+    "teamSlug": "nizhniy-novgorod",
+    "logoUrl": "/fnl/team/team-100-18",
+    "modifiedDate": "2024-11-19T18:30:47.334219"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 260,
+    "teamSlug": "kosmos",
+    "logoUrl": "/fnl/team/team-100-260",
+    "modifiedDate": "2024-11-19T18:31:14.68489"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 11,
+    "teamSlug": "fc10685",
+    "logoUrl": "/fnl/team/team-100-11",
+    "modifiedDate": "2025-07-03T11:45:07.013366"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 31,
+    "teamSlug": "fc10714",
+    "logoUrl": "/fnl/team/team-100-31",
+    "modifiedDate": "2024-11-19T18:30:53.387175"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 226,
+    "teamSlug": "rodina",
+    "logoUrl": "/fnl/team/team-100-226",
+    "modifiedDate": "2025-03-19T15:19:26.678318"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 35,
+    "teamSlug": "rotor",
+    "logoUrl": "/fnl/team/team-100-35",
+    "modifiedDate": "2025-06-17T13:28:25.961162"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 182,
+    "teamSlug": "rotor",
+    "logoUrl": "/fnl/team/team-100-182",
+    "modifiedDate": "2026-10-22T10:35:05.040065"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 87,
+    "teamSlug": "fc10711",
+    "logoUrl": "/fnl/team/team-100-87",
+    "modifiedDate": "2024-11-19T18:30:52.254992"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 36,
+    "teamSlug": "fc10715",
+    "logoUrl": "/fnl/team/team-100-36",
+    "modifiedDate": "2025-06-10T10:03:40.739674"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 100,
+    "teamSlug": "fc10686",
+    "logoUrl": "/fnl/team/team-100-100",
+    "modifiedDate": "2024-11-19T18:30:45.656969"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 59,
+    "teamSlug": "fc10726",
+    "logoUrl": "/fnl/team/team-100-59",
+    "modifiedDate": "2024-11-19T18:30:56.4459"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 60,
+    "teamSlug": "fc10727",
+    "logoUrl": "/fnl/team/team-100-60",
+    "modifiedDate": "2024-11-19T18:30:56.684259"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 19,
+    "teamSlug": "sibir",
+    "logoUrl": "/fnl/team/team-100-19",
+    "modifiedDate": "2025-06-17T09:32:21.560931"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 20,
+    "teamSlug": "ska-habarovsk",
+    "logoUrl": "/fnl/team/team-100-20",
+    "modifiedDate": "2026-10-22T10:12:14.721963"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 72,
+    "teamSlug": "sokol-saratov",
+    "logoUrl": "/fnl/team/team-100-72",
+    "modifiedDate": "2025-12-05T13:20:49.09494"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 66,
+    "teamSlug": "sochi",
+    "logoUrl": "/fnl/team/team-100-66",
+    "modifiedDate": "2026-10-22T10:35:10.038064"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 134,
+    "teamSlug": "spartak-2",
+    "logoUrl": "/fnl/team/team-100-134",
+    "modifiedDate": "2024-11-19T18:31:05.506759"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 267,
+    "teamSlug": "spartak-kostroma",
+    "logoUrl": "/fnl/team/team-100-267",
+    "modifiedDate": "2026-10-22T10:35:15.045446"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 30,
+    "teamSlug": "spartak-nalchik",
+    "logoUrl": "/fnl/team/team-100-30",
+    "modifiedDate": "2024-11-19T18:30:53.144698"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 139,
+    "teamSlug": "fc10763",
+    "logoUrl": "/fnl/team/team-100-139",
+    "modifiedDate": "2024-11-19T18:31:06.193908"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 102,
+    "teamSlug": "tekstilschik",
+    "logoUrl": "/fnl/team/team-100-102",
+    "modifiedDate": "2026-10-22T10:35:15.281162"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 266,
+    "teamSlug": "fc10791",
+    "logoUrl": null,
+    "modifiedDate": null
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 34,
+    "teamSlug": "fc10719",
+    "logoUrl": "/fnl/team/team-100-34",
+    "modifiedDate": "2024-11-19T18:30:54.665653"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 21,
+    "teamSlug": "torpedo-vladimir",
+    "logoUrl": "/fnl/team/team-100-21",
+    "modifiedDate": "2024-11-19T18:30:48.444233"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 22,
+    "teamSlug": "torpedo-moskva",
+    "logoUrl": "/fnl/team/team-100-22",
+    "modifiedDate": "2026-10-22T10:35:20.030213"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 101,
+    "teamSlug": "fc10741",
+    "logoUrl": "/fnl/team/team-100-101",
+    "modifiedDate": "2024-11-19T18:31:00.956346"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 76,
+    "teamSlug": "tyumen",
+    "logoUrl": "/fnl/team/team-100-76",
+    "modifiedDate": "2025-03-19T15:21:11.743112"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 23,
+    "teamSlug": "ural",
+    "logoUrl": "/fnl/team/team-100-23",
+    "modifiedDate": "2026-10-22T10:35:25.034679"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 37,
+    "teamSlug": "ufa",
+    "logoUrl": "/fnl/team/team-100-37",
+    "modifiedDate": "2026-10-22T10:35:30.044898"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 24,
+    "teamSlug": "fakel",
+    "logoUrl": "/fnl/team/team-100-24",
+    "modifiedDate": "2025-07-16T09:17:37.817652"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 64,
+    "teamSlug": "khimik",
+    "logoUrl": "/fnl/team/team-100-64",
+    "modifiedDate": "2025-06-17T13:34:11.129161"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 25,
+    "teamSlug": "fc10705",
+    "logoUrl": "/fnl/team/team-100-25",
+    "modifiedDate": "2024-11-19T18:30:50.072297"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 197,
+    "teamSlug": "chayka",
+    "logoUrl": "/fnl/team/team-100-197",
+    "modifiedDate": "2025-03-19T15:21:56.792148"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 159,
+    "teamSlug": "chelyabinsk",
+    "logoUrl": "/fnl/team/team-100-159",
+    "modifiedDate": "2025-06-30T11:01:37.865313"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 26,
+    "teamSlug": "chernomorets",
+    "logoUrl": "/fnl/team/team-100-26",
+    "modifiedDate": "2025-03-19T15:22:11.765868"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 148,
+    "teamSlug": "chertanovo",
+    "logoUrl": "/fnl/team/team-100-148",
+    "modifiedDate": "2024-11-19T18:31:07.499636"
+  },
+  {
+    "@class": "ru.saytori.fnl.db.dto.TeamLogo",
+    "leagueId": 100,
+    "teamId": 27,
+    "teamSlug": "shinnik",
+    "logoUrl": "/fnl/team/team-100-27",
+    "modifiedDate": "2026-10-22T10:35:30.292851"
+  }
+]
